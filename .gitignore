@@ -11,3 +11,14 @@ __pycache__/
 
 # Generated at runtime (rebuilt from the database)
 *.db
+# Real personal data (never public)
+data/private/
+
+# Runtime logs (regenerated each run)
+logs/*.jsonl
+
+# Personal study notes
+PROGRESS.md
+
+# Local AI tool settings
+.claude/
