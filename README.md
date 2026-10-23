@@ -35,19 +35,18 @@ Everything is stored in one small SQLite database file. The Excel checklist and 
 
 ## The AI models
 
-You can switch between three open models with one setting:
+You can switch between two open models with one setting (`LLM_MODEL` in `.env`):
 
-| Role | Model | Where it runs |
-| --- | --- | --- |
-| Main | Qwen3.8 27B | Groq (cloud, free plan) |
-| Switch-in | GPT-OSS-120B | Groq (cloud) |
-| Offline backup | Qwen3.5 9B | Your own computer, via Ollama |
+| Setting | Model | Where it runs |
+|-|-|-|
+| `main` | GPT-OSS-120B | Groq (cloud, free plan) |
+| `fast` | GPT-OSS-20B | Groq (cloud): faster, separate rate limit, used as fallback |
 
 The AI reads the pages and decides the next step. Plain code does the checking: eligibility, dates and saving records. That way the important decisions are always exact.
 
 ## Getting started
 
-You'll need **Python 3.12** and **git**. Ollama is only needed if you want the offline backup.
+You'll need **Python 3.12** and **git**.
 
 **1. Download the project**
 
@@ -91,7 +90,7 @@ How to run the agent will be added here as it is built.
 
 ## Progress
 
-- [ ] M0 Setup and model switch
+- [x] M0 Setup and model switch
 - [ ] M1 Sample data
 - [ ] M2 Database and version history
 - [ ] M3 Data models

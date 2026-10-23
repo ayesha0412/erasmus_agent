@@ -1,2 +1,13 @@
-erasmusvenv/
+# Secrets: never commit the real key
 .env
+
+# Virtual environment
+erasmusvenv/
+
+# Python build files (created automatically)
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Generated at runtime (rebuilt from the database)
+*.db
