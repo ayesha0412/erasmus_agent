@@ -1,0 +1,64 @@
+{
+  "description": "The 5 programmes the agent reads in full. Each one covers a test scenario. Pages were chosen by hand from each programme's own website menu.",
+  "chosen_on": "2026-10-23",
+  "programmes": [
+    {
+      "programme_id": "deai",
+      "catalogue_id": "101241133",
+      "name": "Data Engineering and Artificial Intelligence",
+      "role": "relevant_ai_in_name",
+      "why": "Matches a CS graduate interested in AI and data engineering; clear requirements and deadlines.",
+      "pages": {
+        "courses": "https://deai.ulb.be/home/master-programme/course-content/",
+        "admission": "https://deai.ulb.be/home/students/admission/",
+        "profiles": "https://deai.ulb.be/home/students/deai-expected-profiles-pre-requisites/"
+      }
+    },
+    {
+      "programme_id": "codas",
+      "catalogue_id": "101128281",
+      "name": "Communications Engineering and Data Science",
+      "role": "relevant_hidden_ai",
+      "why": "No 'AI' in the name, but tracks include machine learning and AI in networking; tests that tags find what names hide.",
+      "pages": {
+        "programme": "https://www.unite-codas-master.eu/programme.html",
+        "admission": "https://www.unite-codas-master.eu/admission.html"
+      }
+    },
+    {
+      "programme_id": "ifros",
+      "catalogue_id": "619789-EPP-1-2020-1-ES-EPPKA1-JMD-MOB",
+      "name": "Intelligent Field Robotic Systems",
+      "role": "nearby_field_missing_deadline",
+      "why": "Robotics (nearby field, fits Omar). Next intake's deadline is not published yet, and an old page shows a 2022 deadline: real missing and conflicting evidence.",
+      "pages": {
+        "programme": "https://ifrosmaster.org/program",
+        "applicants": "https://ifrosmaster.org/ifros-applicants",
+        "old_application_post": "https://ifrosmaster.org/application"
+      }
+    },
+    {
+      "programme_id": "neurodata",
+      "catalogue_id": "101081356",
+      "name": "International Master in Brain and Data Science",
+      "role": "vague_requirements",
+      "why": "Entry rules say 'outstanding grades (roughly top 10% of your class)' and 'basic knowledge in general biology': cannot be checked from a CGPA alone.",
+      "pages": {
+        "programme": "https://www.neurodata-master.org/programme",
+        "requirements": "https://www.neurodata-master.org/application-requirments"
+      }
+    },
+    {
+      "programme_id": "ilspsd",
+      "catalogue_id": "101238242",
+      "name": "International Law of Security, Peace and Sustainable Development",
+      "role": "not_eligible_law",
+      "why": "Requires 60 ECTS in law (or law, politics, international relations) and IELTS 7.0: a CS graduate is not eligible. Also used for the 'exclude law' preference.",
+      "pages": {
+        "structure": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+        "requirements": "https://master-international-law-erasmusmundus.eu/entry-requirements/",
+        "timetable": "https://master-international-law-erasmusmundus.eu/application-selection-timetable/"
+      }
+    }
+  ]
+}
