@@ -1,0 +1,2039 @@
+{
+  "source_url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
+  "user_agent": "ErasmusMundusTracker/0.1 (student university project; +https://github.com/ayesha0412/erasmus_agent)",
+  "fetched_at": "2026-10-23T07:01:17+00:00",
+  "total_listed": 218,
+  "count": 218,
+  "pages": [
+    {
+      "page": 0,
+      "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
+      "fetched_at": "2026-10-23T07:01:20+00:00",
+      "raw_file": "data/raw/catalogue/page_00.html"
+    },
+    {
+      "page": 1,
+      "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=1",
+      "fetched_at": "2026-10-23T07:01:23+00:00",
+      "raw_file": "data/raw/catalogue/page_01.html"
+    },
+    {
+      "page": 2,
+      "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=2",
+      "fetched_at": "2026-10-23T07:01:25+00:00",
+      "raw_file": "data/raw/catalogue/page_02.html"
+    },
+    {
+      "page": 3,
+      "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=3",
+      "fetched_at": "2026-10-23T07:01:27+00:00",
+      "raw_file": "data/raw/catalogue/page_03.html"
+    },
+    {
+      "page": 4,
+      "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=4",
+      "fetched_at": "2026-10-23T07:01:29+00:00",
+      "raw_file": "data/raw/catalogue/page_04.html"
+    },
+    {
+      "page": 5,
+      "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=5",
+      "fetched_at": "2026-10-23T07:01:32+00:00",
+      "raw_file": "data/raw/catalogue/page_05.html"
+    },
+    {
+      "page": 6,
+      "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=6",
+      "fetched_at": "2026-10-23T07:01:34+00:00",
+      "raw_file": "data/raw/catalogue/page_06.html"
+    },
+    {
+      "page": 7,
+      "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=7",
+      "fetched_at": "2026-10-23T07:01:36+00:00",
+      "raw_file": "data/raw/catalogue/page_07.html"
+    },
+    {
+      "page": 8,
+      "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=8",
+      "fetched_at": "2026-10-23T07:01:38+00:00",
+      "raw_file": "data/raw/catalogue/page_08.html"
+    },
+    {
+      "page": 9,
+      "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=9",
+      "fetched_at": "2026-10-23T07:01:41+00:00",
+      "raw_file": "data/raw/catalogue/page_09.html"
+    },
+    {
+      "page": 10,
+      "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?page=10",
+      "fetched_at": "2026-10-23T07:01:43+00:00",
+      "raw_file": "data/raw/catalogue/page_10.html"
+    }
+  ],
+  "programmes": [
+    {
+      "catalogue_id": "101241136",
+      "project_id": "101241136",
+      "acronym": "MultiDiverse",
+      "name": "Erasmus Mundus Joint Master in Multilingualism and Cultural Diversity",
+      "website": "https://www.multidiverse.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241136",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101240350",
+      "project_id": "101240350",
+      "acronym": "LAWGID",
+      "name": "Law and Gender, Intersectionality and Diversity",
+      "website": "https://lawgid.ius.bg.ac.rs/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101240350",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101241106",
+      "project_id": "101241106",
+      "acronym": "WOCC",
+      "name": "International Master in Contemporary Challenges in the World of Work",
+      "website": "https://www.master-wocc.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241106",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101241178",
+      "project_id": "101241178",
+      "acronym": "CLIDE",
+      "name": "InterCultural Leadership in Digital Era International Master",
+      "website": "https://clide.umk.pl/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241178",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101241082",
+      "project_id": "101241082",
+      "acronym": "EMJM STEPS",
+      "name": "Erasmus Mundus Joint Master in Sustainable Transportation and Electric Power Systems",
+      "website": "https://www.emjmdstepsrock.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241082",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101241064",
+      "project_id": "101241064",
+      "acronym": "EPS",
+      "name": "European Politics and Society: Václav Havel Joint Master Degree",
+      "website": "https://epsmaster.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241064",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101239077",
+      "project_id": "101239077",
+      "acronym": "ISSF",
+      "name": "Erasmus Mundus Joint Master in Insects as Solutions for a Sustainable Future",
+      "website": "https://issf-master.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101239077",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101238875",
+      "project_id": "101238875",
+      "acronym": "RESCO",
+      "name": "Renewable Energy and Sustainable COnstruction, RESCO",
+      "website": "http://resco-master.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101238875",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101238589",
+      "project_id": "101238589",
+      "acronym": "MAiSI",
+      "name": "Erasmus Mundus Joint Master Degree in Sports Ethics and Integrity",
+      "website": "https://www.maisi-project.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101238589",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101234513",
+      "project_id": "101234513",
+      "acronym": "EMMA",
+      "name": "Erasmus Mundus Masters in Journalism, Media and Globalisation (Mundus Journalism)",
+      "website": "https://mundusjournalism.com",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101234513",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101241190",
+      "project_id": "101241190",
+      "acronym": "TERRA",
+      "name": "European Masters in Earthen Architecture and Construction",
+      "website": "https://msc-terra.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241190",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101240181",
+      "project_id": "101240181",
+      "acronym": "TFMASA",
+      "name": "Transfers-Fluids-Materials Aeronautical Sustainable Applications",
+      "website": "https://tfmasa.com/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101240181",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101238940",
+      "project_id": "101238940",
+      "acronym": "EDISS",
+      "name": "Erasmus Mundus Joint Master Programme on the Engineering of Data-intensive Intelligent Software Systems",
+      "website": "https://www.master-ediss.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101238940",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101238766",
+      "project_id": "101238766",
+      "acronym": "RADMEP",
+      "name": "Radiation and its Effects on MicroElectronics and Photonics Technologies",
+      "website": "https://master-radmep.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101238766",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101241095",
+      "project_id": "101241095",
+      "acronym": "BIOPHAM",
+      "name": "Bio and Pharmaceutical Materials Science",
+      "website": "https://www.master-biopham.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241095",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101241135",
+      "project_id": "101241135",
+      "acronym": "CYBERSURE",
+      "name": "Master's Programme in Cybersecurity and Assurance",
+      "website": "https://www.cybersure-master.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241135",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101241133",
+      "project_id": "101241133",
+      "acronym": "DEAI",
+      "name": "Data Engineering and Artificial Intelligence",
+      "website": "https://deai.ulb.be/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241133",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101239651",
+      "project_id": "101239651",
+      "acronym": "REM Plus Plus",
+      "name": "Renewable Energy in the Marine environment",
+      "website": "https://master-remplus2.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101239651",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101238854",
+      "project_id": "101238854",
+      "acronym": "SuCat",
+      "name": "Sustainable Catalysis",
+      "website": "https://www.master-sucat.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101238854",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101238242",
+      "project_id": "101238242",
+      "acronym": "ILSPSD",
+      "name": "International Law of Security, Peace and Sustainable Development",
+      "website": "https://master-international-law-erasmusmundus.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101238242",
+      "catalogue_page": 0
+    },
+    {
+      "catalogue_id": "101241222",
+      "project_id": "101241222",
+      "acronym": "MITRA",
+      "name": "International Master in Transnational Migrations",
+      "website": "https://www.master-mitra.eu/en/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241222",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101240871",
+      "project_id": "101240871",
+      "acronym": "EESIC",
+      "name": "Engineering for Environmental Sustainability and International Cooperation",
+      "website": "https://eesic.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101240871",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101241310",
+      "project_id": "101241310",
+      "acronym": "JANUS",
+      "name": "Joint master in Applied security and defense - Networks for Unified Strategies",
+      "website": "https://master-janus-security-defense.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241310",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101241086",
+      "project_id": "101241086",
+      "acronym": "LASCALA",
+      "name": "Large Scale Accelerators and Lasers",
+      "website": "https://www.master-lascala.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241086",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101240600",
+      "project_id": "101240600",
+      "acronym": "NOHA",
+      "name": "NOHA Erasmus Mundus Joint Master in International Humanitarian Action (NOHA)",
+      "website": "https://www.nohanet.org/masters",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101240600",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101239299",
+      "project_id": "101239299",
+      "acronym": "TELME",
+      "name": "Teaching, designing, managing, foreign Language learning for a Multicultural and inclusive Environment",
+      "website": "https://telme.hypotheses.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101239299",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101238231",
+      "project_id": "101238231",
+      "acronym": "MULTICOM",
+      "name": "Data Science of Human Multimodal Communication: European and International Joint Masters Degree",
+      "website": "https://multicom-em.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101238231",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101241068",
+      "project_id": "101241068",
+      "acronym": "Theatre SPACEs",
+      "name": "Theatre in Social, Participatory Art, Community and Educational contexts",
+      "website": "https://www.theatre-spaces.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241068",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101239847",
+      "project_id": "101239847",
+      "acronym": "NucPhys",
+      "name": "Joint European Master Degree in Nuclear Physics",
+      "website": "https://www.emm-nucphys.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101239847",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101239726",
+      "project_id": "101239726",
+      "acronym": "Bioceb",
+      "name": "European Master in Biological and Chemical Engineering for a Sustainable Bioeconomy",
+      "website": "https://www.bioceb.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101239726",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101239524",
+      "project_id": "101239524",
+      "acronym": "DocNomadsPlus",
+      "name": "DocNomadsPlus, Joint Master in Documentary Filmmaking",
+      "website": "https://docnomadsplus.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101239524",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101239924",
+      "project_id": "101239924",
+      "acronym": "Neurasmus",
+      "name": "Erasmus Mundus Joint Master Programme in Neuroscience",
+      "website": "https://www.neurasmus.u-bordeaux.fr/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101239924",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101240661",
+      "project_id": "101240661",
+      "acronym": "GEM",
+      "name": "Geo-Information Science and Earth Observation for Environmental Modelling and Management",
+      "website": "https://www.gem-msc.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101240661",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101240735",
+      "project_id": "101240735",
+      "acronym": "InterMaths",
+      "name": "Interdisciplinary Mathematics",
+      "website": "https://www.intermaths.eu/erasmus-mundus",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101240735",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101241097",
+      "project_id": "101241097",
+      "acronym": "IMSISS",
+      "name": "International Master in Security, Intelligence and Strategic Studies",
+      "website": "https://www.securityintelligence-erasmusmundus.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241097",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101241246",
+      "project_id": "101241246",
+      "acronym": "CHOREOMUNDUS",
+      "name": "Choreomundus – Erasmus Mundus Master in Dance and Movement as Practical Knowledge and Heritage",
+      "website": "https://choreomundus.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101241246",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101239448",
+      "project_id": "101239448",
+      "acronym": "EMCL-25",
+      "name": "European Master's in Clinical Linguistics 25",
+      "website": "https://www.emcl.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101239448",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101239159",
+      "project_id": "101239159",
+      "acronym": "MSc EF",
+      "name": "Master of Science in European Forestry",
+      "website": "http://www.europeanforestry.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101239159",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101235187",
+      "project_id": "101235187",
+      "acronym": "EACH",
+      "name": "Excellence in Analytical Chemistry",
+      "website": "https://www.analyticalchemistry.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101235187",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101179080",
+      "project_id": "101179080",
+      "acronym": "EMABG",
+      "name": "European Master in Animal Biodiversity and Genomics",
+      "website": "https://www.emabg.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101179080",
+      "catalogue_page": 1
+    },
+    {
+      "catalogue_id": "101180273",
+      "project_id": "101180273",
+      "acronym": "RESOUND",
+      "name": "RESOUND - Joint Master of Arts in Sound Design for Media Arts",
+      "website": "https://resound-ma.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180273",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101180052",
+      "project_id": "101180052",
+      "acronym": "ECTPLUS ONE HEALTH",
+      "name": "EMJM ENVIRONMENTAL CONTAMINATION AND TOXICOLOGY + ONE HEALTH",
+      "website": "https://www.ectplus.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180052",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101177274",
+      "project_id": "101177274",
+      "acronym": "IMQP",
+      "name": "International Master in Quaternary and Prehistory",
+      "website": "https://quaternaryprehistory.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101177274",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101180119",
+      "project_id": "101180119",
+      "acronym": "EPH Plus",
+      "name": "Europubhealth+│European Master in Public Health",
+      "website": "https://www.europubhealth.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180119",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101180353",
+      "project_id": "101180353",
+      "acronym": "EMLDS",
+      "name": "European Master in Linguistic Data Science",
+      "website": "https://emlds.fcsh.unl.pt/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180353",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101180007",
+      "project_id": "101180007",
+      "acronym": "EDU_MIG",
+      "name": "Education, Migration, and Diversity",
+      "website": "https://www.edumig.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180007",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101180418",
+      "project_id": "101180418",
+      "acronym": "MISEI",
+      "name": "Master International en Sciences de l'Education Inclusive",
+      "website": "https://master-misei.com",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180418",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101180050",
+      "project_id": "101180050",
+      "acronym": "EU4M",
+      "name": "Erasmus Mundus Master Course in Mechatronics",
+      "website": "https://www.eu4m.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180050",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101180274",
+      "project_id": "101180274",
+      "acronym": "DIGICREA",
+      "name": "Digital Creativity Art&Science European Master",
+      "website": "https://master-digicrea.univ-st-etienne.fr/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180274",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101180080",
+      "project_id": "101180080",
+      "acronym": "MATHS-DISC",
+      "name": "Mathematical Modelling, Simulation and Data Science for Industrial and Societal Challenges",
+      "website": "https://mathsdisc.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180080",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101180342",
+      "project_id": "101180342",
+      "acronym": "IMAgein",
+      "name": "International Master degree on the biology of Ageing",
+      "website": "https://life.univ-cotedazur.fr/international/imagein",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180342",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101172104",
+      "project_id": "101172104",
+      "acronym": "LIVE_Innov",
+      "name": "Leading International Vaccinology Education for Innovation",
+      "website": "https://masterlive-vaccinology.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101172104",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101179940",
+      "project_id": "101179940",
+      "acronym": "GrEnFIn",
+      "name": "Greening Energy Market and Finance",
+      "website": "https://site.unibo.it/grenfin-emjm",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101179940",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101177425",
+      "project_id": "101177425",
+      "acronym": "GLOCAL",
+      "name": "Global Markets, Local Creativities",
+      "website": "https://globallocal-erasmusmundus.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101177425",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101180000",
+      "project_id": "101180000",
+      "acronym": "M3EP",
+      "name": "Erasmus Mundus Master in European Environmental Economics and Policy",
+      "website": "https://4euplus.eu/4EU-981.html",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180000",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101180030",
+      "project_id": "101180030",
+      "acronym": "HYGIEIA",
+      "name": "Health and Wellbeing across the Lifespan",
+      "website": "https://www.hygieiamaster.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180030",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101179938",
+      "project_id": "101179938",
+      "acronym": "IMLEX",
+      "name": "Erasmus Mundus - Master of Science in Imaging and Light in Extended Reality",
+      "website": "https://imlex.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101179938",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101179922",
+      "project_id": "101179922",
+      "acronym": "EPOG-JM",
+      "name": "Economic POlicies for the Global bifurcation - Joint Master",
+      "website": "https://www.epog.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101179922",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101180354",
+      "project_id": "101180354",
+      "acronym": "iPSRS",
+      "name": "Intelligent Photonics for Security Reliability Sustainability and Safety",
+      "website": "https://www.master-photonics4security.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180354",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101180512",
+      "project_id": "101180512",
+      "acronym": "HumanResponse",
+      "name": "Coordinated Humanitarian Response, Health and Displacement",
+      "website": "https://humanresponse.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180512",
+      "catalogue_page": 2
+    },
+    {
+      "catalogue_id": "101180094",
+      "project_id": "101180094",
+      "acronym": "MIPDaL",
+      "name": "MASTER IN INTELLECTUAL PROPERTY AND DATA LAW",
+      "website": "https://mipdal.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180094",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "101180493",
+      "project_id": "101180493",
+      "acronym": "ResponseAbleFutures",
+      "name": "Response_Able Futures; A European Joint Masters in Design and Care",
+      "website": "https://www.response-able-futures.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180493",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "101180476",
+      "project_id": "101180476",
+      "acronym": "EU-CORE",
+      "name": "EUropean master on COntrol of Renewable Energy systems",
+      "website": "https://master-eu-core.ec-nantes.fr",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180476",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "101180446",
+      "project_id": "101180446",
+      "acronym": "SUSTAGRI",
+      "name": "Erasmus Mundus Joint Master in Cutting-Edge Technologies for Sustainable Agriculture",
+      "website": "https://sustagri-em.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180446",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "101180445",
+      "project_id": "101180445",
+      "acronym": "SERP",
+      "name": "Erasmus Mundus Joint Master's programme in Surface, Electro, Radiation, and Photo-chemistry",
+      "website": "https://www.master-serp.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180445",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "101180348",
+      "project_id": "101180348",
+      "acronym": "TCCM",
+      "name": "Theoretical Chemistry and Computational Modeling",
+      "website": "https://www.emtccm.org",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180348",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "101180302",
+      "project_id": "101180302",
+      "acronym": "SPOT",
+      "name": "Social Psychology of Transformation:  Understanding and Mastering Social Change",
+      "website": "https://spot-psychology.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180302",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "101180266",
+      "project_id": "101180266",
+      "acronym": "MARIHE",
+      "name": "Research and Innovation in Higher Education",
+      "website": "http://www.marihe.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180266",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "101180228",
+      "project_id": "101180228",
+      "acronym": "MemBioMed",
+      "name": "From Membrane Biology to Neuroscience and Experimental Medicine",
+      "website": "https://life.univ-cotedazur.fr/international/erasmus-mundus-joint-master-membiomed",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180228",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "101180198",
+      "project_id": "101180198",
+      "acronym": "E-PiCo Plus",
+      "name": "Electric vehicle PropulsIon & COntrol Plus",
+      "website": "https://master-epico.ec-nantes.fr/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180198",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "101180177",
+      "project_id": "101180177",
+      "acronym": "IMARC",
+      "name": "International Master's in Advanced Research in Criminology",
+      "website": "https://www.internationalmastercriminology.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180177",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "101180112",
+      "project_id": "101180112",
+      "acronym": "DENSYS 2.0",
+      "name": "Decentralised Smart Energy Systems 2.0",
+      "website": "https://densys.univ-lorraine.fr/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180112",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "101180032",
+      "project_id": "101180032",
+      "acronym": "IMIM",
+      "name": "International Master in Innovative Medicine",
+      "website": "https://www.innovativemedicine.eu/home",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180032",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "101178091",
+      "project_id": "101178091",
+      "acronym": "MS2",
+      "name": "Mechanics of Sustainable Materials and Structures",
+      "website": "https://www.ms2master.com",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101178091",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "101180104",
+      "project_id": "101180104",
+      "acronym": "GLOBE",
+      "name": "Erasmus Mundus Joint Master in Global Change Ecology and Biodiversity Management",
+      "website": "https://globe-master.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101180104",
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "SPREE",
+      "project_id": null,
+      "acronym": "SPREE",
+      "name": "Strengthening Mobility and Promoting Regional Integration of Engineering Education in Africa",
+      "website": "http://www.spreeafrica.com/",
+      "overview_url": null,
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "MASTET",
+      "project_id": null,
+      "acronym": "MASTET",
+      "name": "Mobility of African Scholars for Transformative Engineering Training",
+      "website": "http://www.intra-africa-mastet.org/",
+      "overview_url": null,
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "MIRET",
+      "project_id": null,
+      "acronym": "MIRET",
+      "name": "Mobility for Innovative Renewable Energy Technologies",
+      "website": "https://miret.mu.ac.ke/",
+      "overview_url": null,
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "FRAME",
+      "project_id": null,
+      "acronym": "FRAME",
+      "name": "Fostering Research and Intra-African knowledge transfer through Mobility and Education",
+      "website": "http://frame.nust.na/",
+      "overview_url": null,
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "ELbM",
+      "project_id": null,
+      "acronym": "ELbM",
+      "name": "Education for Laser-based Manufacturing",
+      "website": "https://elbmmobility.org/",
+      "overview_url": null,
+      "catalogue_page": 3
+    },
+    {
+      "catalogue_id": "AFRIDI",
+      "project_id": null,
+      "acronym": "AFRIDI",
+      "name": "Appui à la Formation, à la Recherche et à l'Innovation pour le Développement Intra-Afrique",
+      "website": "http://www.utm.rnu.tn/afridi/fr",
+      "overview_url": null,
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "AWaRMN",
+      "project_id": null,
+      "acronym": "AWaRMN",
+      "name": "African Water Resources Mobility Network: Building transdisciplinary capacity for sustainable water resources management in Africa",
+      "website": "http://www.ru.ac.za/intra-africa-awarmn",
+      "overview_url": null,
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101127887",
+      "project_id": "101127887",
+      "acronym": "EMerald",
+      "name": "EMerald Master in Georesources Engineering",
+      "website": "https://www.em-georesources.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101127887",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101127690",
+      "project_id": "101127690",
+      "acronym": "FilmMemory",
+      "name": "FilmMemory - Joint Master of Arts in European Film Heritage, History and Cultures",
+      "website": "https://www.filmmemory.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101127690",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101128215",
+      "project_id": "101128215",
+      "acronym": "SMACCs",
+      "name": "MSc in Smart Cities and Communities",
+      "website": "https://www.smaccs.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128215",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101128187",
+      "project_id": "101128187",
+      "acronym": "EMIMEP",
+      "name": "European Master For Industry in Microwave Electronics and Photonics",
+      "website": "https://www.erasmus-mundus.emimep.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128187",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101128275",
+      "project_id": "101128275",
+      "acronym": "MULTIPHASE",
+      "name": "Multiphase Systems for Sustainable Engineering",
+      "website": "https://www.multiphase-master.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128275",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101128167",
+      "project_id": "101128167",
+      "acronym": "SARENA",
+      "name": "Safe and Reliable Nuclear Applications",
+      "website": "https://www.imt-atlantique.fr/en/study/masters/emjmd/sarena",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128167",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101128259",
+      "project_id": "101128259",
+      "acronym": "GLOBED",
+      "name": "Education Policies for Global Development",
+      "website": "http://www.globed.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128259",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101128281",
+      "project_id": "101128281",
+      "acronym": "CoDaS",
+      "name": "Communications Engineering and Data Science",
+      "website": "https://www.unite-codas-master.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128281",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101128240",
+      "project_id": "101128240",
+      "acronym": "MUNDUS MAPP",
+      "name": "Erasmus Mundus Masters Program in Public Policy",
+      "website": "https://www.mundusmapp.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128240",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101128273",
+      "project_id": "101128273",
+      "acronym": "PLANTHEALTH3",
+      "name": "PlantHealth - European Master Degree in PLANT HEALTH IN SUSTAINABLE CROPPING SYSTEMS",
+      "website": "https://www.planthealth.upv.es/web/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128273",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101127568",
+      "project_id": "101127568",
+      "acronym": "SpaceMed",
+      "name": "Erasmus Mundus Joint Master in Physiology and Medicine of Humans in Space and Extreme Environment",
+      "website": "https://space-med.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101127568",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101128227",
+      "project_id": "101128227",
+      "acronym": "IMAGING",
+      "name": "Erasmus Mundus Joint Master Programme in Imaging",
+      "website": "https://www.emjm-imaging.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128227",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101128171",
+      "project_id": "101128171",
+      "acronym": "NORISK",
+      "name": "International Masters in Risk Assessment and Management of Civil Infrastructures",
+      "website": "https://msc-norisk.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128171",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101128159",
+      "project_id": "101128159",
+      "acronym": "i-MESC",
+      "name": "Interdisciplinarity in Materials for Energy Storage and Conversion",
+      "website": "https://i-mesc.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128159",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101127959",
+      "project_id": "101127959",
+      "acronym": "EMGS",
+      "name": "Erasmus Mundus Master in 'Global Studies'",
+      "website": "https://globalstudies-masters.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101127959",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101128127",
+      "project_id": "101128127",
+      "acronym": "EMOTION",
+      "name": "European Master of Science in Skin Health and Care",
+      "website": "http://www.emotion-master.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128127",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101127924",
+      "project_id": "101127924",
+      "acronym": "IPCVai",
+      "name": "Image Processing and Computer Vision ai",
+      "website": "http://ipcv.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101127924",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101126545",
+      "project_id": "101126545",
+      "acronym": "EMJM-EMLex",
+      "name": "Master Erasmus Mundus in Lexicography",
+      "website": "https://www.emlex.eu.usc.gal/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101126545",
+      "catalogue_page": 4
+    },
+    {
+      "catalogue_id": "101127390",
+      "project_id": "101127390",
+      "acronym": "GroundwatCh",
+      "name": "Groundwater and Global Change - Impacts and Adaptation",
+      "website": "https://www.groundwatermaster.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101127390",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101126726",
+      "project_id": "101126726",
+      "acronym": "CLMCE",
+      "name": "Children’s Literature, Media and Cultural Entrepreneurship",
+      "website": "https://www.clmce-erasmusmundus.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101126726",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101128126",
+      "project_id": "101128126",
+      "acronym": "RePIC",
+      "name": "Erasmus Mundus Joint Master Redesigning the Post-Industrial City",
+      "website": "https://www.unic.eu/en/repic#all",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128126",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101128161",
+      "project_id": "101128161",
+      "acronym": "RE_PLAY",
+      "name": "RE_PLAY: EUROPEAN JOINT MASTERS IN GAMES",
+      "website": "https://www.replaymasters.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128161",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101127545",
+      "project_id": "101127545",
+      "acronym": "GREENANO",
+      "name": "Joint Master's in Nanomaterials for Green and Digital Transitions",
+      "website": "https://www.greenanomaster.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101127545",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101128198",
+      "project_id": "101128198",
+      "acronym": "EMPHID",
+      "name": "Erasmus Mundus Joint Master Degree on Public Health in Disaster",
+      "website": "https://masterpublichealthdisasters.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128198",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101128183",
+      "project_id": "101128183",
+      "acronym": "EMSHIP",
+      "name": "International Master in Advanced Design of Sustainable Ships and Offshore Structures",
+      "website": "http://www.EMship.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128183",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101128124",
+      "project_id": "101128124",
+      "acronym": "EUROPHOTONICS",
+      "name": "EUROPHOTONICS",
+      "website": "http://www.europhotonics.org/wordpress/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128124",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101127953",
+      "project_id": "101127953",
+      "acronym": "SITeS-JM",
+      "name": "Sustainable Information Technologies for Societies Joint Masters",
+      "website": "https://aissprogram.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101127953",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101127220",
+      "project_id": "101127220",
+      "acronym": "SUFONAMA",
+      "name": "Sustainable Forest and Nature Management",
+      "website": "https://em-sufonama.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101127220",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101126802",
+      "project_id": "101126802",
+      "acronym": "IMSOGLO",
+      "name": "International Master in Soils and Global Change",
+      "website": "https://imsoglo.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101126802",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101127982",
+      "project_id": "101127982",
+      "acronym": "FLOODRisk",
+      "name": "Flood Risk Management",
+      "website": "https://www.floodriskmaster.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101127982",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101128119",
+      "project_id": "101128119",
+      "acronym": "EMSSE",
+      "name": "European Master in Sustainable Systems Engineering",
+      "website": "https://www.emsse.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128119",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101128051",
+      "project_id": "101128051",
+      "acronym": "EMINENT",
+      "name": "European Master on Embedded Intelligence Nanosystems Engineering – from Nanoscale Technologies to Ubiquitous Smart Sensors",
+      "website": "http://eminent-master.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128051",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101128006",
+      "project_id": "101128006",
+      "acronym": "CDE",
+      "name": "Copernicus Master in Digital Earth",
+      "website": "https://master-cde.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128006",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101128149",
+      "project_id": "101128149",
+      "acronym": "WINTOUR",
+      "name": "International Master on Wine Tourism Transitions and Innovations",
+      "website": "http://www.wintour-master.eu/en/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101128149",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101082643",
+      "project_id": "101082643",
+      "acronym": "META 4.0",
+      "name": "Manufacturing 4.0 by intElligent and susTAinable technologies - META 4.0",
+      "website": "https://www.master-meta4-0.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082643",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101082155",
+      "project_id": "101082155",
+      "acronym": "MorphoPHEN",
+      "name": "Human Diseases Models Morphological Phenotyping",
+      "website": "https://morphophen.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082155",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101082688",
+      "project_id": "101082688",
+      "acronym": "EMMBIOME",
+      "name": "Erasmus Mundus Master in Biomedical Engineering",
+      "website": "http://www.emmbiome.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082688",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101081786",
+      "project_id": "101081786",
+      "acronym": "EMMaH",
+      "name": "Euro-Asian Joint Master Programme in Medical Technology and Healthcare Business",
+      "website": "https://master-emmah.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101081786",
+      "catalogue_page": 5
+    },
+    {
+      "catalogue_id": "101082651",
+      "project_id": "101082651",
+      "acronym": "HySET",
+      "name": "Hydrogen Systems and Enabling Technologies",
+      "website": "https://www.hysetmaster.polito.it/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082651",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082117",
+      "project_id": "101082117",
+      "acronym": "MERGED",
+      "name": "Master of Science (MSc) in Global Environment and Development",
+      "website": "https://merged.info/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082117",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082433",
+      "project_id": "101082433",
+      "acronym": "EMAI",
+      "name": "Erasmus Mundus Joint Master In Artificial Intelligence",
+      "website": "https://emai-master.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082433",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101080968",
+      "project_id": "101080968",
+      "acronym": "EMJM ACES-STAR",
+      "name": "EMJM AQUACULTURE, ENVIRONMENT AND SOCIETY – STAR",
+      "website": "https://www.emm-aces.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101080968",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101081341",
+      "project_id": "101081341",
+      "acronym": "IMAPP",
+      "name": "International Master of Advanced Methods in Particle Physics",
+      "website": "https://imapp.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101081341",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082454",
+      "project_id": "101082454",
+      "acronym": "MaMaSELF",
+      "name": "Master in Materials Science powEred by Large-Scale Facilities",
+      "website": "https://www.mamaself.eu/",
+      "overview_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/43353764/101082454/ERASMUS2027",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101081182",
+      "project_id": "101081182",
+      "acronym": "ARURCOHE",
+      "name": "Architectural and Urban Contemporary Heritage",
+      "website": "https://www.arurcohe.com/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101081182",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082211",
+      "project_id": "101082211",
+      "acronym": "MESPOM",
+      "name": "Masters degree in Environmental Sciences, Policy and Management",
+      "website": "https://mespom.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082211",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101081874",
+      "project_id": "101081874",
+      "acronym": "MESD",
+      "name": "Master in Membrane Engineering for Sustainable Development",
+      "website": "https://mesd.edu.umontpellier.fr/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101081874",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082420",
+      "project_id": "101082420",
+      "acronym": "GLOFOR",
+      "name": "EMJM in Global Forestry",
+      "website": "https://globalforestry.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082420",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082428",
+      "project_id": "101082428",
+      "acronym": "FLOURISH",
+      "name": "Joint Master Programme in Resilience in Educational Contexts",
+      "website": "http://flourishproject.mt/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082428",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082398",
+      "project_id": "101082398",
+      "acronym": "CCD-STeDe",
+      "name": "Erasmus Mundus Joint Master on “Climate Change and Diversity: Sustainable Territorial Development”",
+      "website": "https://ccd-stede.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082398",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082567",
+      "project_id": "101082567",
+      "acronym": "ARCHMAT",
+      "name": "ERASMUS MUNDUS JOINT MASTER in ARCHAEOLOGICAl MATERIALS SCIENCE",
+      "website": "http://www.erasmusmundus-archmat.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082567",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082683",
+      "project_id": "101082683",
+      "acronym": "CyberMACS",
+      "name": "Master of Applied Cybersecurity",
+      "website": "http://cybermacs.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082683",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082393",
+      "project_id": "101082393",
+      "acronym": "EMLE",
+      "name": "European Master in Law and Economics",
+      "website": "http://www.emle.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082393",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082749",
+      "project_id": "101082749",
+      "acronym": "FAMEAIS",
+      "name": "Functional Advanced Materials Engineering with Artificial Intelligence for Sustainability",
+      "website": "https://www.fame-master.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082749",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082707",
+      "project_id": "101082707",
+      "acronym": "Global-MINDS",
+      "name": "Global MINDS European Master in the Psychology of Global Mobility, Inclusion and Diversity in Society",
+      "website": "https://global-minds.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082707",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082574",
+      "project_id": "101082574",
+      "acronym": "PIONEER",
+      "name": "Public Sector Innovation and eGovernance",
+      "website": "https://pioneer-master.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082574",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082436",
+      "project_id": "101082436",
+      "acronym": "IMATEC",
+      "name": "International Master in Technology and Management for Circular Economy",
+      "website": "https://imatec-mundus.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082436",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082388",
+      "project_id": "101082388",
+      "acronym": "SDSI",
+      "name": "Joint Master's Degree Programme in Service Design Strategies and Innovations",
+      "website": "https://www.sdsi.ma/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082388",
+      "catalogue_page": 6
+    },
+    {
+      "catalogue_id": "101082003",
+      "project_id": "101082003",
+      "acronym": "EDUMaH",
+      "name": "Education in Museums and Heritage",
+      "website": "https://www.gla.ac.uk/postgraduate/erasmusmundus/edumah/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082003",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101081356",
+      "project_id": "101081356",
+      "acronym": "NeuroData",
+      "name": "International Master in Brain and Data Science",
+      "website": "https://www.neurodata-master.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101081356",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101082417",
+      "project_id": "101082417",
+      "acronym": "ReD Global",
+      "name": "Religious Diversity in a Globalised World",
+      "website": "https://www.red-global.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101082417",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101081748",
+      "project_id": "101081748",
+      "acronym": "IMFSE",
+      "name": "International Master of Science in Fire Safety Engineering",
+      "website": "https://imfse.be/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101081748",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101081552",
+      "project_id": "101081552",
+      "acronym": "GeoPlaNet",
+      "name": "Erasmus Mundus Joint Master in Planetary Geosciences",
+      "website": "https://geoplanet-impg.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101081552",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101081731",
+      "project_id": "101081731",
+      "acronym": "MAGMa",
+      "name": "Managing Art and Cultural Heritage in Global Markets",
+      "website": "https://www.magma-erasmusmundus.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101081731",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050239",
+      "project_id": "101050239",
+      "acronym": "GOALS",
+      "name": "Governance & Administration of Leisure and Sports International Master",
+      "website": "http://www.master-goals.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050239",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050331",
+      "project_id": "101050331",
+      "acronym": "COASTHazar",
+      "name": "Coastal Hazards – Risks, Climate Change Impacts and Adaptation",
+      "website": "https://www.coasthazar.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050331",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050462",
+      "project_id": "101050462",
+      "acronym": "CoMEM+",
+      "name": "Master of Science in Coastal and Marine Engineering and Management",
+      "website": "https://www.ntnu.edu/studies/mscomem",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050462",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050459",
+      "project_id": "101050459",
+      "acronym": "CARTO",
+      "name": "Cartography - Mapping for a sustainable world",
+      "website": "https://cartographymaster.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050459",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050446",
+      "project_id": "101050446",
+      "acronym": "PROMISE",
+      "name": "Erasmus Mundus Joint Master in Sustainable Mineral and Metal Processing Engineering",
+      "website": "https://www.master-promise.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050446",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050444",
+      "project_id": "101050444",
+      "acronym": "TPTI",
+      "name": "Techniques, Patrimoine, Territoires de l'Industrie : Histoire, Valorisation, Didactique",
+      "website": "https://www.tpti.eu/en/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050444",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050369",
+      "project_id": "101050369",
+      "acronym": "EMILDAI",
+      "name": "European Master in Law, Data and Artificial Intelligence",
+      "website": "https://emildai.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050369",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050349",
+      "project_id": "101050349",
+      "acronym": "ISLANDS",
+      "name": "Islands and Sustainability",
+      "website": "https://islandsmaster.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050349",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050730",
+      "project_id": "101050730",
+      "acronym": "QuanTEEM",
+      "name": "Quantum Technologies and Engineering Erasmus Mundus Master",
+      "website": "http://www.quanteem.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050730",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050789",
+      "project_id": "101050789",
+      "acronym": "Sus2BioEng",
+      "name": "Sustainable Biomass and Bioproducts Engineering",
+      "website": "https://emjm-sbbe.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050789",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050466",
+      "project_id": "101050466",
+      "acronym": "DAFM",
+      "name": "Sustainability in Agriculture, Food Production and Food Technology in the Danube Region - Danube AgriFood Master",
+      "website": "http://www.agrifoodmaster.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050466",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050597",
+      "project_id": "101050597",
+      "acronym": "JMPMB",
+      "name": "EU-CONEXUS Joint Master Programme in Marine Biotechnology",
+      "website": "https://www.eu-conexus.eu/en/marine-biotechnology/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050597",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050809",
+      "project_id": "101050809",
+      "acronym": "ChEMoinformaticsplus",
+      "name": "ChEMoinformaticsplus - Artificial Intelligence in Chemistry",
+      "website": "https://masterchemoinfo.u-strasbg.fr/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050809",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050810",
+      "project_id": "101050810",
+      "acronym": "TNGS EMJM",
+      "name": "Transnational German Studies Erasmus Mundus Joint Master",
+      "website": "https://transnationalgermanstudies.eu/en/programme/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050810",
+      "catalogue_page": 7
+    },
+    {
+      "catalogue_id": "101050997",
+      "project_id": "101050997",
+      "acronym": "QUARMEN",
+      "name": "QUAntum Research Master-level Education Network",
+      "website": "http://www.master-quarmen.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050997",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "101051004",
+      "project_id": "101051004",
+      "acronym": "MBUILD",
+      "name": "Master Degree in Sustainable Design, Construction and Management of the Built Environment",
+      "website": "http://www.mbuild.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101051004",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "101050044",
+      "project_id": "101050044",
+      "acronym": "MASS",
+      "name": "Master in Astrophysics and Space Science",
+      "website": "https://www.master-mass.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101050044",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "101049867",
+      "project_id": "101049867",
+      "acronym": "AMIR-EM",
+      "name": "Master Program in Advanced Materials Innovative Recycling AMIR EM",
+      "website": "https://www.amir-em-master.com/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101049867",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "101049855",
+      "project_id": "101049855",
+      "acronym": "EMMIR",
+      "name": "European Master in Migration and Intercultural Relations",
+      "website": "https://www.emmir.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101049855",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "101049847",
+      "project_id": "101049847",
+      "acronym": "S-DISCO",
+      "name": "International Master in Sustainable Drug Discovery",
+      "website": "http://sustainabledrugdiscovery.eu",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101049847",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "101049796",
+      "project_id": "101049796",
+      "acronym": "GeoTech",
+      "name": "Master of Science in Geospatial Technologies",
+      "website": "https://mastergeotech.info/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101049796",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "101049712",
+      "project_id": "101049712",
+      "acronym": "CYBERUS",
+      "name": "Erasmus Mundus Joint Master in Cybersecurity",
+      "website": "https://cyberus.univ-ubs.fr/en/index.html",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101049712",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "101049647",
+      "project_id": "101049647",
+      "acronym": "DREAM",
+      "name": "European Master in Dynamics of Renewables-based Power Systems",
+      "website": "https://master-dream.ec-nantes.fr/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101049647",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "101049277",
+      "project_id": "101049277",
+      "acronym": "EMMIE",
+      "name": "Erasmus Mundus Master Impact Entrepreneurship",
+      "website": "https://www.emmie.uliege.be/cms/c_7950389/en/emmie",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101049277",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "101049150",
+      "project_id": "101049150",
+      "acronym": "IMETE-C",
+      "name": "International Masters in Environmental Technology and Engineering – Consolidation phase",
+      "website": "https://www.imete.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101049150",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "101048961",
+      "project_id": "101048961",
+      "acronym": "FRP++",
+      "name": "European Master in Advanced Structural Analysis and Design using Composite Materials",
+      "website": "https://msc-frp.org/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101048961",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "101048710",
+      "project_id": "101048710",
+      "acronym": "CYBER",
+      "name": "CYBER: Joint Master in CYberspace, Behavior and E-theRapy",
+      "website": "http://www.cyber-t.eu/",
+      "overview_url": "https://erasmus-plus.ec.europa.eu/projects/search/details/101048710",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "619643-EPP-1-2020-1-IT-EPPKA1-JMD-MOB",
+      "project_id": "619643-EPP-1-2020-1-IT-EPPKA1-JMD-MOB",
+      "acronym": "EGEI",
+      "name": "Erasmus Mundus Joint Master Degree in Economics of Globalisation and European Integration",
+      "website": "https://www.master-egei.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619643-EPP-1-2020-1-IT-EPPKA1-JMD-MOB",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "619824-EPP-1-2020-1-PT-EPPKA1-JMD-MOB",
+      "project_id": "619824-EPP-1-2020-1-PT-EPPKA1-JMD-MOB",
+      "acronym": "ChIR",
+      "name": "Erasmus Mundus MSc in Chemical Innovation and Regulation",
+      "website": "https://www.emmcchir.org/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619824-EPP-1-2020-1-PT-EPPKA1-JMD-MOB",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "619721-EPP-1-2020-1-DE-EPPKA1-JMD-MOB",
+      "project_id": "619721-EPP-1-2020-1-DE-EPPKA1-JMD-MOB",
+      "acronym": "EMECS",
+      "name": "European Master in Embedded Computing Systems",
+      "website": "http://www.emecs.eu",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619721-EPP-1-2020-1-DE-EPPKA1-JMD-MOB",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "619817-EPP-1-2020-1-ES-EPPKA1-JMD-MOB",
+      "project_id": "619817-EPP-1-2020-1-ES-EPPKA1-JMD-MOB",
+      "acronym": "WOP-P",
+      "name": "Master in Work, Organizational and Personnel Psychology",
+      "website": "https://www.erasmuswop.org",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619817-EPP-1-2020-1-ES-EPPKA1-JMD-MOB",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "619841-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "project_id": "619841-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "acronym": "AquaH",
+      "name": "International Master of Science in Health Mangement in Aquaculture",
+      "website": "http://www.aquah.eu",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619841-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "619636-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "project_id": "619636-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "acronym": "IMBRSea",
+      "name": "International Master of Science in Marine Biological Resources",
+      "website": "http://www.imbrsea.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619636-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "610590-EPP-1-2019-1-BE-EPPKA1-JMD-MOB",
+      "project_id": "610590-EPP-1-2019-1-BE-EPPKA1-JMD-MOB",
+      "acronym": "IMRD",
+      "name": "International Master of Science in Rural Development",
+      "website": "http://www.imrd.ugent.be/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/610590-EPP-1-2019-1-BE-EPPKA1-JMD-MOB",
+      "catalogue_page": 8
+    },
+    {
+      "catalogue_id": "619799-EPP-1-2020-1-PT-EPPKA1-JMD-MOB",
+      "project_id": "619799-EPP-1-2020-1-PT-EPPKA1-JMD-MOB",
+      "acronym": "KEM",
+      "name": "Kino Eyes - The European Fiction Master",
+      "website": "http://www.kinoeyes.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619799-EPP-1-2020-1-PT-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "619789-EPP-1-2020-1-ES-EPPKA1-JMD-MOB",
+      "project_id": "619789-EPP-1-2020-1-ES-EPPKA1-JMD-MOB",
+      "acronym": "IFROS",
+      "name": "Intelligent Field Robotic Systems",
+      "website": "http://ifrosmaster.org/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619789-EPP-1-2020-1-ES-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "619807-EPP-1-2020-1-PT-EPPKA1-JMD-MOB",
+      "project_id": "619807-EPP-1-2020-1-PT-EPPKA1-JMD-MOB",
+      "acronym": "MAEH",
+      "name": "Master in Applied Ecohydrology",
+      "website": "http://www.maeh-mundus.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619807-EPP-1-2020-1-PT-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "610556-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "project_id": "610556-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "acronym": "IDOH+",
+      "name": "Infectious Diseases and One Health",
+      "website": "http://infectious-diseases-one-health.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/610556-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "619657-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "project_id": "619657-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "acronym": "ME3+",
+      "name": "European Joint Masters in Management and Engineering of Environment and Energy +",
+      "website": "https://www.imt-atlantique.fr/en/study/msc/emjmd-me3plusqJaTLx94UxC2zIVi2A$",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619657-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "619801-EPP-1-2020-1-PT-EPPKA1-JMD-MOB",
+      "project_id": "619801-EPP-1-2020-1-PT-EPPKA1-JMD-MOB",
+      "acronym": "MEDfOR",
+      "name": "Mediterranean Forestry and Natural Resources Management",
+      "website": "https://www.medfor.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619801-EPP-1-2020-1-PT-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "619798-EPP-1-2020-1-ES-EPPKA1-JMD-MOB",
+      "project_id": "619798-EPP-1-2020-1-ES-EPPKA1-JMD-MOB",
+      "acronym": "MER2030",
+      "name": "European MSc in Marine EnviRonment 2030",
+      "website": "http://merconsortium.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619798-EPP-1-2020-1-ES-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "610558-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "project_id": "610558-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "acronym": "MIR",
+      "name": "Marine and maritime Intelligent Robotics",
+      "website": "http://www.master-mir.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/610558-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "610564-EPP-1-2019-1-ES-EPPKA1-JMD-MOB",
+      "project_id": "610564-EPP-1-2019-1-ES-EPPKA1-JMD-MOB",
+      "acronym": "GEMMA",
+      "name": "Erasmus Mundus Master’s Degree in Women’s and Gender Studies",
+      "website": "https://gemmaerasmusmundus.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/610564-EPP-1-2019-1-ES-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "610557-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "project_id": "610557-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "acronym": "FUSION",
+      "name": "European Master of Science in Nuclear Fusion and Engineering Physics",
+      "website": "http://www.em-master-fusion.org/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/610557-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "619864-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "project_id": "619864-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "acronym": "FOOD4S",
+      "name": "European Master of Science in Sustainable Food Systems Engineering, Technology and Business",
+      "website": "https://iiw.kuleuven.be/english/food4s/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619864-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "610546-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "project_id": "610546-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "acronym": "FIPDes",
+      "name": "Erasmus Mundus Joint Master Degree in Food Innovation & Product Design",
+      "website": "http://www.fipdes.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/610546-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "619644-EPP-1-2020-1-UK-EPPKA1-JMD-MOB",
+      "project_id": "619644-EPP-1-2020-1-UK-EPPKA1-JMD-MOB",
+      "acronym": "MUrCS15",
+      "name": "Master of Urban Climate and Sustainability1.5",
+      "website": "http://www.murcs.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619644-EPP-1-2020-1-UK-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "619764-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "project_id": "619764-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "acronym": "NANOMED",
+      "name": "Nanomedicine for Drug Delivery",
+      "website": "http://master-nanomed.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619764-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "619660-EPP-1-2020-1-NL-EPPKA1-JMD-MOB",
+      "project_id": "619660-EPP-1-2020-1-NL-EPPKA1-JMD-MOB",
+      "acronym": "EURCULT",
+      "name": "Euroculture: Society, Politics and Culture in a Global Context",
+      "website": "http://www.euroculturemaster.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619660-EPP-1-2020-1-NL-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "619857-EPP-1-2020-1-LT-EPPKA1-JMD-MOB",
+      "project_id": "619857-EPP-1-2020-1-LT-EPPKA1-JMD-MOB",
+      "acronym": "ESWOCHY",
+      "name": "European Joint Master in Social Work with Children and Youth",
+      "website": "https://eswochy.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619857-EPP-1-2020-1-LT-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "599253-EPP-1-2018-1-FR-EPPKA1-JMD-MOB",
+      "project_id": "599253-EPP-1-2018-1-FR-EPPKA1-JMD-MOB",
+      "acronym": "QEM2018",
+      "name": "Models and Methods of Quantitative Economics",
+      "website": "http://master-economics-qem.univ-paris1.fr/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/599253-EPP-1-2018-1-FR-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "619859-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "project_id": "619859-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "acronym": "emPLANT",
+      "name": "Erasmus Mundus Master Program in Plant Breeding",
+      "website": "https://emplant-master.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619859-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "610566-EPP-1-2019-1-PT-EPPKA1-JMD-MOB",
+      "project_id": "610566-EPP-1-2019-1-PT-EPPKA1-JMD-MOB",
+      "acronym": "ReaAnim",
+      "name": "Re:Anima - European Joint Masters in Animation",
+      "website": "http://www.reanima.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/610566-EPP-1-2019-1-PT-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "619839-EPP-1-2020-1-FI-EPPKA1-JMD-MOB",
+      "project_id": "619839-EPP-1-2020-1-FI-EPPKA1-JMD-MOB",
+      "acronym": "SE4GD",
+      "name": "Educating software engineers with a sustainability mindset to improve the well-being of people through software solutions",
+      "website": "http://se4gd.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619839-EPP-1-2020-1-FI-EPPKA1-JMD-MOB",
+      "catalogue_page": 9
+    },
+    {
+      "catalogue_id": "619828-EPP-1-2020-1-IT-EPPKA1-JMD-MOB",
+      "project_id": "619828-EPP-1-2020-1-IT-EPPKA1-JMD-MOB",
+      "acronym": "SEAS4.0",
+      "name": "Sustainable Ship and Shipping 4.0",
+      "website": "http://www.master-seas40.unina.it/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619828-EPP-1-2020-1-IT-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "619612-EPP-1-2020-1-FI-EPPKA1-JMD-MOB",
+      "project_id": "619612-EPP-1-2020-1-FI-EPPKA1-JMD-MOB",
+      "acronym": "SECCLO",
+      "name": "Master's programme in Security and Cloud Computing",
+      "website": "https://secclo.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619612-EPP-1-2020-1-FI-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "619842-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "project_id": "619842-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "acronym": "SINReM",
+      "name": "International Master of Science in Sustainable and Innovative Natural Resource Management",
+      "website": "https://sinrem.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619842-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "619869-EPP-1-2020-1-NO-EPPKA1-JMD-MOB",
+      "project_id": "619869-EPP-1-2020-1-NO-EPPKA1-JMD-MOB",
+      "acronym": "SSIs",
+      "name": "Joint International Master in Smart Systems Integrated Solutions",
+      "website": "https://ssi-master.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619869-EPP-1-2020-1-NO-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "619582-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "project_id": "619582-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "acronym": "STRAINS",
+      "name": "European Master in Advanced Solid Mechanics",
+      "website": "https://master-strains.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619582-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "619804-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "project_id": "619804-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "acronym": "EMMNano",
+      "name": "Erasmus Mundus Master Nanoscience and Nanotechnology",
+      "website": "http://www.emm-nano.org/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619804-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "619813-EPP-1-2020-1-AT-EPPKA1-JMD-MOB",
+      "project_id": "619813-EPP-1-2020-1-AT-EPPKA1-JMD-MOB",
+      "acronym": "TISE",
+      "name": "Transition, Innovation and Sustainability Environments",
+      "website": "https://www.tise-master.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619813-EPP-1-2020-1-AT-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "610544-EPP-1-2019-1-SE-EPPKA1-JMD-MOB",
+      "project_id": "610544-EPP-1-2019-1-SE-EPPKA1-JMD-MOB",
+      "acronym": "EMHRPP",
+      "name": "Erasmus Mundus Human Rights Policy and Practice",
+      "website": "http://www.emhrpp.com/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/610544-EPP-1-2019-1-SE-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "610581-EPP-1-2019-1-BE-EPPKA1-JMD-MOB",
+      "project_id": "610581-EPP-1-2019-1-BE-EPPKA1-JMD-MOB",
+      "acronym": "TROPIMUNDO",
+      "name": "Erasmus Mundus Joint Master Degree in Tropical Biodiversity and Ecosystems",
+      "website": "https://www.tropimundo.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/610581-EPP-1-2019-1-BE-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "610485-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "project_id": "610485-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "acronym": "WAVES",
+      "name": "WAVES ACOUSTICS VIBRATIONS ENGINEERING SOUND",
+      "website": "https://master-waves.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/610485-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "619662-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "project_id": "619662-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "acronym": "WE-TEAM",
+      "name": "World Textile Engineering Advanced Master",
+      "website": "https://we-team.education/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619662-EPP-1-2020-1-BE-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "619784-EPP-1-2020-1-DE-EPPKA1-JMD-MOB",
+      "project_id": "619784-EPP-1-2020-1-DE-EPPKA1-JMD-MOB",
+      "acronym": "AMASE",
+      "name": "Joint European Master Programme in Advanced Materials Science and Engineering",
+      "website": "https://www.eusmat.net/international-studies/master/amase/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619784-EPP-1-2020-1-DE-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "619542-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "project_id": "619542-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "acronym": "CNE",
+      "name": "Chemical Nano-Engineering",
+      "website": "https://www.master-cne.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619542-EPP-1-2020-1-FR-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "599186-EPP-1-2018-1-IT-EPPKA1-JMD-MOB",
+      "project_id": "599186-EPP-1-2018-1-IT-EPPKA1-JMD-MOB",
+      "acronym": "CLE",
+      "name": "Cultures Littéraires Européennes - CLE",
+      "website": "https://www.cle.unibo.it/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/599186-EPP-1-2018-1-IT-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "619589-EPP-1-2020-1-UK-EPPKA1-JMD-MOB",
+      "project_id": "619589-EPP-1-2020-1-UK-EPPKA1-JMD-MOB",
+      "acronym": "CEERES",
+      "name": "Central and East European, Russian and Eurasian Studies",
+      "website": "https://erasmusmundus-ceeres.eu/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/619589-EPP-1-2020-1-UK-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "599172-EPP-1-2018-1-PT-EPPKA1-JMD-MOB",
+      "project_id": "599172-EPP-1-2018-1-PT-EPPKA1-JMD-MOB",
+      "acronym": "BIM A+",
+      "name": "European Master in Building Information Modelling",
+      "website": "https://bimaplus.org/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/599172-EPP-1-2018-1-PT-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "610519-EPP-1-2019-1-BE-EPPKA1-JMD-MOB",
+      "project_id": "610519-EPP-1-2019-1-BE-EPPKA1-JMD-MOB",
+      "acronym": "BDMA",
+      "name": "Big Data Management and Analytics",
+      "website": "https://bdma.ulb.ac.be/bdma/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/610519-EPP-1-2019-1-BE-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    },
+    {
+      "catalogue_id": "610540-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "project_id": "610540-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "acronym": "ASC",
+      "name": "Advanced Spectroscopy in Chemistry Master's Course",
+      "website": "http://www.master-asc.org/",
+      "overview_url": "https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/610540-EPP-1-2019-1-FR-EPPKA1-JMD-MOB",
+      "catalogue_page": 10
+    }
+  ]
+}
