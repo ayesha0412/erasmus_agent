@@ -313,6 +313,17 @@ def get_history(conn: sqlite3.Connection, table: str, key: dict) -> list[dict]:
     return [_decode(row) for row in rows]
 
 
+STUDENT_TABLES = ("profile_versions", "document_versions", "preference_versions")
+
+
+def list_current(conn: sqlite3.Connection, table: str, student_id: str) -> list[dict]:
+    """All current records of ONE student in a student-owned versioned table."""
+    if table not in STUDENT_TABLES:
+        raise ValueError(f"'{table}' is not a student-owned versioned table")
+    rows = conn.execute(f"SELECT * FROM {table} WHERE student_id = ? AND is_current = 1 ORDER BY id", [student_id])
+    return [_decode(row) for row in rows]
+
+
 def _decode(row: sqlite3.Row) -> dict:
     """Turn a database row into a dict and parse its JSON 'data' column."""
     record = dict(row)

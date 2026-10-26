@@ -1,0 +1,28 @@
+{
+  "student_id": "stu-sara",
+  "fictional": true,
+  "name": "Sara (fictional test student)",
+  "degree": {
+    "level": "bachelor",
+    "field": "Computer Science",
+    "degree_field": "computer science",
+    "institution": "Example University (fictional)",
+    "graduation_year": 2025,
+    "ects": 240
+  },
+  "grades": {"cgpa": 3.4, "scale": 4.0},
+  "interests_text": "artificial intelligence and data engineering",
+  "interest_topics": ["artificial intelligence", "data engineering"],
+  "documents": [
+    {"doc_type": "transcript", "version": 1, "added_on": "2026-10-25"},
+    {"doc_type": "cv", "version": 1, "added_on": "2026-10-25"},
+    {
+      "doc_type": "english_test",
+      "version": 1,
+      "added_on": "2026-10-25",
+      "details": {"test": "IELTS Academic", "overall": 6.5, "taken_on": "2025-08-15"}
+    },
+    {"doc_type": "passport", "version": 1, "added_on": "2026-10-25"}
+  ],
+  "preferences": []
+}

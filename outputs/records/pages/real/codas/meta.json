@@ -1,0 +1,23 @@
+{
+  "programme_id": "codas",
+  "catalogue_id": "101128281",
+  "name": "Communications Engineering and Data Science",
+  "role": "relevant_hidden_ai",
+  "user_agent": "ErasmusMundusTracker/0.1 (student university project; +https://github.com/ayesha0412/erasmus_agent)",
+  "pages": [
+    {
+      "page": "programme",
+      "url": "https://www.unite-codas-master.eu/programme.html",
+      "fetched_at": "2026-10-23T07:25:47+00:00",
+      "sha256": "984156575f70bbea696a871bdd577639e350bede487d7c1c95830e87745aefd2",
+      "file": "data/pages/real/codas/programme.html"
+    },
+    {
+      "page": "admission",
+      "url": "https://www.unite-codas-master.eu/admission.html",
+      "fetched_at": "2026-10-23T07:25:49+00:00",
+      "sha256": "93fa83612cd45926998f8da43e2d21ba6898c282de8e247f1f72a8ade68024ec",
+      "file": "data/pages/real/codas/admission.html"
+    }
+  ]
+}

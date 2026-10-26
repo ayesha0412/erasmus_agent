@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CoDaS || Programme</title>
+    <!--TODO mettre ici le titre-->
+    <link
+      rel="icon"
+      href="assets/codas_logo_squared.png"
+      type="image/icon type"
+    />
+    <!-- style communs -->
+    <link rel="stylesheet" href="navBarStyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footerStyle.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style spécifiques -->
+    <link rel="stylesheet" href="programmeStyle.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="home.html"
+          ><img src="assets/codas_logo.png" alt="logo de codas" loading="lazy"
+        /></a>
+        <a href="home.html"
+          ><img
+            src="assets/erasmus_mundus_logo.webp"
+            alt="logo de unite"
+            loading="lazy"
+        /></a>
+      </div>
+      <div class="pannel">
+        <a class="home" href="home.html"><p>Home</p></a>
+        <div class="selection programme">
+          <p class="option" onclick="underpannel(0)">Programme</p>
+          <div class="underpannel">
+            <span
+              ><a href="programme.html#programmestructure"
+                ><p>Programme Structure</p></a
+              ></span
+            >
+            <span
+              ><a href="programme.html#curriculum"><p>Curriculum</p></a></span
+            >
+            <span
+              ><a href="programme.html#summerSchool"
+                ><p>Summer School and Conference</p></a
+              ></span
+            >
+            <span
+              ><a href="programme.html#internships"><p>Internship</p></a></span
+            >
+            <span
+              ><a href="programme.html#master"><p>Master's thesis</p></a></span
+            >
+            <span
+              ><a href="programme.html#careers"
+                ><p>Careers and employability</p></a
+              ></span
+            >
+          </div>
+        </div>
+        <div class="selection admission">
+          <p class="option" onclick="underpannel(1)">Admission</p>
+          <div class="underpannel">
+            <span
+              ><a href="admission.html"><p>How to apply</p></a></span
+            >
+          </div>
+        </div>
+        <div class="selection scholarship">
+          <p class="option" onclick="underpannel(2)">Scholarship</p>
+          <div class="underpannel">
+            <span
+              ><a href="scholarship.html#erasmus"
+                ><p>Erasmus Mundus scholarship</p></a
+              ></span
+            >
+            <span
+              ><a href="scholarship.html#codas"
+                ><p>CoDaS scholarship</p></a
+              ></span
+            >
+            <span
+              ><a href="scholarship.html#contribution"
+                ><p>Students with disabilities</p></a
+              ></span
+            >
+            <span
+              ><a href="scholarship.html#fee"><p>Programme fee</p></a></span
+            >
+          </div>
+        </div>
+        <div class="selection universities">
+          <p class="option" onclick="underpannel(3)">Universities</p>
+          <div class="underpannel">
+            <span
+              ><a href="aalto.html"><p>Aalto University</p></a></span
+            >
+            <span
+              ><a href="grenoble.html"><p>Grenoble INP-UGA</p></a></span
+            >
+            <span
+              ><a href="lisboa.html"><p>Tecnico Lisboa</p></a></span
+            >
+            <span
+              ><a href="braunschweig.html"><p>TU Braunschweig</p></a></span
+            >
+            <span
+              ><a href="barcelona.html"><p>UPC BarcelonaTech</p></a></span
+            >
+          </div>
+        </div>
+        <div class="selection collaboration">
+          <p class="option" onclick="underpannel(4)">Partners</p>
+          <div class="underpannel">
+            <span
+              ><a href="collaboration.html#partners"
+                ><p>Associate partners</p></a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <script type="text/javascript" src="navBar.js" defer></script>
+    <main>
+      <!--première page  -->
+      <div class="front">
+        <p>
+          CoDaS is an Erasmus Mundus Joint Masters (EMJM) programme, funded by
+          Erasmus+ Programme of the European Union. CoDaS is also one of the
+          first degrees promoted by the European Programme University Network
+          for Innovation, Technology and Engineering (Unite!). Unite! envisions
+          a ‘European University’, in which University-hubs at excellent
+          European institutes share resources and services in education,
+          research, and management, thereby removing structural barriers and
+          generating new frameworks for a European degree.
+        </p>
+        <h1>PROGRAMME</h1>
+
+        <div class="arrow">
+          <a href="#footer">
+            <img src="assets/icones/half_arrow_down_black.svg" />
+          </a>
+        </div>
+        <div class="background">
+          <div class="filtre"></div>
+          <div class="img"></div>
+        </div>
+      </div>
+      <!-- programme structure -->
+      <div class="para-structure" id="#programmestructure">
+        <h2>Programme structure</h2>
+        <p>
+          CoDaS is an international joint master’s programme, where you will
+          study at least in two partner universities. The Programme is
+          structured into 2 years.
+        </p>
+      </div>
+      <!-- différentes années -->
+      <div class="years">
+        <div class="box">
+          <div class="cont">
+            <div class="first-year">
+              <h3>First year</h3>
+              <p>Basic studies at Aalto, Técnico Lisboa, TU Braunschweig, or UPC BarcelonaTech</p>
+              <ul>
+                <li>General studies (languages, soft skills)</li>
+                <li>Mathematics/Programming/Security</li>
+                <li>Communications</li>
+                <li>Data Science</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cont">
+            <div class="second-year">
+              <h3>Second year</h3>
+              <p>
+                Specialization studies, specific to all Consortium Universities,
+                and Thesis
+              </p>
+              <ul>
+                <li>
+                  Communications, Data Science, and Security (Grenoble INP-UGA)
+                </li>
+                <li>Communications and Data Science (Tecnico Lisboa)</li>
+                <li>
+                  Communications, Automation, and Machine Learning (Aalto
+                  University)
+                </li>
+                <li>
+                  Communications, Machine Learning, Medical Informatics &
+                  Biomedicine (TU Braunschweig)
+                </li>
+                <li>
+                  Communications, 5G/6G and Internet of Things, and Data Science
+                  (UPC BarcelonaTech)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p>The total number of credits of the programme is 120 ECTS.</p>
+      </div>
+
+      <!-- paragraphe avec des zig zags -->
+      <div class="zigzag">
+        <div class="container top">
+          <p>
+            Students may choose between 4 Home Universities (first
+            year; Aalto, Técnico Lisboa, TU Braunschweig, or UPC Barcelona Tech) and 5 Host Universities (second year; Aalto, Técnico Lisboa, TU Braunschweig, UPC BarcelonaTech, or Grenoble INP-UGA). On the first year, you will
+            complete courses with 60 ECTS at Home University and on the second
+            year, you will complete courses with 30 ECTS and the thesis with 30
+            ECTS at Host University. On the first year, you will already get a
+            chance to study your field of specialization by completing a course
+            online provided by the second year university.
+          </p>
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+        <div class="container middle">
+          <p>
+            All students of the programme are required to study at two countries
+            other than their country of residence at the start of studies. If
+            you are a resident of the country of the Home or Host University
+            before starting in the programme, you are required to complete the
+            final semester (thesis work) in another Host University or within
+            the industry in another country.
+          </p>
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+        <div class="container bottom">
+          <p>
+            After completing the programme, you will graduate from the two
+            universities you have completed 60 ECTS, including the thesis. You
+            will be granted a double degree, meaning that you will receive a
+            diploma from both universities.<br>
+	    
+ The titles of the degrees in each partner university are the following:<br>
+              - Aalto University: Master of Science (Technology)<br>
+		- Grenoble INP-UGA: Master Mention Informatique<br>
+		- Técnico Lisboa: Mestre em Engenharia Eletrotécnica e de Computadores<br>
+		- TU Braunschweig: Master of Science (M.Sc.) Computer Science<br>
+		- UPC: Màster Erasmus Mundus in Communications Engineering and Data Science<br>
+
+	    The level of the qualification is second-cycle university degree
+	      (Master's level), aligned with the Bologna Process." 
+          </p>
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+
+      <!-- paragraphe curriculum -->
+      <div class="curriculum" id="curriculum">
+        <h3>Curriculum</h3>
+        <p>
+          The expertise gained through CoDaS programme features diverse
+          programming skills, good mathematical background, goal-oriented
+          problem solving, as well as efficient project planning and management.
+        </p>
+      </div>
+
+      <!-- différentes compétences acquises -->
+      <div class="competences">
+        <p>In particular, students will boast competences in:</p>
+        <Div class="flex-box">
+          <div class="container left">
+            <div class="light">
+              <p>
+                Emerging communication technologies: learning from experts in
+                the domain of communication and networking.
+              </p>
+            </div>
+            <div class="medium">
+              <p>
+                Emerging information technologies: learning from experts in
+                evolving information technologies that define the future in
+                industry and society.
+              </p>
+            </div>
+            <div class="dark">
+              <p>
+                Artificial intelligence in networking: acquiring knowledge on a
+                broad range of tools to structure and analyse huge data sets and
+                to extract meaning from patterns.
+              </p>
+            </div>
+          </div>
+          <div class="container middle">
+            <div class="medium">
+              <p>
+                Network security: learning to lead the transition of the
+                industry towards security and privacy by design and by default
+                in all types of networks, and more specifically in IoT.
+              </p>
+            </div>
+            <div class="dark">
+              <p>
+                Programming skills: obtaining practical programming expertise in
+                a range of industry-relevant languages.
+              </p>
+            </div>
+            <div class="medium">
+              <p>
+                Distributed computer networks: learning to command the tools to
+                manage future distributed networks of an unprecedented scale,
+                including ubiquitously deployed IoT.
+              </p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="dark">
+              <p>
+                Data acquisition: appreciating the value created by collecting,
+                communicating, coordinating, and leveraging the data from
+                connected devices.
+              </p>
+            </div>
+            <div class="medium">
+              <p>
+                Project and team working: getting practical experience through
+                projects in relation with industry.
+              </p>
+            </div>
+            <div class="light">
+              <p>
+                Cutting-edge automation competences: getting theoretical skills
+                and practical expertise at the crossroads of communications and
+                data science.
+              </p>
+            </div>
+          </div>
+        </div>
+	<p>Please find the curriculum for the academic years 2026-2028
+	  <a href="assets/CoDaS Curriculum 2026-2028.pdf">here</a>.
+	</p>
+      </div>
+      <!-- paragraphe summer School and Conference -->
+      <div class="summerSchool" id="summerSchool">
+        <h3>Summer School and Conference</h3>
+        <p>
+          In CoDaS Summer School, all students in the programme come together
+          and work in groups on timely, industry-relevant topics in
+          communications engineering and data science. The Summer School is
+          organized yearly in July or August in different Consortium University
+          and the students participate in it once between the first and second
+          year of studies. The length of the summer school is max. 1 week. 
+        </p>
+        <div class="content">
+          <div class="learn">
+            <div class="students cont">
+              <h4>Students will learn about:</h4>
+              <ul>
+                <li>
+                  Emerging information technologies – the future in industry and
+                  society
+                </li>
+                <li>Emerging communication and network technologies</li>
+                <li>Distributed computer networks</li>
+                <li>Artificial intelligence in networking</li>
+              </ul>
+            </div>
+            <div class="outcomes cont">
+              <h4>Learning outcomes</h4>
+              <ul>
+                <li>
+                  Develop cutting-edge automation competences: the programme
+                  boasts theoretical skills and practical expertise at the
+                  interconnection between communications and data science
+                </li>
+                <li>
+                  Learn how to transition towards security and privacy by
+                  integrating it into the design of all types of networks,
+                  specially in IoT applications
+                </li>
+                <li>
+                  Command the managing tools in distributed computer networks
+                  commonly deployed in IoT
+                </li>
+                <li>
+                  Collect, communicate, coordinate, and leverage data from
+                  connected devices
+                </li>
+                <li>
+                  Use a broad range of structuring and analysis tools to extract
+                  meaning from patterns.
+                </li>
+                <li>
+                  Develop professional skills – project management, professional
+                  communications, and teamworking competences through practical
+                  experience in an international environment.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="para-content">
+            <p>
+              The Summer School is a great chance for students to network with
+              other students and academics from all Consortium Universities, as
+              well as with the visiting specialists from CoDaS industry
+              partners.
+            </p>
+            <p>
+              In addition, during the second year of studies, all students in
+              the programme have a chance to participate in an international
+              conference related to the field of study. In connection with the
+              conference, students will participate in a Workshop where they
+              will have a chance to present the results of their work of the
+              joint Project course from the first year of studies.
+            </p>
+            <p>
+              The conference in questions will be decided annually and informed
+              to the students well advanced.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Internships -->
+      <div class="internships" id="internships">
+        <h3>Internships</h3>
+        <p>
+          CoDaS students are encouraged to find internship positions for the
+          summer between the first and second year. Finding an internship
+          position within the industry is a great chance to integrate to field
+          and possibly find a master’s thesis topic for the final semester.
+        </p>
+        <p>
+          Students are especially encouraged to see the open internship
+          positions at CoDaS <br />
+          <a href="collaboration.html#associte">Associate partners</a>.
+        </p>
+        <p>
+          CoDaS programme enquires full-time studying, so students are not
+          recommended to conduct internships during the semesters of studying.
+        </p>
+      </div>
+
+      <!-- Master's thesis -->
+      <div class="master" id="master">
+        <h3>Master’s thesis</h3>
+        <p>
+          The final semester of the CoDaS programme is dedicated to the Master’s
+          thesis (30 ECTS), jointly supervised by professors from both
+          universities the student has studied in. The thesis is usually written
+          in a research and development project either in industry or in
+          academia.
+        </p>
+        <p>
+          If you are a resident of the country of the Home or Host University
+          before starting in the programme, you are required to complete the
+          final semester (thesis work) in another Host University or within the
+          industry in another country.
+        </p>
+      </div>
+
+      <!-- Careers and employability -->
+      <div class="careers" id="careers">
+        <h3>Careers and employability</h3>
+        <p>
+          The employability of graduates in communications engineering and data
+          science area is very high at the European level since there is a lack
+          of human resources in the target domains in all European countries and
+          even worldwide.
+        </p>
+        <p>
+          Besides the companies in the telecommunications sector, such as
+          telecom operators, consultancies, service providers, and encompassing
+          manufacturers, one can envisage other companies and organizations
+          hiring these graduates, in need of technical human resources dealing
+          with networks, Internet of Things, security, data analytics,
+          automation, and artificial intelligence.
+        </p>
+        <p>
+	Completing the Master's programme also gives the student access to apply
+	doctoral (PhD) studies in relevant fields. 
+        </p>
+      </div>
+    </main>
+
+    <!-- Bottom of the page -->
+
+    <footer id="footer">
+      <div class="join-the-programme">
+        <div class="left-join">
+          <div class="join">
+            <a href="admission.html#apply">
+              <p class="apply">
+                <img src="assets/icones/article.svg" />How to apply
+              </p></a
+            >
+            <h3>Join the programme</h3>
+            <p class="application-form">
+              The application consists of an electronic application form and a
+              set of required application documents. Read the instructions for
+              required application documents carefully.
+            </p>
+          </div>
+          <div class="date-para">
+            <p>Open for applications from</p>
+            <p class="date">
+              <img src="assets/icones/callendar_black.svg" />1 Dec 2026 - 5 Jan 2027
+            </p>
+          </div>
+        </div>
+        <div class="right-join">
+          <a href="admission.html#schedule" class="box-programme">
+            <div class="box-programme1">
+              <h4>Admission Timeline</h4>
+              <p>
+                Late applications are not considered, the deadline cannot be
+                extended.
+              </p>
+            </div>
+          </a>
+          <a href="admission.html#required" class="box-programme">
+            <div class="box-programme2">
+              <h4>List of Documents Required</h4>
+              <p>All application documents must be uploaded.</p>
+            </div>
+          </a>
+          <a href="" class="box-programme">
+            <div class="box-programme3">
+              <h4>Application Form</h4>
+              <p>
+                You can edit your application form within the application
+                period.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <p class="end-programme">
+        Co-Funded by the European Union. Views and opinions expressed are
+        however those of the author(s) only and do not necessarily reflect those
+        of the European Union. Neither the European Union nor the granting
+        authority can be held responsible for them.
+      </p>
+      <div class="separate"></div>
+      <div class="contact">
+        <div class="left-contact">
+          <div>
+            <a href="#"><p>About us</p></a>
+            <a href="admission.html"><p>Admission</p></a>
+            <a href="scholarship.html"><p>Scholarship</p></a>
+            <a href="home.html#universities"><p>Universities</p></a>
+            <a href="collaboration.html"><p>Collaboration</p></a>
+          </div>
+        </div>
+        <div class="right-contact">
+          <div>
+            <h6>Contact</h6>
+            <p>codas@aalto.fi</p>
+          </div>
+        </div>
+      </div>
+      <div class="foot-page">
+        <a href="#"><p>Cookies</p></a>
+        <a href="privacy.html"><p>Privacy policy</p></a>
+        <a href="contact.html"><p>Contact</p></a>
+        <a href="#"><p>Accessibility</p></a>
+      </div>
+    </footer>
+  </body>
+</html>

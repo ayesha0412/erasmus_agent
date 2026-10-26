@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>CoDaS || Admission</title>
+    <!--TODO mettre ici le titre-->
+    <link rel="icon" href="assets/codas_logo_squared.png"
+      type="image/icon type">
+    <!-- style communs -->
+    <link rel="stylesheet" href="navBarStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footerStyle.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"
+      crossorigin="">
+    <link
+href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+      rel="stylesheet">
+    <!-- style spécifiques -->
+    <link rel="stylesheet" href="admissionStyle.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo"> <a href="home.html"><img
+            src="assets/codas_logo.png" alt="logo de codas"
+            loading="lazy"></a> <a href="home.html"><img
+            src="assets/erasmus_mundus_logo.webp" alt="logo de unite"
+            loading="lazy"></a> </div>
+      <div class="pannel"> <a class="home" href="home.html">
+          <p>Home</p>
+        </a>
+        <div class="selection programme">
+          <p class="option" onclick="underpannel(0)">Programme</p>
+          <div class="underpannel"> <span><a
+                href="programme.html#programmestructure">
+                <p>Programme Structure</p>
+              </a></span> <span><a href="programme.html#curriculum">
+                <p>Curriculum</p>
+              </a></span> <span><a href="programme.html#summerSchool">
+                <p>Summer School and Conference</p>
+              </a></span> <span><a href="programme.html#internships">
+                <p>Internship</p>
+              </a></span> <span><a href="programme.html#master">
+                <p>Master's thesis</p>
+              </a></span> <span><a href="programme.html#careers">
+                <p>Careers and employability</p>
+              </a></span> </div>
+        </div>
+        <div class="selection admission">
+          <p class="option" onclick="underpannel(1)">Admission</p>
+          <div class="underpannel"> <span><a href="admission.html">
+                <p>How to apply</p>
+              </a></span> </div>
+        </div>
+        <div class="selection scholarship">
+          <p class="option" onclick="underpannel(2)">Scholarship</p>
+          <div class="underpannel"> <span><a
+                href="scholarship.html#erasmus">
+                <p>Erasmus Mundus scholarship</p>
+              </a></span> <span><a href="scholarship.html#codas">
+                <p>CoDaS scholarship</p>
+              </a></span> <span><a href="scholarship.html#contribution">
+                <p>Students with disabilities</p>
+              </a></span> <span><a href="scholarship.html#fee">
+                <p>Programme fee</p>
+              </a></span> </div>
+        </div>
+        <div class="selection universities">
+          <p class="option" onclick="underpannel(3)">Universities</p>
+          <div class="underpannel"> <span><a href="aalto.html">
+                <p>Aalto University</p>
+              </a></span> <span><a href="grenoble.html">
+                <p>Grenoble INP-UGA</p>
+              </a></span> <span><a href="lisboa.html">
+                <p>Tecnico Lisboa</p>
+              </a></span> <span><a href="braunschweig.html">
+                <p>TU Braunschweig</p>
+              </a></span> <span><a href="barcelona.html">
+                <p>UPC BarcelonaTech</p>
+              </a></span> </div>
+        </div>
+        <div class="selection collaboration">
+          <p class="option" onclick="underpannel(4)">Partners</p>
+          <div class="underpannel"> <span><a
+                href="collaboration.html#partners">
+                <p>Associate partners</p>
+              </a></span> </div>
+        </div>
+      </div>
+      <div class="burger"> <span></span> <span></span> <span></span>
+      </div>
+    </nav>
+    <script type="text/javascript" src="navBar.js" defer="defer"></script>
+    <main>
+      <h1>ADMISSION</h1>
+      <!-- cartes de présentation -->
+      <div class="cards">
+        <div class="card card-schedule">
+          <h3>Schedule</h3>
+          <p> The application period for studies beginning
+in Autumn 2027 will be open from 1 December 2026 to 5 January 2027.
+ </p>
+          <a href="#schedule">
+            <p>See more</p>
+          </a> </div>
+        <div class="card card-apply">
+          <h3>How to apply</h3>
+          <p> The application consists of an electronic application form
+            and a set of required application documents. </p>
+          <a href="#apply">
+            <p>See more</p>
+          </a> </div>
+        <div class="card card-requirements">
+          <h3>Requirements</h3>
+          <p> Only the applicants who meet the general eligibility
+            criteria for master's studies are evaluated and ranked. </p>
+          <a href="#requirements">
+            <p>See more</p>
+          </a> </div>
+      </div>
+      <div class="arrow"> <a href="#footer"> <img
+            src="assets/icones/half_arrow_down_black.svg"> </a> </div>
+      <!-- Schedule -->
+      <div class="schedule" id="schedule">
+        <div class="pre-content">
+          <h2>Schedule</h2>
+          <p> The application period for studies starting in Autumn 2027 runs from 1 December 2026 to 
+5 January 2027. </p>
+ </p>
+        </div>
+        <h4> <img src="assets/icones/callendar_black.svg">Admission
+          timeline </h4>
+        <div class="timeline">
+          <div class="cont">
+            <div class="dateBox before" date="December 1,2026 09:00:00
+              GMT+0300">
+              <h5>1 December 2026 at 9.00 (9 am, GMT +2)</h5>
+              <p>Application period starts and online application form
+                opens</p>
+            </div>
+          </div>
+          <div class="cont">
+            <div class="dateBox before" date="January 5, 2027 15:00:00
+              GMT+0300">
+              <h5>5 January 2027 at 15.00 (3 pm, GMT +2)</h5>
+              <p>Application period ends and online application form
+                closes</p>
+            </div>
+          </div>
+          <div class="cont">
+            <div class="dateBox before" date="January 12, 2027 15:00:00
+              GMT+0300">
+              <h5>12 January 2027 at 15.00 (3 pm, GMT +2)</h5>
+              <p> Deadline for application documents to be uploaded to
+                application form (including motivation video, reference letters, and language test results) </p>
+            </div>
+          </div>
+          <div class="cont">
+            <div class="dateBox before" date="March 1, 2027 GMT+0300"
+              datebis="March 31, 2027 GMT+0300">
+              <h5>End of March 2027</h5>
+              <p>Admissions results are published</p>
+            </div>
+          </div>
+          <div class="cont">
+            <div class="dateBox before" date="April 1, 2027 GMT+0300"
+              datebis="April 30, 2027 GMT+0300">
+              <h5>13 days from the admission result</h5>
+              <p style="font-style: italic"> Selected students with
+                scholarship </p>
+              <p>deadline for accepting the offer of admission (study
+                place)</p>
+            </div>
+          </div>
+          <div class="cont">
+            <div class="dateBox before" date="May 31, 2027 15:00:00
+              GMT+0300">
+              <h5>7 days from the reallocation of scholarship</h5>
+              <p style="font-style: italic"> Students who are granted
+                scholarship from a waiting list: </p>
+              <p>deadline for accepting the offer of admission (study
+                place)</p>
+            </div>
+          </div>
+          <div class="cont">
+            <div class="dateBox before" date="May 31, 2027 GMT+0300">
+              <h5>31 May 2027 at 15.00 (3 pm, GMT +3)</h5>
+              <p style="font-style: italic"> Selected students without
+                scholarship: </p>
+              <p>deadline for accepting the offer of admission (study
+                place)</p>
+            </div>
+          </div>
+          <div class="cont">
+            <div class="dateBox before" date="July 31, 2027 GMT+0300">
+              <h5>31 July 2027</h5>
+              <p> Deadline to graduate for applicants who applied with
+                an incomplete degree </p>
+            </div>
+          </div>
+          <div class="cont">
+            <div class="dateBox before" date="August 13, 2027 15:00:00
+              GMT+0300">
+              <h5>13 August 2027 at 15.00 (3 pm, GMT +3)</h5>
+              <p> Deadline for officially certified study certificates
+                to arrive at Aalto University School of Electrical
+                Engineering Learning Services </p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="admission.js" defer="defer"></script>
+        <!-- Apply -->
+        <div class="para-apply" id="apply">
+          <div class="pre-content">
+            <h2>How to apply</h2>
+            <p> The application consists of an electronic application form, a set of required application documents, and a motivation video. Read the instructions for required application documents carefully.            </p>
+          </div>
+          <div class="cases">
+            <div class="box application">
+              <h3>Application</h3>
+              <p>The application consists of an electronic application form, a set of required application documents, and a motivation video. Read the instructions for required application documents carefully. <br>
+                <br>
+                Fill in and submit the online application form during the application period. You can edit your application form within the application period before submitting it. Late applications or applications that are started but not submitted are not considered. <br>
+                <br>
+               All application documents must be uploaded to your application form by the given deadline. The deadline cannot be extended. <span>Documents submitted after the deadline will not be considered </span>in any circumstances; the final deadline is the same for all applicants. <br>
+                <br>
+                Your application and the required documents will be reviewed for the general eligibility requirements. Only eligible applications proceed for the academic evaluation. <span>Incomplete applications will be rejected.</span> <br>
+                <br>
+                <span>The application form and link to it are available only during the application period</span> When the application period opens, the link will be posted here. One applicant can have only one application form, do not fill in several forms. 
+<br><br></p>
+            </div>
+            <div class="box video">
+              <h3>Motivation video</h3>
+              <p> All applicants must submit a link to a motivation video with their application. The maximum length of the video is 1 minute. The maximum size of the video is 100 MB. Videos that exceed the maximum length or size <span>will not be evaluated. </span>  </p>
+              <p> <br>The motivation video must be submitted as a link in the Motivation Video section of the application portal. The link can lead to an unlisted or private YouTube video, or another video hosting platform. If the video is password-protected, the applicant must include the password in the application. It is the applicant's responsibility to ensure that the video is accessible to the CoDaS Admission Office from the time of application submission until the end of March 2027. The evaluators will not be able to download and install any software to view the videos. <span>Applications lacking a link to a visible motivation video will be rejected.</span> </p>
+              <p> <br>On the motivation video, you must describe why you are applying to the programme and why you would be a good candidate.  </p>
+            </div>
+            <div class="box preferences">
+              <h3>University preference</h3>
+              <p> On the application form, you are asked to list the Consortium Universities according to your preference where you would like to study on your first year and second year. Admitted students will be allocated to the Consortium Universities equally while considering student’s preferences and previous studies.<br>
+                <br>
+                Both Home University (first year) and Host University (second year) will be assigned for each student in the admission and will be informed to the student in the admission letter. Admitted students cannot change their Home University, but can apply to change the Host University during the first year of studies if there are open positions available.  <br>
+                <br>
+                              University preference does not affect the admission decision to the programme or the scholarship decision. </p>
+            </div>
+            <div class="box eligibility">
+              <h3>General Eligibility</h3>
+              <p> You are eligible to apply in master’s admissions if you have <span>a bachelor’s degree</span>. The bachelor’s degree must be equivalent to 180 ECTS credits or three years of full-time study. The degree must give eligibility to apply for master’s degree studies at university in the awarding country. The awarding higher education institution has to be a recognised part of the official national education system of the country. It has to be accredited as a degree-granting higher education institution by the country where it is located or by a relevant international organisation (such as UNESCO).<br>
+                <br>
+                <span>You cannot apply to a master’s programme on the
+                  basis of a previous master's degree</span>. Only
+                bachelor’s degrees give eligibility for master’s
+                programmes. Exceptions to this are ‘long-cycle’ master's
+                degrees that have been granted without a bachelor’s
+                degree, for instance, degrees awarded in Finland prior
+                to the adoption of the two-cycle degree system in 2008
+                or licentiate of medicine degrees. </p>
+            </div>
+            <div class="box incomplete-degree">
+              <h3>Are you applying with an incomplete degree?</h3>
+              <p> You can apply to the programme with an incomplete
+                bachelor’s degree, provided that you will graduate by <span>31
+
+
+
+                  July 2027</span>. If you are accepted to the
+                university, you must deliver a certified copy of your
+                degree certificate by 13 August 2027 at 15.00 (3 pm, GMT
+                +3). In case you are not able to graduate or fail to
+                deliver your degree certificate by the deadline, your
+                conditionally granted study right will be cancelled.<br> <br>If
+                you apply with an incomplete degree, note that it may
+                not be possible to graduate during the summer months.
+                You should look into the graduation schedules and
+                requirements of your own faculty or school in advance.<br>
+                <br>
+                Only studies included in an official transcript of
+                records submitted with the online application form by
+                the deadline can be taken into consideration in the
+                evaluation. Updated transcripts or any studies completed
+                after the deadline cannot be taken into consideration. </p>
+            </div>
+          </div>
+          <div class="others">
+            <div class="box documents" id="required">
+              <h3>Required application documents</h3>
+              <p>All documents have to be uploaded to the online
+                application form before the given deadline (see <a
+                  href="#schedule">admission schedule</a>). Documents
+                received after the deadline are not considered. If an
+                obligatory application document is not submitted as
+                required by the deadline, the application will be
+                rejected as incomplete. We recommend uploading all the
+                documents as early as possible.<br>
+                <br>
+                Obligatory documents to be uploaded to the application
+                form (in PDF format)</p>
+              <ul>
+                <li> Scanned colour copy of the original <span>Bachelor’s
+
+
+
+                    degree certificate</span> (This document requirement
+                  does not apply to applicants with an incomplete
+                  degree. If your degree is unfinished at the
+                  application phase, leave the upload attachment section
+                  for degree certificate blank. The degree must be
+                  completed by 31 July 2027.)</li>
+                <li> Scanned colour copy of the original <span>official
+                    transcript of study records</span>.
+                  <ul>
+                    <li> The transcripts of study records should include
+                      the information on the standard period of study,
+                      the total number of credits to be obtained in the
+                      bachelor's program and the grading system. If the
+                      transcript does not include this information, it
+                      must be provided in a separate official document,
+                      issued by the educational institution. </li>
+                  </ul>
+                </li>
+                <li> If your degree certificate and the official
+                  transcript of records are not in English, scanned
+                  colour copies of <span>authorised translations</span>.</li>
+                <li> <span>Copy of a valid passport</span> or an
+                  official government-issued identification card with
+                  photo and information on <span>citizenship</span>.
+                  Upload a copy of the personal information page of the
+                  passport only (not all pages). Driver’s license does
+                  not have information on citizenship and is therefore
+                  not accepted.</li>
+                <li> <span>Proof of English language proficiency</span>.
+                  See the accepted language tests, other accepted
+                  methods of demonstrating English language skills and
+                  document instructions on <a href="#requirements">language
+
+
+
+                    requirements</a> .</li>
+<li> <span>Link to motivation video.</span> See detailed instructions on <q>Motivation Video</q> section. </li>
+                <li> <span> Motivation letter </span>(to be written directly on the
+                  application form, not as an attached document)</li>
+                <ul>
+                  <li>The motivation letter should be written in
+                    English. The maximum length of the motivation letter
+                    is <span>500 words</span>. The motivation letter should describe
+                    why you are applying to the programme and why you
+                    would be a good candidate. The motivation letter
+                    should also include which partner universities you
+                    wish to study in and why. </li>
+                </ul>
+                <li> <span>Curriculum vitae </span></li>
+                <li> <span>Links to course descriptions</span> of relevant courses
+                  taken on the educational institution’s website.  </li>
+                <ul>
+                  <li>	Submit the course descriptions as a pdf document <span>only if</span> the website links are not available. The document must be issued by the educational institution. Submit
+only pages that are relevant, not a complete Handbook, for example. 
+<li>If course descriptions issued by the educational institution are not available, descriptions written by the applicant are accepted.
+<li>If the course descriptions are not available in English, please provide a translation. Translations made by the applicant are accepted. 
+<li>Courses in this context means an individual module of studies, not a bachelor’s programme as a whole. The course description should contain, for example, a description of the content covered in the course, methods of assessment, materials/readings covered, etc.
+                </ul>
+                <li> If the degree is incomplete, <span>list of planned
+                  courses to be taken </span></li>
+                <ul>
+                  <li>An unofficial document written by the applicant is
+                    accepted.</li>
+                </ul>
+                <br><p align="left">In addition, the student may provide the
+                  following documents to add value on their application:</p>
+                <li> at least one original recommendation letter
+                  (preferably academic)
+                  <ul>
+                    <li> Recommendation letters written by work
+                      supervisors are accepted as well in case some time
+                      has passed since graduation.</li>
+		<li> 
+The recommendation letter can be attached to the application form as a pdf document. The referee must submit their reference by the document submission deadline 12 January 2027 at 15.00 (3 pm, GMT +2).
+</li>
+                  </ul>
+                </li>
+                <li> work certificates and certificates of other
+                  relevant achievements</li>
+                <li> copies of any publications</li>
+                <li> the official transcript of records for other
+                  university studies which are not included in the
+                  mandatory part of the application</li>
+              </ul>
+              <br><p> Documents that are in the same category (for example,
+                a transcript of records that has four pages) should be
+                scanned into <span>one</span> file. Please do not make
+                a separate file for each page. <br>
+                <br>
+                Admitted applicants must submit certified (attested)
+                copies of the bachelor’s degree certificate,
+                transcript of study records and official translations of
+                these documents (if applicable) by the given deadline.
+                Please note that only admitted applicants need to submit
+                the certified educational documents after the admission
+                results have been published. The deadline for the
+                officially certified study certificates is 13 August
+                2027 at 15.00 (GMT +3). Please find more information below.
+            </p>
+            </div>
+            <div class="box translations">
+              <h3>Translations</h3>
+              <p>The documents must be in English. If the original
+                degree certificate or transcript of records was written
+                in some other language, you must submit an official
+                translation of the document. <br><br>The translation is official
+                if it has been done by the higher education institution
+                that awarded the degree or by a certified translator
+                (authorised translator). The translations must have the
+                certified translator’s stamp and signature. <br><br>A Diploma
+                Supplement issued in English can be accepted as a
+                translation of a degree certificate (issued in a
+                language other than English), if it contains all the
+                same information as the degree certificate (at least the
+                name of the degree, the name of the institution awarding
+                the degree, the date of awarding the degree, and the
+                name of the student.)</p>
+            </div>
+            <div class="box residency">
+              <h3>Proof of place of residency</h3>
+              <p>Only admitted applicants must provide proof of place of
+                residency after the selection results have been
+                published. </p>
+              <p>A proof of place of residence (PPR) is a document
+                verifying the country and the city you currently live
+                in. The document must:</p>
+              <ul>
+                <li> be issued within 12 months </li>
+                <li> have <span>your name</span> on it and clearly (in
+                  print, in Latin alphabet) state your <span>current
+                    country and city of residence</span>, ideally also
+                  your full address, and</li>
+                <li> be available <span>in English/translated into
+                    English</span> by a certified translator (authorized
+                  translator).</li>
+              </ul>
+              <br><p>The proof of place of residence (PPR) document can be,
+                for example,</p>
+              <ul>
+                <li> a residence certificate issued in accordance with
+                  your municipality’s normal registration rules, or</li>
+                <li> a certificate from your current place of work,
+                  study or training issued by your employer or the
+                  institution in question. <a
+                    href="assets/Country-of-residence-1.pdf">The CoDaS’
+                    own PPR template</a> is recommended.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- language requirements -->
+        <div class="language" id="requirements">
+          <h3>Language requirements</h3>
+          <p> <span>No other methods of demonstrating English language skills
+            than those listed below are accepted.</span> <br>Duolingo and EF Set English language tests <span>are not accepted</span> as methods of demonstrating English language proficiency in this admission. Applications without
+            the required proof of language proficiency will be rejected.
+          </p><br>
+          <div class="different-sources">
+            <div class="ielts see-lang">
+              <h4>IELTS Academic</h4>
+              <div class="content cache">
+                <div class="min-score">
+                  <p>Minimum score requirements:</p>
+                  <ul>
+                    <li> IELTS&nbsp;Academic: overall score <span>6.5,
+                        and</span> writing score <span>6.0</span>. </li>
+                  </ul>
+                  <p> Aalto University accepts also IELTS UKVI Academic and IELTS
+                    Online (Academic) test. <br>
+                    Only IELTS Academic tests are accepted.
+                    General-level tests are not accepted.<br>
+                    If you have taken several tests, the best official
+                    score that is still valid and received by Aalto
+                    University by the deadline will be considered in the
+                    admissions. You cannot combine scores from different
+                    test dates.<br>
+                    IELTS test results are valid for <span>two years</span>
+                    from the date of the test. For 2027 admissions, test results are valid if the test was taken on or after December 1 2024. </p>
+                </div>
+                <div class="submitting">
+                  <h4>Submitting the IELTS scores</h4>
+                  <p> The official language test scores must arrive at
+                    Aalto University at the latest by 12 January 2027 at
+                    15.00 (3 pm, GMT +2). </p>
+                  <ol>
+                    <li> Upload a PDF copy of your IELTS test report to
+                      your application form, if you have received the
+                      report already. </li>
+                    <li> Mark your Test Report Form (TRF) number
+                      carefully to your application form. Make sure to
+                      type the number correctly. Your TRF number is
+                      required for verifying the scores. </li>
+                      <li> Send your electronic test report to Aalto
+                      University in the test administrator's service.</li>
+                      <ul><li>When booking the test, you can choose Aalto
+                      University as the Recognising Organisation to make
+                      your score available to Aalto University. The
+                      department is "Admission Services".</li>
+                      <li>If you have already taken the test, contact your
+                      test centre and request the test administrator to
+                      send your electronic test report to Aalto
+                      University. See the instructions for sending IELTS
+                      results to nominated organisations
+                      (electronically) on the test administrator
+                      website. </li></ul>
+                    <li> If you receive your IELTS score after you have
+                      submitted your online application, please send
+                      your Test Report Form by email to codas@aalto.fi.
+                      In addition, send your electronic test report to
+                      Aalto University in the test administrator’s
+                      service. The Test Report Form and electronic test
+                      report must be received by Aalto University at the
+                      latest by 12 January 2027 at 15.00 (3 pm, GMT +2).
+                    </li>
+                  </ol>
+                  <p>The results are verified electronically.</p>
+                </div>
+              </div>
+            </div>
+            <div class="toefl see-lang">
+              <h4>TOEFL</h4>
+              <div class="content cache">
+                <div class="min-score">
+                  <p>Minimum score requirements:</p>
+                  <ul>
+                    <li> TOEFL iBT (Internet-based Test) when test is taken before 21.1.2026: <span>92, and
+                        22 for Writing</span> </li>
+<li> TOEFL iBT (Internet-based Test) when test is taken on or after 21.1.2026 <span>4.5, and 4 for writing</span> </li> 
+                  </ul>
+                  <p> TOEFL iBT® Home Edition test is also accepted. <br><br>
+                    If you have taken several tests, the best official
+                    score that is still valid and received by Aalto
+                    University by the deadline will be considered in the
+                    admissions. You cannot combine scores from different
+                    test dates, e.g. TOEFL MyBest scores is not
+                    accepted.<br><br>
+                    TOEFL test results are valid for <span>two years</span>
+                    from the date of the test. For 2027 admissions, test results
+		are valid if the test was taken on or after December 1 2024. Note that the test
+                    administrator <span>ETS does not send TOEFL results
+                      after they have expired</span>. </p>
+                </div>
+                <div class="submitting">
+                  <h4>Submitting the TOEFL scores</h4>
+                  <p> The official language test scores must arrive at
+                    Aalto University at the latest by 12 January 2027 at
+                    15.00 (3 pm, GMT +2) directly <span>from the test
+                      administrator</span>. Only official test scores
+                    sent by the test administrator are accepted. </p>
+                  <ol>
+                    <li> Request your official score report to be sent
+                      from the test administrator to Aalto University
+                      reporting code <span>7364</span> (Score Report
+                      Recipient). <br>
+                      A department code is not required (or you can
+                      choose any department). Aalto University will
+                      receive all results sent with the reporting code
+                      7364. Make the reporting request early enough. </li>
+                    <li> Type your TOEFL iBT Appointment number to your
+                      application form (to "Language proficiency"
+                      section of the form). The number has 16 digits
+                      (e.g. 0000 0000 xxxx xxxx). <br>
+                      Note that this is not sufficient for submitting
+                      the score, you must request the official score
+                      report to be sent with the Aalto University
+                      reporting code well in advance of the deadline. </li>
+                    <li> Upload a PDF copy of your TOEFL test report to
+                      your application form, if you have already
+                      received the report. </li>
+                    <li>If you receive your TOEFL iBT Appointment number
+                      after you have submitted your online application,
+                      send it by email to codas@aalto.fi and request
+                      that the number be added to your application form.
+                      In addition, send your score report to Aalto
+                      University in the test administrator’s service.
+                      The Appointment number and electronic score report
+                      must be received by Aalto University at the latest
+                      by 12 January 2027 at 15.00 (3 pm, GMT +2). </li>
+                  </ol>
+                  <p> The scores must be received electronically
+                    directly from the test administrator by the
+                    deadline. Unofficial score reports sent by
+                    applicants will not be accepted. The scores are
+                    usually available within 1 to 2 weeks of sending the
+                    score report request. Contact the test administrator
+                    if you have questions about score delivery times. <br>
+                    Aalto University receives the scores via ETS® Data
+                    Manager service. </p>
+                </div>
+              </div>
+            </div>
+            <div class="pte see-lang">
+              <h4>Pearson Test of English Academic PTE A</h4>
+              <div class="content cache">
+                <div class="min-score">
+                  <p>Minimum score requirements:</p>
+                  <ul>
+                    <li> Pearson Test of English Academic&nbsp;(PTE A):
+                      <span>overall 62, and writing score 54</span> </li>
+                  </ul>
+                  <p>Pearson Test of English Academic Online (PTE
+                    Academic Online) and Pearson Test of English
+                    Academic UKVI tests are also accepted.</p>
+                  <p> PTE test results are valid for <span>two years</span>
+                    from the date of the test. For 2027 admissions, test results are valid if the test was taken on or after 1 December 2024<br>
+                    <br>If you have taken several tests, the best official
+                    score that is still valid and received by Aalto
+                    University by the deadline will be considered in the
+                    admissions. You cannot combine scores from different
+                    test dates. </p>
+                </div>
+                <div class="submitting">
+                  <h4>Submitting the PTE scores</h4>
+                  <p> The official language test scores must arrive at
+                    Aalto University at the latest by 12 January 2027 at
+                    15.00 (3 pm, GMT +2). <br>
+                    PTE test scores must be sent via the test
+                    administrator’s electronic service. </p>
+                  <ol>
+                    <li> Log in to your PTE account and send your
+                      results to Aalto University in the test
+                      administrator’s service. </li>
+                    <li> Mark your Score Report Code to your application
+                      form (to "Language proficiency" section of the
+                      form). <br>
+                      The Score Report Code contains 10 characters that
+                      are letters and numbers. The code can be found at
+                      the top of the report under your name. </li>
+                    <li> Upload a PDF copy of your PTE A test report to
+                      your application form, if you have already
+                      received the report. </li>
+                    <li> If you receive your test score after you have
+                      submitted your online application, send your
+                      results to Aalto University in the test
+                      administrator’s service and inform us
+                      (codas@aalto.fi) on your Score Report Code by
+                      email. The Score Report Code and electronic
+                      results must be received by Aalto University at
+                      the latest by 12 January 2027 at 15.00 (3 pm, GMT
+                      +2). </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="cambridge see-lang">
+              <h4>Cambridge C1 Advanced / C2 Proficiency</h4>
+              <div class="content cache">
+                <div class="min-score">
+                  <p>Minimum score requirements:</p>
+                  <ul>
+                    <li> C1 Advanced (formerly known as Cambridge
+                      Certificate in Advanced English, CAE): <span>A,B</span>
+                      or <span>C</span> </li>
+                    <li> C2 Proficiency (formerly known as Cambridge
+                      Certificate of Proficiency in English, CPE): <span>A,B,C</span>
+                      or <span>Level C1</span> </li>
+                  </ul>
+                  <p> No other Cambridge language tests than C1 Advanced
+                    (or CAE) and C2 Proficiency (or CPE) are accepted. <br>
+                    For C1 Advanced and C2 Proficiency tests,
+                    electronically verifiable tests taken after 2005 are
+                    accepted. </p>
+                </div>
+                <div class="submitting">
+                  <h4>Submitting the C1 Advanced or C2 Proficiency
+                    scores</h4>
+                  <p> The official language test scores must arrive at
+                    Aalto University Admission Services at the latest by
+                    12 January 2027 at 15.00 (3 pm, GMT +2). </p>
+                  <ol>
+                    <li> Upload a PDF copy of your C1 Advanced or C2
+                      Proficiency results report to your application
+                      form ("Language proficiency" section on the
+                      application form). </li>
+                    <li> Mark your test taker's ID number (e.g.
+                      ABC1234567), Reference number (e.g. 173YU0034522)
+                      and Statement of results number or Verification
+                      Number to your application form. </li>
+                    <li> Log into the language test administrator's
+                      service and share your test results to Aalto
+                      University. </li>
+                    <li> If you receive your C1/C2 test score after you
+                      have submitted your online application, share your
+                      test results to Aalto University and send your
+                      test taker numbers and a scanned copy of your
+                      results report by email to codas@aalto.fi. The
+                      result report and electronic results must be
+                      received by Aalto University at the latest by 12
+                      January 2027 at 15.00 (3 pm, GMT +2). </li>
+                  </ol>
+                  <p>The results are verified electronically.</p>
+                </div>
+              </div>
+            </div>
+            <div class="consortium see-lang">
+              <h4> Degree students and exchange students from Consortium
+                Universities </h4>
+              <div class="contentbis cache">
+                <p> An English language test is not required if you have
+                  proven your English language skills in CEFR level B2
+                  (CEFR - Common European Framework of Reference for
+                  Languages) while studying as a degree or exchange
+                  student at one of the Consortium Universities (Aalto,
+                  Grenoble INP-UGA, Tecnico Lisboa, TU Braunschweig or
+                  UPC BarcelonaTech). </p>
+                <p> You must submit an English language certificate
+                  issued by the Consortium University at the latest by
+                  5 January 2027 at 15.00 (3 pm, GMT +2). The
+                  certificate must state that you have proven your
+                  English language skills in CEFR level B2 while
+                  studying in the Consortium University. </p>
+              </div>
+            </div>
+            <div class="unidegree see-lang">
+              <h4>University degree completed in English in an EU/EEA
+                country, Australia, Canada, New Zealand, Singapore,
+                South Africa, Switzerland, the United Kingdom or the
+                United States while residing in that country </h4>
+              <div class="contentbis cache">
+                <p> English proficiency can be demonstrated with a
+                  higher education degree in an <span>English-medium</span>
+                  programme completed at a university or university of
+                  applied sciences in:
+                  an <span>EU/EEA country, Australia, Canada, New
+                    Zealand, Singapore, South Africa, Switzerland</span>,
+                  the <span>United Kingdom</span> or the <span>United
+                    States</span> while <span>residing in that country</span>
+                  while studying. <br><br> <span> An English-medium degree completed in any other country cannot be accepted. </span></p>
+                <p> A minimum of <span>one half of the degree</span>
+                  must be completed in a country and higher education
+                  institution that meets the requirements for exempting
+                  the student from taking an English language test. Note
+                  this requirement if your degree includes many transfer
+                  credits or you have an international double or joint
+                  degree. </p>
+                <p>The language of the degree must be stated
+                  unambiguously in the degree certificate or its
+                  appendix, or in the transcript of records or other
+                  official document issued by the awarding institution.</p>
+                <p>If there are several instruction languages, the
+                  document must clearly indicate the amount of studies
+                  taken in English. It is not sufficient, if the
+                  document states, for example, that the language of
+                  instruction is English and French.</p>
+                <p>Note the requirement of residing in the country while
+                  studying. A degree completed at an offshore campus
+                  outside the listed countries is not sufficient for
+                  proving your language skills even in case the degree
+                  is awarded in one of the listed countries.</p>
+                <p>Upload to the application form: </p>
+                <ul>
+                  <li>Scanned copy of the original <span>degree
+                      certificate</span> </li>
+                  <li>Scanned copy of the original <span>official
+                      transcript of study records</span></li>
+                  <li>If the language of the degree is not stated
+                    unambiguously in the degree certificate or
+                    transcript of records, an official document of the
+                    language of instruction issued by the awarding
+                    institution.</li>
+                </ul>
+                <br><p> The documents must be uploaded to the online
+                  application form at the latest by 12 January 2027 at
+                  15.00 (3 pm, GMT +2). <br><br>
+                  If your degree is still incomplete at the application
+                  phase, the degree must be completed and you must
+                  graduate by 31 July 2027. A copy of the degree
+                  certificate must be submitted according to the
+                  instructions at the latest by 13 August 2027 at 15.00
+                  (3 pm, GMT +3). <br><br>
+                  After the publication of admission results, the
+                  admitted applicants must submit copies of their certified (attested)
+                  educational documents at the latest by 13 August 2027 at
+                  15.00 (3 pm, GMT +3).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- criteria -->
+        <div class="criteria" id="criteria">
+          <h3>Selection criteria</h3>
+          <p>Only the applicants who meet the general eligibility
+            criteria for master's studies (see General eligibility) and
+            who have submitted all the obligatory application documents
+            are evaluated and ranked according to the selection criteria
+            listed here.</p>
+          <ul>
+            <li>Relevance of previous studies</li>
+            <li>Academic performance</li>
+            <li>Recognition and quality of institution</li>
+            <li>Suitability</li>
+            <li>Other areas of competence</li>
+          </ul>
+          <br><br><p>During the evaluation process, the academic
+	performance and relevance of previous studies are assessed
+	first. Only the applications that meet the requirements for 
+	these criteria will be evaluated further. 
+	<br><br>The best applicants will be selected based on the joint
+            evaluation of all the above criteria. The programme does not
+            have a minimum quota to be fulfilled, and not all eligible
+            applicants will necessarily be admitted.</p>
+          <div class="criteria">
+            <div class="content relevance">
+              <h4>Relevance of previous studies</h4>
+              <div class="what">
+                <div class="applicant">
+                  <h5>What we look for in an applicant</h5>
+                  <p><span>A high‐quality Bachelor’s degree in
+                      communications engineering, computer science,
+                      electrical engineering�(with a major on communications) or software engineering</span>
+                    is required. <br>
+                  </p>
+                  <p><br>
+                    In addition, the applicant must have solid knowledge
+                    obtained in university level studies in <span>most</span> of the
+                    following areas: <br>
+                    <br>
+                  </p>
+                  <ul>
+                    <li>mathematics (linear algebra, calculus,
+                      probability theory, statistics, and discrete
+                      mathematics)</li>
+                    <li>basics of algorithms and data structures</li>
+		<li>software engineering and programming skills</li>
+                    <li>operating systems</li>
+                    <li>basics of computer networks</li>
+                    <li>basics of communications engineering</li>
+                    <li>basics of mobile and wireless systems</li>
+                  </ul>
+                  <p><br>
+                  </p>
+                  <p> <span>Students allocated to TU Braunschweig</span>
+                    must also meet the following criteria:</p>
+                  <p><br>
+                    Basic knowledge acquired during the first-degree
+                    program through successful participation in
+                    corresponding modules (courses such as lectures,
+                    tutorials, practical courses) totalling at least 60
+                    ECTS credits, in 8 out of 10 of the following core
+                    subjects of computer science: <br>
+                    <br>
+                  </p>
+                  <ul>
+                    <li>Algorithms and Data Structures</li>
+                    <li>Programming</li>
+                    <li>Software Engineering</li>
+                    <li>Software Development</li>
+                    <li>Theoretical Computer Science</li>
+                    <li>Logic</li>
+                    <li>Operating Systems</li>
+                    <li>Computer Networks</li>
+                    <li>Database Systems</li>
+                    <li>Computer Engineering</li>
+                  </ul>
+                  <p><br>
+                  </p>
+                  <ul>
+                  </ul>
+                  <p> Basic knowledge acquired during the first-degree
+                    program through successful participation in
+                    corresponding modules (courses such as lectures,
+                    tutorials, practical courses) totalling at least 15
+                    ECTS credits, in the following central subjects of
+                    mathematics: <br>
+                    <br>
+                  </p>
+                  <ul>
+                    <li>Linear algebra</li>
+                    <li>Analysis</li>
+                    <li>Discrete Mathematics</li>
+                  </ul>
+                  <p><br>
+                  </p>
+                  <p> <span>Students allocated to UPC</span> must also
+                    meet the following criteria: <br>
+                    <br>
+                  </p>
+                  <ul>
+                    <li>Background on Wireless Communications. At least
+                      an equivalent of 5 ECTS covering the following
+                      topics: propagation, modulations, transmission,
+                      cellular networks, architecture of 2G/3G networks,
+                      wireless LAN concepts and architecture, IEEE
+                      802.11.</li>
+                    <li>Background on Computer Networks. At least an
+                      equivalent of 5 ECTS covering the following
+                      topics: packet-switching, LAN networks, Ethernet,
+                      TCP/IP architecture, IP addressing, IP routing,
+                      protocols (IPv4, IPv6, UDP, TCP, DNS, HTTP, NAT).</li>
+                  </ul>
+                  <br>
+<p> <span>Students allocated to Grenoble INP-UGA:</span><br>
+                    <br>
+                  </p>
+                  <ul>
+                    <li>In Grenoble the programme is strongly focused on computer engineering. Therefore, students allocated to Grenoble for the second year (M2) must demonstrate that they have a strong background in computer engineering. </li>
+                  </ul>
+                  <br>
+
+                </div>
+                <div class="evaluated">
+                  <h5>What is evaluated</h5>
+                  <p>Contents and the scope of the previous studies
+                    compared to the demands/contents of the Codas
+                    programme.</p>
+                </div>
+                <div class="method">
+                  <h5>Method of demonstrating competence</h5>
+                  <p>Transcript(s) of records, degree certificate(s),
+                    course descriptions.</p>
+                </div>
+              </div>
+            </div>
+            <div class="content academic">
+              <h4>Academic performance</h4>
+              <div class="what">
+                <div class="applicant">
+                  <h5>What we look for in an applicant</h5>
+                  <p>The applicant’s academic performance will be
+                    evaluated based on the grade point average (GPA) and
+                    grades in key courses. The programme is looking for
+                    applicants with excellent academic performance in
+                    their previous studies. This means that the
+                    applicant has achieved consistently excellent grades
+                    throughout the degree studies (very high weighted
+                    average grade or GPA).<br><br> 
+		From the most represented countries, the applicant is expected to have at least the following GPA: Bangladesh 3.70/4, India 8.0/10 or 80%, Pakistan 3.60/4. Meeting the expected GPA does not guarantee admission to the programme. For other countries, the evaluation of adequate GPA is made when the applications are processed. CoDaS Admission Office will not evaluate the adequacy of applicant’s GPA beforehand.</p>
+                </div>
+                <div class="evaluated">
+                  <h5>What is evaluated</h5>
+                  <p>Grades of the previous degree(s). </p>
+                </div>
+                <div class="method">
+                  <h5>Method of demonstrating competence</h5>
+                  <p>Transcript(s) of records, degree certificate(s),
+                    course descriptions.</p>
+                </div>
+              </div>
+            </div>
+            <div class="content recognition">
+              <h4>Recognition and quality of institution</h4>
+              <div class="what">
+                <div class="applicant">
+                  <h5>What we look for in an applicant</h5>
+                  <p>The applicant’s previous degree will be evaluated
+                    based on the international reputation and academic
+                    quality of the university and the programme.</p>
+                </div>
+                <div class="evaluated">
+                  <h5>What is evaluated</h5>
+                  <p>Recognition and quality of the applicant's previous
+                    institution.</p>
+                </div>
+                <div class="method">
+                  <h5>Method of demonstrating competence</h5>
+                  <p>International and national rankings of higher
+                    education institutions.</p>
+                </div>
+              </div>
+            </div>
+            <div class="content suitability">
+              <h4>Suitability</h4>
+              <div class="what">
+                <div class="applicant">
+                  <h5>What we look for in an applicant</h5>
+                  <p>The applicant should be motivated to study the
+                    chosen subject and committed to full-time studies
+                    with a plan to complete the Master’s degree in two
+                    years. We are looking for applicants who are able to
+                    express clearly the reasons for applying to the
+                    CoDaS programme and describe why they would be good
+                    candidates for the programme. The applicant must
+                    show commitment to studying in two partner
+                    universities. <br>
+                  </p>
+                  <p><br>
+                    Applicants with a previous Master’s degree of
+                    comparable quality and content in the fields of the
+                    CoDaS programme or who intend to complete one, or
+                    who have a valid study right in this application
+                    target will not be accepted to the programme except
+                    for special reasons, which the applicant must
+                    explain in the application. The Master’s programme
+                    should provide genuinely new knowledge and further
+                    the career of the applicant.</p>
+                </div>
+                <div class="evaluated">
+                  <h5>What is evaluated</h5>
+                  <p>Applicant’s further applicability to the programme, motivation and commitment for studies.</p>
+                </div>
+                <div class="method">
+                  <h5>Method of demonstrating competence</h5>
+                  <p>Applications as a whole including motivation video.</p>
+                </div>
+              </div>
+            </div>
+            <div class="content areas">
+              <h4>Other areas of competence</h4>
+              <div class="what">
+                <div class="applicant">
+                  <h5>What we look for in an applicant</h5>
+                  <p>Relevant work experience, professional certificates
+                    and online courses can also be taken into account in
+                    the evaluation, but they do not in general
+                    compensate for the absence of university-level
+                    studies covering the theoretical foundations of the
+                    required subjects. Applicants may also benefit of a
+                    participation in scientific research leading to
+                    publications and/or a recommendation stating
+                    applicant’s academic competence and suitability in
+                    the field of the programme. </p>
+                </div>
+                <div class="evaluated">
+                  <h5>What is evaluated</h5>
+                  <p>Work experience and learning gained otherwise or
+                    demonstration of skills such as publications,
+                    contests, non-formal learning etc.</p>
+                </div>
+                <div class="method">
+                  <h5>Method of demonstrating competence</h5>
+                  <p>Curriculum vitae, letter of recommendation, proof
+                    of employment, publications, motivation video</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Admission results -->
+        <div class="results" id="results">
+          <h3>Admission results</h3>
+          <p>The admissions result will be published in the end of March
+            2027. The applicants will receive an email notification once
+            the results are published. Admitted applicants will receive
+            an official electronic acceptance letter by email. <br>
+            The admitted applicant must accept the admission offer at
+            the latest by the deadline given with the admission
+            decision. Instructions are sent by email. The admission
+            offer will be cancelled if the applicant does not accept the
+            admission offer by the given deadline. </p>
+          <div class="documents">
+            <h4>Certified educational documents</h4>
+            <p>Admitted applicants must submit certified (attested)
+              copies of the bachelor’s degree certificate, transcript of
+              study records and official translations of these documents
+              (if applicable) by the given deadline. Please note that
+              only admitted applicants need to submit the certified
+              documents after the admission results have been
+              published. <br><br>Admission is conditional until the certified documents have been received. Conditionally granted study rights will be cancelled if the certified documents are not received in the required manner by the deadline. <br><br> The certified documents will be compared to the electronic documents uploaded to the application system.</p><br>
+            <p>The deadline for the officially certified study
+              certificates is 13 August 2027 at 15.00 (GMT +3).</p>
+            <p>Please find more detailed instructions and
+              country-specific requirements for the documents <a
+                href="assets/Certified documents after selection 2026.pdf">here</a>.</p>
+          </div>
+          <div class="request">
+            <h4>Requesting rectification to the admission decision</h4>
+            <p> It is possible to submit a written request to rectify
+              the admission decision within 14 days of the publication
+              of the results. The purpose of the written rectification
+              request procedure is to allow applicants to appeal against
+              the admission decision on the grounds of a possible error
+              in the decision-making, and thereby have an erroneous
+              decision corrected. An admission decision may only be
+              rectified if Aalto University has made an error in the
+              admission procedure and the error in question entitles the
+              applicant to have the admission decision rectified. The
+              procedure is not for requesting feedback or additional
+              information on the admissions results. </p>
+            <p> Your request for rectification has to contain the
+              following information: </p>
+            <ul>
+              <li>the study option that the rectification request
+                concerns</li>
+              <li>the decision you wish to have rectified</li>
+              <li>a description of how you want the university to
+                rectify its decision</li>
+              <li>the grounds for your rectification request</li>
+              <li>your contact information (full name, email address)</li>
+              <li>written authorisation to your representative (if you
+                use a representative)</li>
+            </ul>
+            <p> As defined in the Finnish Universities Act, <span>the
+                scholarship decision cannot be appealed to</span>. <br>
+              All requests for rectification of admission decisions must
+              be delivered to the University Registry within 14 days of
+              the application results, either to the Registry’s email
+              address registry@aalto.fi or by post to its postal
+              address: Aalto University, Registry, P.O. Box 11000, 00076
+              Aalto, Finland. </p>
+          </div>
+        </div>
+        <!-- Admitted students -->
+        <div class="students" id="students">
+          <h3>Admitted students</h3>
+          <p>Admitted students will receive an admission letter from
+            their Home University after accepting the study offer. The
+            home university will also provide guidance on moving to the
+            country in question and enrollment process to the
+            university.</p>
+          <div class="list">
+            <p>The start of studies is determined by the semester
+              schedule of the Home University. You can find the semester
+              schedule for each Consortium University here:</p>
+            <ul>
+              <li><a
+href="https://www.aalto.fi/en/programme-directors-handbook/teaching-periods-for-2024-2025-and-2025-2026">
+                  <p>Aalto University</p>
+                </a></li>
+              <li><a href="#">
+                  <p>Grenoble INP-UGA</p>
+                </a></li>
+              <li><a href="#">
+                  <p>Tecnico Lisboa</p>
+                </a></li>
+              <li><a
+                  href="https://www.tu-braunschweig.de/en/during-your-studies/term-dates">
+                  <p>TU Braunschweig</p>
+                </a></li>
+              <li><a href="#">
+                  <p>UPC BarcelonaTech</p>
+                </a></li>
+            </ul>
+            <p>All enrolled students must sign the Student Agreement
+              after the arrival to the Home University. </p>
+            <a href="assets/Student agreement 2025 website.pdf">
+              <p>Student Agreement template</p>
+            </a> </div>
+        </div>
+      </div>
+    </main>
+    <!-- Bottom of the page -->
+    <footer id="footer">
+      <div class="join-the-programme">
+        <div class="left-join">
+          <div class="join"> <a href="admission.html#apply">
+              <p class="apply"> <img src="assets/icones/article.svg">How
+
+
+
+                to apply </p>
+            </a>
+            <h3>Join the programme</h3>
+            <p class="application-form"> The application consists of an
+              electronic application form and a set of required
+              application documents. Read the instructions for required
+              application documents carefully. </p>
+          </div>
+          <div class="date-para">
+            <p>Open for applications from</p>
+            <p class="date"> <img
+                src="assets/icones/callendar_black.svg">1 Dec 2026 - 5
+              Jan 2027 </p>
+          </div>
+        </div>
+        <div class="right-join"> <a href="admission.html#schedule"
+            class="box-programme">
+            <div class="box-programme1">
+              <h4>Admission Timeline</h4>
+              <p> Late applications are not considered, the deadline
+                cannot be extended. </p>
+            </div>
+          </a> <a href="admission.html#required" class="box-programme">
+            <div class="box-programme2">
+              <h4>List of Required Documents</h4>
+              <p>All application documents must be uploaded.</p>
+            </div>
+          </a> <a href=""
+            class="box-programme">
+            <div class="box-programme3">
+              <h4>Application Form</h4>
+              <p> You can edit your application form within the
+                application period. </p>
+            </div>
+          </a> </div>
+      </div>
+      <p class="end-programme"> Co-Funded by the European Union. Views
+        and opinions expressed are however those of the author(s) only
+        and do not necessarily reflect those of the European Union.
+        Neither the European Union nor the granting authority can be
+        held responsible for them. </p>
+      <div class="contact">
+        <div class="left-contact">
+          <div> <a href="#">
+              <p>About us</p>
+            </a> <a href="admission.html">
+              <p>Admission</p>
+            </a> <a href="scholarship.html">
+              <p>Scholarship</p>
+            </a> <a href="home.html#universities">
+              <p>Universities</p>
+            </a> <a href="collaboration.html">
+              <p>Collaboration</p>
+            </a> </div>
+        </div>
+        <div class="right-contact">
+          <div>
+            <h6>Contact</h6>
+            <p>codas@aalto.fi</p>
+          </div>
+        </div>
+      </div>
+      <div class="foot-page">
+        <p>Cookies</p>
+        <a href="privacy.html">
+          <p>Privacy policy</p>
+        </a> <a href="contact.html">
+          <p>Contact</p>
+        </a>
+        <p>Accessibility</p>
+      </div>
+    </footer>
+  </body>
+</html>
