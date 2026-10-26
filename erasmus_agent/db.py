@@ -299,6 +299,17 @@ def approve_version(conn: sqlite3.Connection, table: str, version_id: int) -> No
         _make_current(conn, table, key, version_id)
 
 
+def reject_version(conn: sqlite3.Connection, table: str, version_id: int) -> None:
+    """Reject a pending version: the current version stays in use, the rejected one is kept as history."""
+    if table not in VERSIONED_TABLES:
+        raise ValueError(f"'{table}' is not a versioned table")
+    with conn:
+        updated = conn.execute(f"UPDATE {table} SET status = 'rejected' WHERE id = ? AND status = 'pending'",
+                               [version_id]).rowcount
+    if not updated:
+        raise ValueError(f"{table} row {version_id} is not waiting for approval")
+
+
 def get_current(conn: sqlite3.Connection, table: str, key: dict) -> dict | None:
     """Return the current version of a record (with 'data' decoded), or None if there is none."""
     where, values = _where(table, key)

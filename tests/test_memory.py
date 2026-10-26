@@ -49,7 +49,8 @@ def test_condition_answer_is_remembered_once(conn):
     assert record_condition_answer(conn, "stu-sara", 1, "codas", "no previous master's", True) is True
     assert record_condition_answer(conn, "stu-sara", 1, "codas", "no previous master's", True) is False
     answers = lookup_profile(conn, "stu-sara")["condition_answers"]
-    assert answers == [{"programme_id": "codas", "condition": "no previous master's", "met": True}]
+    assert answers == [{"programme_id": "codas", "decided_by": "student", "condition": "no previous master's",
+                        "met": True, "reason": ""}]
     assert lookup_profile(conn, "stu-omar")["condition_answers"] == []
 
 

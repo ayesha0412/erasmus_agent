@@ -5,14 +5,16 @@ import time
 
 from openai import OpenAI, RateLimitError
 
-from .config import DEFAULT_MODEL, GROQ_BASE_URL, MODELS
+from .config import DEFAULT_MODEL, GROQ_BASE_URL, LOCAL_BASE_URL, LOCAL_MODELS, MODELS
 
 RATE_LIMIT_ATTEMPTS = 5   # tries when Groq answers "too many requests"
 RATE_LIMIT_WAIT = 30      # seconds to wait between those tries
 
 
-def get_client() -> OpenAI:
-    """Return a Groq client, or explain clearly if the key is missing."""
+def get_client(model: str = DEFAULT_MODEL) -> OpenAI:
+    """Return a client for the model's provider: Ollama for local models, otherwise Groq."""
+    if model in LOCAL_MODELS:
+        return OpenAI(base_url=LOCAL_BASE_URL, api_key="ollama")   # Ollama ignores the key
     api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
         raise RuntimeError("GROQ_API_KEY is missing. Add it to your .env file.")
@@ -25,9 +27,39 @@ def chat(messages: list[dict], model: str = DEFAULT_MODEL, tools: list[dict] | N
         raise ValueError(f"Unknown model '{model}'. Choose from: {', '.join(MODELS)}")
     if tools:
         kwargs["tools"] = tools
-    return get_client().chat.completions.create(
+    if model in LOCAL_MODELS:
+        kwargs.pop("reasoning_effort", None)   # a Groq option the local model does not use
+    return get_client(model).chat.completions.create(
         model=MODELS[model], messages=messages, temperature=0, seed=42, **kwargs
     )
+
+
+FALLBACK = {"main": "fast", "fast": "local"}  # if a model's DAILY budget is used up, switch instead of waiting
+
+
+def is_daily_limit(error: RateLimitError) -> bool:
+    """Groq says 'tokens per day' or 'requests per day' when the daily budget is gone; waiting won't help."""
+    return "per day" in str(error)
+
+
+def chat_with_retry(messages: list[dict], model: str, **kwargs):
+    """chat(), but safe against rate limits. Returns (response, model actually used).
+
+    Per-minute limit: wait and retry. Daily limit: switch to the fallback model at once.
+    """
+    for attempt in range(1, RATE_LIMIT_ATTEMPTS + 1):
+        try:
+            return chat(messages, model=model, **kwargs), model
+        except RateLimitError as error:
+            if is_daily_limit(error) and model in FALLBACK:
+                print(f"    daily token limit reached for '{model}', switching to '{FALLBACK[model]}'")
+                model = FALLBACK[model]
+                continue
+            if attempt == RATE_LIMIT_ATTEMPTS or is_daily_limit(error):
+                raise
+            print(f"    rate limit reached, waiting {RATE_LIMIT_WAIT}s (attempt {attempt}/{RATE_LIMIT_ATTEMPTS})")
+            time.sleep(RATE_LIMIT_WAIT)
+    raise RuntimeError("no model available")
 
 
 def chat_json(messages: list[dict], schema_name: str, schema: dict, model: str = DEFAULT_MODEL,
@@ -35,21 +67,25 @@ def chat_json(messages: list[dict], schema_name: str, schema: dict, model: str =
     """Ask for a reply shaped by a JSON schema. Returns (reply text, tokens used).
 
     The reply is returned as text, not parsed: the caller validates it and decides what
-    to do if it is wrong. Waits and retries only when Groq's rate limit is hit.
+    to do if it is wrong.
     """
     response_format = {"type": "json_schema", "json_schema": {"name": schema_name, "schema": schema}}
-    for attempt in range(1, RATE_LIMIT_ATTEMPTS + 1):
-        try:
-            response = chat(messages, model=model, response_format=response_format,
-                            reasoning_effort=reasoning_effort)
-            break
-        except RateLimitError:
-            if attempt == RATE_LIMIT_ATTEMPTS:
-                raise
-            print(f"    rate limit reached, waiting {RATE_LIMIT_WAIT}s (attempt {attempt}/{RATE_LIMIT_ATTEMPTS})")
-            time.sleep(RATE_LIMIT_WAIT)
+    response, _ = chat_with_retry(messages, model, response_format=response_format, reasoning_effort=reasoning_effort)
     tokens = response.usage.total_tokens if response.usage else 0
     return response.choices[0].message.content or "", tokens
+
+
+def chat_tools(messages: list[dict], tools: list[dict], model: str = DEFAULT_MODEL,
+               reasoning_effort: str = "medium") -> tuple[str | None, str, int, str]:
+    """Ask the model to choose ONE tool. Returns (tool name or None, arguments as JSON text, tokens, model used)."""
+    response, used = chat_with_retry(messages, model, tools=tools, tool_choice="required",
+                                     reasoning_effort=reasoning_effort)
+    tokens = response.usage.total_tokens if response.usage else 0
+    message = response.choices[0].message
+    if not message.tool_calls:
+        return None, message.content or "", tokens, used
+    call = message.tool_calls[0]
+    return call.function.name, call.function.arguments or "{}", tokens, used
 
 
 def ping(model: str) -> tuple[str, float]:

@@ -38,11 +38,16 @@ def save_preference(conn: sqlite3.Connection, student_id: str, preference: Prefe
 
 
 def record_condition_answer(conn: sqlite3.Connection, student_id: str, cycle: int, programme_id: str,
-                            condition: str, met: bool) -> bool:
-    """Remember the student's answer about an admission condition, so it is never asked again."""
+                            condition: str, met: bool | None, decided_by: str = "student",
+                            reason: str = "") -> bool:
+    """Remember whether an admission condition is met, so it is never asked or worked out again.
+
+    met is True or False, or None when the student is not sure (the condition then stays uncertain).
+    decided_by is "student" (they answered) or "agent" (settled from profile facts, with a reason).
+    """
     return db.insert_once(conn, "decisions", {
         "student_id": student_id, "cycle": cycle, "kind": "condition_answer", "programme_id": programme_id,
-        "data": json.dumps({"condition": condition, "met": met}), "decided_by": "student",
+        "data": json.dumps({"condition": condition, "met": met, "reason": reason}), "decided_by": decided_by,
         "idempotency_key": db.idempotency_key(student_id, "condition_answer", programme_id, condition),
     })
 
@@ -69,7 +74,7 @@ def lookup_profile(conn: sqlite3.Connection, student_id: str) -> dict:
         "documents": documents,
         "preferences": preferences,
         "decisions": decisions,
-        "condition_answers": [{"programme_id": d["programme_id"], **d["data"]}
+        "condition_answers": [{"programme_id": d["programme_id"], "decided_by": d["decided_by"], **d["data"]}
                               for d in decisions if d["kind"] == "condition_answer"],
         "open_checklist": checklist,
     }
