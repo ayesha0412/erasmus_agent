@@ -1,0 +1,769 @@
+{
+  "generated_at": "2026-10-26T06:17:06+00:00",
+  "model": "openai/gpt-oss-120b",
+  "status": "PROPOSED - to be reviewed by the author before freezing as data/tags.json",
+  "sources": {
+    "deai": {
+      "courses": [
+        "courses"
+      ],
+      "requirements": [
+        "admission",
+        "profiles"
+      ]
+    },
+    "codas": {
+      "courses": [
+        "programme"
+      ],
+      "requirements": [
+        "admission"
+      ]
+    },
+    "ifros": {
+      "courses": [
+        "programme"
+      ],
+      "requirements": [
+        "applicants"
+      ]
+    },
+    "neurodata": {
+      "courses": [
+        "programme"
+      ],
+      "requirements": [
+        "requirements"
+      ]
+    },
+    "ilspsd": {
+      "courses": [
+        "structure"
+      ],
+      "requirements": [
+        "requirements"
+      ]
+    }
+  },
+  "evidence": {
+    "course_names": {
+      "deai": [
+        "Advanced Databases",
+        "Database Systems Architecture",
+        "Data Warehouses",
+        "Management of Data Science and Business Workflows",
+        "Data Mining",
+        "Foreign Language",
+        "Big Data Management",
+        "Semantic Data Management",
+        "Machine Learning",
+        "High-Performance Data Analytics",
+        "Data Engineering and Artificial Intelligence Seminars",
+        "Debates on Data Ethics",
+        "Statistical Learning",
+        "Deep Learning and Human Data Analytics",
+        "Time-Series Analysis for Business, Economic and Financial Data",
+        "Business Process Intelligence",
+        "Law and Data",
+        "Stochastic Methods",
+        "Management of Graph Data",
+        "Graph AI",
+        "Declarative Knowledge and Symbolic AI",
+        "AI Ethics",
+        "Natural Language Processing and Information Extraction",
+        "Introduction into Research Data Management",
+        "Technical English Communication",
+        "Technical English Presentation",
+        "Data and Intelligence for Heterogeneous Systems (Université Claude Bernard Lyon 1, 3rd semester, 30 ECTS)",
+        "Real-Time Data Processing and Analytics",
+        "Machine Learning Techniques and Applications",
+        "Research Methodologies 1",
+        "Natural Language Processing and LLMs",
+        "Research Methodologies 2",
+        "Human-Centered AI",
+        "Big Graph Processing Systems",
+        "Master’s Thesis (4th semester, 30 ECTS)"
+      ],
+      "codas": [
+        "General studies (languages, soft skills)",
+        "Mathematics/Programming/Security",
+        "Communications",
+        "Data Science",
+        "Communications, Data Science, and Security (Grenoble INP-UGA)",
+        "Communications and Data Science (Tecnico Lisboa)",
+        "Communications, Automation, and Machine Learning (Aalto University)",
+        "Communications, Machine Learning, Medical Informatics & Biomedicine (TU Braunschweig)",
+        "Communications, 5G/6G and Internet of Things, and Data Science (UPC BarcelonaTech)",
+        "Joint Project course",
+        "Summer School",
+        "Workshop"
+      ],
+      "ifros": [
+        "Robot Manipulation",
+        "Probabilistic Robotics",
+        "Autonomous Systems",
+        "Multiple View Geometry",
+        "Machine Learning",
+        "Hands-on Intervention",
+        "Hands-on Localization",
+        "Hands-on Perception",
+        "Hands-on Planning",
+        "Management & Entrepreneurship",
+        "Scientific Writing and Research Best Practices",
+        "Deep Learning 1",
+        "Deep learning",
+        "Seminar 1",
+        "Aerial Robotics",
+        "Multi-robot Systems",
+        "Human-robot interaction",
+        "Ethics and New Technologies",
+        "Robot Sensing, Perception and Actuation",
+        "Autonomous systems & self-driving land vehicles",
+        "Deep Network Developments",
+        "Introduction to Vehicles and Sensors",
+        "3D Sensing and Sensor Fusion",
+        "Intelligent Field Robots Lab",
+        "Methods and tools for AI Applications",
+        "Mathematical data models in artificial intelligence",
+        "Linear algebra, generalized linear models, mathematical representations; elements of probability theory, the normal distribution and the Mahalanobis distance",
+        "Likelihood estimations: from the maximum likelihood to MAP to Bayesian estimations. Their use in model optimization.",
+        "Likelihood approximations: from gradient to conjugate models",
+        "Unsupervised methods, the expectation maximization and clustering",
+        "Ensemble methods",
+        "Autoencoder models",
+        "Preparation course for master studies and developing learning skills",
+        "Master Thesis Project"
+      ],
+      "neurodata": [
+        "Machine learning and neural networks for neuroscience",
+        "Signal and Data analysis in Neuroscience",
+        "Data Science and Advanced Python concepts workshop",
+        "Data Science Applications in Neuroscience",
+        "Introduction to cellular and systems neurophysiology",
+        "Advanced topics in system Neurophysiology",
+        "Synaptic Neurochemistry",
+        "Brain Imaging of Language Functions",
+        "Brain and Cognition Research in the 21 Century",
+        "Research Internship",
+        "Biomedical imaging",
+        "Instrumentation and acquisition of Biosignals",
+        "Machine Learning in Bioengineering",
+        "Neuroimaging",
+        "Image Processing and Vision",
+        "Machine Learning",
+        "Mathematical Models in Biomedicine",
+        "Neuromodulation",
+        "Principles of human-machine interfaces",
+        "Biosignals and biomedical image processing",
+        "Advance imaging techniques",
+        "Medical and Biological Image Processing",
+        "Artificial Intelligence and Decision Systems",
+        "Applied Computational Intelligence",
+        "Data Analysis and Integration",
+        "Statistical Methods in Data Mining",
+        "Information Visualization",
+        "Project (thesis preparation)",
+        "Thesis",
+        "Cognitive Neuroscience and Clinical Neuropsychology with Data Processing",
+        "Human electrophysiology",
+        "Cognitive neuroscience of action",
+        "Neuropsychological assessment and rehabilitation",
+        "Clinical neuropsychology",
+        "Affective neuroscience and psychopathology",
+        "Advanced social psychology and social neuroscience",
+        "New concepts in developmental psychology",
+        "Neural networks and deep learning",
+        "Machine learning for brain and cognition",
+        "New trends in neuroscience",
+        "New technologies and human behaviour",
+        "Animal models in neurobiology",
+        "Ethics and deontology in psychology",
+        "Neurology",
+        "Neurosurgery",
+        "Internship",
+        "Systems Neuroscience and Data Processing",
+        "Neurophilosophy and Ethics",
+        "Career and Academic Skills Portfolio",
+        "Thesis (Internship II)",
+        "Cellular Models for Brain Disorders",
+        "Live Cell Imaging",
+        "Neuron-Glia Interaction",
+        "Developmental Neurobiology of the Vertebrate Brain",
+        "Methods in Behavioral Neurosciences",
+        "Neuronal Networks In Vivo",
+        "System Neuroscience",
+        "Neuro- and Psychopharmacology",
+        "Rhythms of the Brain",
+        "Experimental and Clinical Neuroendocrinology",
+        "Basics of signal processing",
+        "Deep learning for cognitive computing",
+        "Deep learning for cognitive computing for developers",
+        "Collective Intelligence and agent technology",
+        "SOA and cloud computing",
+        "Communication Systems and Services",
+        "Anatomy and physiology of the central and autonomic nervous system",
+        "Experimental methods in neuroscience",
+        "Basics of brain imaging",
+        "Neuroscience practicum",
+        "Current issues in cognitive neuroscience",
+        "Neurobiology of learning and memory",
+        "Developmental language-related disorders",
+        "Motor control and human neuroscience",
+        "Analysis methods for Cognitive Neuroscience",
+        "Brain development",
+        "Current applications of cognitive neuroscience"
+      ],
+      "ilspsd": [
+        "International Law of Security, Peace and Sustainable Development",
+        "Global Security and Peaceful Dispute Settlement in International Law",
+        "International Economic Law and Sustainability",
+        "International Sustainability Law",
+        "Sustainable Ocean Law and Governance",
+        "Public International Law",
+        "Environmental Law",
+        "Concepts, Structures and Practices of National and International Policy for Sustainable Development",
+        "Lecture Series: Security, Power, and Law in the 21st Century",
+        "Theories of International Security",
+        "Research Methods in International Security",
+        "International Law and International Security",
+        "Advanced Introduction to International Criminal Law",
+        "Advanced Introduction to the Law of the United Nations",
+        "Climate Change Law and Governance",
+        "International Courts and Tribunals",
+        "International Human Rights Law",
+        "International Law and International Economic Governance",
+        "International Law and Security in a Digital World",
+        "Law and International Development",
+        "The Laws of Armed Conflict",
+        "International Litigation and Pleading Exercises (in English and French)",
+        "Exercises of Public International Law",
+        "Methodology of International Law / Méthodologie du droit international (in French)",
+        "Terrorism and International Law",
+        "Laws of Armed Conflict (in English and French)",
+        "International and European Criminal Law",
+        "International Dispute Settlement / Règlement des différends internationaux (in French)",
+        "Environmental Law / Droit de l’Environnement (in French)",
+        "International Humanitarian Law",
+        "Globalization and Security",
+        "Security, Governance and the Rule of Law",
+        "Cybersecurity and Governance",
+        "Diplomatic and Consular Law",
+        "Intelligence and Strategic Analysis",
+        "International Law of the Sea and International Courts",
+        "Transitional Justice",
+        "Emerging Technologies: Governance and Regulation",
+        "Human Rights Law",
+        "History and Theory of International Law",
+        "Law of International Institutions",
+        "Protection of Marginalised Groups in International Human Rights Law",
+        "Human Rights and Education",
+        "Law and Practice of the United Nations",
+        "European Human Rights Law",
+        "International Criminal Law",
+        "Munich Advanced Course in International Law",
+        "Summer Course on Refugee Issues at York University",
+        "Summer School on International Humanitarian Law in Theory and Practice",
+        "IFLOS Summer Academy",
+        "Law of the Sea Summer School",
+        "International Summer School Sarajevo",
+        "Introduction to International Human Rights: Theory, Law and Practice (Summer School)"
+      ]
+    },
+    "field_phrases": {
+      "deai": [
+        "Computer Science",
+        "Mathematics",
+        "Physics",
+        "Statistics",
+        "Telecommunication Sciences and Technologies",
+        "Telecommunication Technology and Services Engineering",
+        "Electronic Telecommunication Engineering",
+        "Civil Engineering",
+        "Engineering in Industrial Technologies",
+        "Industrial Electronics and Automation"
+      ],
+      "codas": [
+        "communications engineering",
+        "computer science",
+        "electrical engineering",
+        "software engineering",
+        "mathematics",
+        "algorithms and data structures",
+        "programming",
+        "software development",
+        "theoretical computer science",
+        "logic",
+        "operating systems",
+        "computer networks",
+        "database systems",
+        "computer engineering",
+        "linear algebra",
+        "analysis",
+        "discrete mathematics",
+        "wireless communications"
+      ],
+      "ifros": [
+        "Field Robotics"
+      ],
+      "neurodata": [
+        "brain sciences",
+        "life sciences",
+        "exact sciences (mathematics, physics, chemistry, engineering, computer sciences)",
+        "engineering (primarily computer engineering, electrical engineering and bioengineering)",
+        "psychology",
+        "cognitive sciences",
+        "general biology",
+        "math",
+        "programming in python"
+      ],
+      "ilspsd": [
+        "law",
+        "political science",
+        "international relations",
+        "European studies",
+        "war and security studies",
+        "sociology",
+        "political economics",
+        "human geography",
+        "social sciences",
+        "humanities"
+      ]
+    }
+  },
+  "topics": [
+    {
+      "topic": "artificial intelligence",
+      "broader": null,
+      "description": "Fundamental concepts, methods and applications of AI, including machine learning, deep learning and symbolic AI.",
+      "example_courses": [
+        "Artificial Intelligence and Decision Systems",
+        "Applied Computational Intelligence",
+        "Methods and tools for AI Applications",
+        "Declarative Knowledge and Symbolic AI"
+      ]
+    },
+    {
+      "topic": "machine learning",
+      "broader": "artificial intelligence",
+      "description": "Algorithms and techniques for learning from data, covering supervised, unsupervised and reinforcement approaches.",
+      "example_courses": [
+        "Machine Learning",
+        "Machine Learning Techniques and Applications",
+        "Deep Learning",
+        "Ensemble methods",
+        "Statistical Learning"
+      ]
+    },
+    {
+      "topic": "deep learning",
+      "broader": "machine learning",
+      "description": "Neural network architectures and training methods for representation learning, including CNNs, RNNs and transformers.",
+      "example_courses": [
+        "Deep Learning 1",
+        "Deep Learning and Human Data Analytics",
+        "Deep Network Developments",
+        "Neural networks and deep learning"
+      ]
+    },
+    {
+      "topic": "data science",
+      "broader": null,
+      "description": "Techniques for extracting knowledge from data, covering data engineering, mining, analytics and visualization.",
+      "example_courses": [
+        "Data Science",
+        "Data Mining",
+        "Data Analysis and Integration",
+        "High-Performance Data Analytics"
+      ]
+    },
+    {
+      "topic": "big data",
+      "broader": "data science",
+      "description": "Scalable storage, processing and analytics for massive, heterogeneous datasets.",
+      "example_courses": [
+        "Big Data Management",
+        "Big Graph Processing Systems",
+        "Data Warehouses",
+        "Real-Time Data Processing and Analytics"
+      ]
+    },
+    {
+      "topic": "graph analytics",
+      "broader": "big data",
+      "description": "Methods for processing and learning from graph-structured data.",
+      "example_courses": [
+        "Graph AI",
+        "Management of Graph Data",
+        "Big Graph Processing Systems"
+      ]
+    },
+    {
+      "topic": "signal processing",
+      "broader": null,
+      "description": "Theory and practice of analyzing, filtering and transforming signals, especially biosignals.",
+      "example_courses": [
+        "Basics of signal processing",
+        "Signal and Data analysis in Neuroscience",
+        "Instrumentation and acquisition of Biosignals"
+      ]
+    },
+    {
+      "topic": "computer vision",
+      "broader": null,
+      "description": "Algorithms for image acquisition, processing and interpretation, including medical imaging.",
+      "example_courses": [
+        "Image Processing and Vision",
+        "Biomedical imaging",
+        "Medical and Biological Image Processing",
+        "Basics of brain imaging"
+      ]
+    },
+    {
+      "topic": "robotics",
+      "broader": null,
+      "description": "Design, control and perception for autonomous robotic systems.",
+      "example_courses": [
+        "Aerial Robotics",
+        "Autonomous Systems",
+        "Multi-robot Systems",
+        "Intelligent Field Robots Lab"
+      ]
+    },
+    {
+      "topic": "autonomous vehicles",
+      "broader": "robotics",
+      "description": "Self‑driving land, aerial and marine vehicles, sensor fusion and navigation.",
+      "example_courses": [
+        "Autonomous systems & self-driving land vehicles",
+        "Introduction to Vehicles and Sensors",
+        "Probabilistic Robotics"
+      ]
+    },
+    {
+      "topic": "neuroscience",
+      "broader": null,
+      "description": "Study of the nervous system, from cellular mechanisms to cognition and behavior.",
+      "example_courses": [
+        "Advanced topics in system Neurophysiology",
+        "Neurobiology of learning and memory",
+        "System Neuroscience",
+        "Neuroscience practicum"
+      ]
+    },
+    {
+      "topic": "cognitive neuroscience",
+      "broader": "neuroscience",
+      "description": "Investigation of brain mechanisms underlying cognition, perception and action.",
+      "example_courses": [
+        "Advanced social psychology and social neuroscience",
+        "Current applications of cognitive neuroscience",
+        "Brain Imaging of Language Functions",
+        "Cognitive neuroscience of action"
+      ]
+    },
+    {
+      "topic": "clinical neuroscience",
+      "broader": "neuroscience",
+      "description": "Translational research linking neurobiology with diagnosis and treatment of brain disorders.",
+      "example_courses": [
+        "Clinical neuropsychology",
+        "Neuroimaging",
+        "Neuropsychological assessment and rehabilitation",
+        "Experimental and Clinical Neuroendocrinology"
+      ]
+    },
+    {
+      "topic": "neuroinformatics",
+      "broader": "neuroscience",
+      "description": "Computational tools and data management for neuroscience research.",
+      "example_courses": [
+        "Data Science Applications in Neuroscience",
+        "Systems Neuroscience and Data Processing",
+        "Signal and Data analysis in Neuroscience"
+      ]
+    },
+    {
+      "topic": "law",
+      "broader": null,
+      "description": "Fundamental legal principles, doctrines and institutions across national and international domains.",
+      "example_courses": [
+        "International Criminal Law",
+        "European Human Rights Law",
+        "Public International Law",
+        "Law and Data"
+      ]
+    },
+    {
+      "topic": "international law",
+      "broader": "law",
+      "description": "Legal rules governing relations among states and international organisations.",
+      "example_courses": [
+        "International Law and International Security",
+        "International Courts and Tribunals",
+        "Law of International Institutions",
+        "International Human Rights Law"
+      ]
+    },
+    {
+      "topic": "human rights law",
+      "broader": "international law",
+      "description": "Legal protections of fundamental rights and freedoms at the global level.",
+      "example_courses": [
+        "Human Rights Law",
+        "Protection of Marginalised Groups in International Human Rights Law",
+        "International Human Rights Law"
+      ]
+    },
+    {
+      "topic": "environmental law",
+      "broader": "law",
+      "description": "Legal frameworks for environmental protection, climate change and sustainable development.",
+      "example_courses": [
+        "Environmental Law",
+        "Climate Change Law and Governance",
+        "Sustainable Ocean Law and Governance",
+        "Concepts, Structures and Practices of National and International Policy for Sustainable Development"
+      ]
+    },
+    {
+      "topic": "ethics",
+      "broader": null,
+      "description": "Philosophical and professional standards for responsible conduct of research and technology.",
+      "example_courses": [
+        "AI Ethics",
+        "Ethics and New Technologies",
+        "Neurophilosophy and Ethics",
+        "Debates on Data Ethics"
+      ]
+    },
+    {
+      "topic": "technology governance",
+      "broader": "ethics",
+      "description": "Policy and regulatory approaches to emerging technologies and digital security.",
+      "example_courses": [
+        "Emerging Technologies: Governance and Regulation",
+        "Cybersecurity and Governance",
+        "Security, Governance and the Rule of Law",
+        "International Law and Security in a Digital World"
+      ]
+    },
+    {
+      "topic": "communication systems",
+      "broader": null,
+      "description": "Design and analysis of wired and wireless communication networks and services.",
+      "example_courses": [
+        "Communications",
+        "Communications, 5G/6G and Internet of Things, and Data Science (UPC BarcelonaTech)",
+        "Communication Systems and Services",
+        "SOA and cloud computing"
+      ]
+    },
+    {
+      "topic": "natural language processing",
+      "broader": null,
+      "description": "Computational methods for processing and understanding human language.",
+      "example_courses": [
+        "Natural Language Processing and Information Extraction",
+        "Natural Language Processing and LLMs",
+        "Machine Learning in Bioengineering"
+      ]
+    },
+    {
+      "topic": "biomedical engineering",
+      "broader": null,
+      "description": "Application of engineering principles to medical and biological problems.",
+      "example_courses": [
+        "Biomedical imaging",
+        "Medical and Biological Image Processing",
+        "Machine Learning in Bioengineering",
+        "Mathematical Models in Biomedicine"
+      ]
+    },
+    {
+      "topic": "psychology",
+      "broader": null,
+      "description": "Study of behavior and mental processes, including developmental and social aspects.",
+      "example_courses": [
+        "New concepts in developmental psychology",
+        "Advanced social psychology and social neuroscience",
+        "Ethics and deontology in psychology",
+        "New technologies and human behaviour"
+      ]
+    },
+    {
+      "topic": "security studies",
+      "broader": null,
+      "description": "Analysis of threats, conflict, and strategies for national and international security.",
+      "example_courses": [
+        "Global Security and Peaceful Dispute Settlement in International Law",
+        "Theories of International Security",
+        "Terrorism and International Law",
+        "Intelligence and Strategic Analysis"
+      ]
+    },
+    {
+      "topic": "management",
+      "broader": null,
+      "description": "Organisational, strategic and entrepreneurial concepts for business and research projects.",
+      "example_courses": [
+        "Management & Entrepreneurship",
+        "Management of Data Science and Business Workflows",
+        "Project (thesis preparation)",
+        "Joint Project course"
+      ]
+    }
+  ],
+  "degree_fields": [
+    {
+      "field": "civil engineering",
+      "isced_f": "2142",
+      "synonyms": [
+        "civil engineering"
+      ]
+    },
+    {
+      "field": "computer science",
+      "isced_f": "0213",
+      "synonyms": [
+        "computer science",
+        "computer engineering",
+        "software engineering",
+        "software development",
+        "theoretical computer science",
+        "programming",
+        "programming in python",
+        "algorithms and data structures",
+        "operating systems",
+        "computer networks",
+        "database systems"
+      ]
+    },
+    {
+      "field": "electrical and electronic engineering",
+      "isced_f": "2143",
+      "synonyms": [
+        "electronic telecommunication engineering",
+        "telecommunication sciences and technologies",
+        "telecommunication technology and services engineering",
+        "communications engineering",
+        "wireless communications",
+        "industrial electronics and automation",
+        "electrical engineering"
+      ]
+    },
+    {
+      "field": "industrial engineering",
+      "isced_f": "2141",
+      "synonyms": [
+        "engineering in industrial technologies",
+        "industrial technologies"
+      ]
+    },
+    {
+      "field": "european studies",
+      "isced_f": "0235",
+      "synonyms": [
+        "european studies"
+      ]
+    },
+    {
+      "field": "robotics",
+      "isced_f": "0214",
+      "synonyms": [
+        "field robotics"
+      ]
+    },
+    {
+      "field": "mathematics",
+      "isced_f": "0211",
+      "synonyms": [
+        "mathematics",
+        "math",
+        "discrete mathematics",
+        "linear algebra",
+        "analysis"
+      ]
+    },
+    {
+      "field": "physics",
+      "isced_f": "0212",
+      "synonyms": [
+        "physics"
+      ]
+    },
+    {
+      "field": "statistics",
+      "isced_f": "0215",
+      "synonyms": [
+        "statistics"
+      ]
+    },
+    {
+      "field": "biology",
+      "isced_f": "0216",
+      "synonyms": [
+        "general biology",
+        "life sciences"
+      ]
+    },
+    {
+      "field": "geography",
+      "isced_f": "0232",
+      "synonyms": [
+        "human geography"
+      ]
+    },
+    {
+      "field": "humanities",
+      "isced_f": "0230",
+      "synonyms": [
+        "humanities"
+      ]
+    },
+    {
+      "field": "political science",
+      "isced_f": "0233",
+      "synonyms": [
+        "political science",
+        "political economics",
+        "international relations"
+      ]
+    },
+    {
+      "field": "law",
+      "isced_f": "0234",
+      "synonyms": [
+        "law"
+      ]
+    },
+    {
+      "field": "psychology",
+      "isced_f": "0235",
+      "synonyms": [
+        "psychology",
+        "cognitive sciences",
+        "brain sciences"
+      ]
+    },
+    {
+      "field": "sociology",
+      "isced_f": "0236",
+      "synonyms": [
+        "sociology",
+        "social sciences"
+      ]
+    },
+    {
+      "field": "security studies",
+      "isced_f": "0237",
+      "synonyms": [
+        "war and security studies"
+      ]
+    }
+  ],
+  "check_problems": [
+    "topic 'deep learning' -> 'machine learning' is more than one level deep",
+    "topic 'graph analytics' -> 'big data' is more than one level deep",
+    "topic 'human rights law' -> 'international law' is more than one level deep"
+  ]
+}
