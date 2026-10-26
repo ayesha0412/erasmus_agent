@@ -1,0 +1,886 @@
+{
+  "programme_id": "neurodata",
+  "accepted_degree_fields": [
+    "computer science",
+    "electrical and electronic engineering",
+    "biology",
+    "mathematics",
+    "physics",
+    "psychology"
+  ],
+  "degree_rule_quote": "All candidates must have obtained a first higher education degree or demonstrate a recognised equivalent level of learning according to national legislation and practices, with outstanding grades (roughly top 10% of your class) or other study results. Students participating in the program must have obtained an undergraduate degree of at least 180 ECTS in brain sciences, life sciences, exact sciences (mathematics, physics, chemistry, engineering, computer sciences), engineering (primarily computer engineering, electrical engineering and bioengineering), psychology and cognitive sciences or equivalent by the time of application.",
+  "degree_rule_vague": true,
+  "english_requirements": [
+    {
+      "test": "IELTS (Academic Test)",
+      "min_overall": 6.5
+    },
+    {
+      "test": "TOEFL (IBT)",
+      "min_overall": 85.0
+    },
+    {
+      "test": "Oxford Test of English",
+      "min_overall": 126.0
+    },
+    {
+      "test": "Pearson Test of English Academic",
+      "min_overall": 70.0
+    }
+  ],
+  "other_language_requirements": [],
+  "other_conditions": [
+    "Outstanding grades (roughly top 10% of your class)",
+    "Basic knowledge in general biology, math and programming in python"
+  ],
+  "deadlines": [],
+  "required_documents": [
+    {
+      "doc_type": "transcript",
+      "count": 1
+    },
+    {
+      "doc_type": "degree_certificate",
+      "count": 1
+    }
+  ],
+  "courses": [
+    {
+      "name": "Machine learning and neural networks for neuroscience",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "machine learning",
+        "deep learning",
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Signal and Data analysis in Neuroscience",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "signal processing",
+        "data science",
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Data Science and Advanced Python concepts workshop",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "data science"
+      ]
+    },
+    {
+      "name": "Data Science Applications in Neuroscience",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "data science",
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Biological Module (pick one)",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": []
+    },
+    {
+      "name": "Introduction to cellular and systems neurophysiology",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Advanced topics in system Neurophysiology",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Synaptic Neurochemistry",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Cognitive module (pick one)",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": []
+    },
+    {
+      "name": "Brain Imaging of Language Functions",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Brain and Cognition Research in the 21 Century",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Research Internship",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": []
+    },
+    {
+      "name": "Biomedical imaging",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "biomedical engineering"
+      ]
+    },
+    {
+      "name": "Instrumentation and acquisition of Biosignals",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "signal processing",
+        "biomedical engineering"
+      ]
+    },
+    {
+      "name": "Machine Learning in Bioengineering",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "machine learning",
+        "biomedical engineering"
+      ]
+    },
+    {
+      "name": "Neuroimaging",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Image Processing and Vision",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "computer vision"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Mathematical Models in Biomedicine",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "mathematics and statistics",
+        "biomedical engineering"
+      ]
+    },
+    {
+      "name": "Neuromodulation",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Principles of human-machine interfaces",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "robotics",
+        "human rights law"
+      ]
+    },
+    {
+      "name": "Biosignals and biomedical image processing",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "signal processing",
+        "biomedical engineering"
+      ]
+    },
+    {
+      "name": "Advance imaging techniques",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Medical and Biological Image Processing (it will not be offered next year)",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "biomedical engineering"
+      ]
+    },
+    {
+      "name": "Artificial Intelligence and Decision Systems",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "name": "Applied Computational Intelligence",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "name": "Data Analysis and Integration",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "data science"
+      ]
+    },
+    {
+      "name": "Statistical Methods in Data Mining",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "data science",
+        "mathematics and statistics"
+      ]
+    },
+    {
+      "name": "Information Visualization",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "data science"
+      ]
+    },
+    {
+      "name": "Project (thesis preparation)",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": []
+    },
+    {
+      "name": "Thesis",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": []
+    },
+    {
+      "name": "Cognitive Neuroscience and Clinical Neuropsychology with Data Processing",
+      "ects": null,
+      "semester": null,
+      "university": "Instituto Superior Técnico",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience",
+        "data science"
+      ]
+    },
+    {
+      "name": "Human electrophysiology",
+      "ects": null,
+      "semester": null,
+      "university": "University of Padua",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Cognitive neuroscience of action",
+      "ects": null,
+      "semester": null,
+      "university": "University of Padua",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Neuropsychological assessment and rehabilitation",
+      "ects": null,
+      "semester": null,
+      "university": "University of Padua",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Clinical neuropsychology",
+      "ects": null,
+      "semester": null,
+      "university": "University of Padua",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Affective neuroscience and psychopathology",
+      "ects": null,
+      "semester": null,
+      "university": "University of Padua",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Advanced social psychology and social neuroscience",
+      "ects": null,
+      "semester": null,
+      "university": "University of Padua",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "New concepts in developmental psychology",
+      "ects": null,
+      "semester": null,
+      "university": "University of Padua",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Neural networks and deep learning",
+      "ects": null,
+      "semester": null,
+      "university": "University of Padua",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "deep learning"
+      ]
+    },
+    {
+      "name": "Machine learning for brain and cognition",
+      "ects": null,
+      "semester": null,
+      "university": "University of Padua",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "machine learning",
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "New trends in neuroscience",
+      "ects": null,
+      "semester": null,
+      "university": "University of Padua",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "New technologies and human behaviour",
+      "ects": null,
+      "semester": null,
+      "university": "University of Padua",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "technology governance"
+      ]
+    },
+    {
+      "name": "Animal models in neurobiology",
+      "ects": null,
+      "semester": null,
+      "university": "University of Padua",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Ethics and deontology in psychology",
+      "ects": null,
+      "semester": null,
+      "university": "University of Padua",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "ethics"
+      ]
+    },
+    {
+      "name": "Neurophilosophy and Ethics",
+      "ects": null,
+      "semester": null,
+      "university": "Vrije Universiteit Amsterdam",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "ethics"
+      ]
+    },
+    {
+      "name": "Career and Academic Skills Portfolio",
+      "ects": null,
+      "semester": null,
+      "university": "Vrije Universiteit Amsterdam",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": []
+    },
+    {
+      "name": "Thesis (Internship II)",
+      "ects": null,
+      "semester": null,
+      "university": "Vrije Universiteit Amsterdam",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": []
+    },
+    {
+      "name": "Cellular Models for Brain Disorders",
+      "ects": null,
+      "semester": "P1",
+      "university": "Vrije Universiteit Amsterdam",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Live Cell Imaging",
+      "ects": null,
+      "semester": "P1",
+      "university": "Vrije Universiteit Amsterdam",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "biomedical engineering"
+      ]
+    },
+    {
+      "name": "Neuron-Glia Interaction",
+      "ects": null,
+      "semester": "P1",
+      "university": "Vrije Universiteit Amsterdam",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Developmental Neurobiology of the Vertebrate Brain",
+      "ects": null,
+      "semester": "P2",
+      "university": "Vrije Universiteit Amsterdam",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Methods in Behavioral Neurosciences",
+      "ects": null,
+      "semester": "P2",
+      "university": "Vrije Universiteit Amsterdam",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Neuronal Networks In Vivo",
+      "ects": null,
+      "semester": "P2",
+      "university": "Vrije Universiteit Amsterdam",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "System Neuroscience",
+      "ects": null,
+      "semester": "P2",
+      "university": "Vrije Universiteit Amsterdam",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Neuro- and Psychopharmacology",
+      "ects": null,
+      "semester": "P2",
+      "university": "Vrije Universiteit Amsterdam",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Rhythms of the Brain",
+      "ects": null,
+      "semester": "P2",
+      "university": "Vrije Universiteit Amsterdam",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Experimental and Clinical Neuroendocrinology",
+      "ects": null,
+      "semester": "P2",
+      "university": "Vrije Universiteit Amsterdam",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Cognitive Neuroscience and Neuroimaging with Data Processing",
+      "ects": null,
+      "semester": null,
+      "university": "Faculty of Education and Psychology, University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Basics of signal processing",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "signal processing"
+      ]
+    },
+    {
+      "name": "Deep learning for cognitive computing",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "deep learning"
+      ]
+    },
+    {
+      "name": "Deep learning for cognitive computing for developers",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "deep learning"
+      ]
+    },
+    {
+      "name": "Collective Intelligence and agent technology",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "name": "SOA and cloud computing",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Communication Systems and Services",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "communication systems"
+      ]
+    },
+    {
+      "name": "Anatomy and physiology of the central and autonomic nervous system",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Experimental methods in neuroscience",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Basics of brain imaging",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Neuroscience practicum",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Current issues in cognitive neuroscience",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Neurobiology of learning and memory",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Developmental language-related disorders",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Motor control and human neuroscience",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Analysis methods for Cognitive Neuroscience",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Brain development",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "name": "Current applications of cognitive neuroscience",
+      "ects": null,
+      "semester": null,
+      "university": "University of Jyväskylä",
+      "description": null,
+      "source_url": "https://www.neurodata-master.org/programme",
+      "topics": [
+        "neuroscience"
+      ]
+    }
+  ],
+  "missing_information": [],
+  "suspected_instructions": []
+}

@@ -1,0 +1,468 @@
+{
+  "programme_id": "ilspsd",
+  "accepted_degree_fields": [
+    "law",
+    "political science",
+    "sociology"
+  ],
+  "degree_rule_quote": "Applicants must have successfully completed 60 ECTS in law (Leuphana’s LLM Track) or 60 ECTS in relevant subjects (Leuphana’s MA Track).",
+  "degree_rule_vague": true,
+  "english_requirements": [
+    {
+      "test": "IELTS Academic",
+      "min_overall": 7.0
+    },
+    {
+      "test": "TOEFL iBT",
+      "min_overall": 5.0
+    },
+    {
+      "test": "Cambridge English: Advanced (CAE)",
+      "min_overall": 0.0
+    },
+    {
+      "test": "Cambridge English: Proficiency (CPE)",
+      "min_overall": 0.0
+    }
+  ],
+  "other_language_requirements": [
+    {
+      "language": "french",
+      "min_level": "B2",
+      "applies_to": "all",
+      "quote": "students applying to the Université libre de Bruxelles for their second year of study, they are required to submit a certificate proving a passive level of French: a degree awarded by a higher education institution located in a French-speaking community, or proof of French language skills at level B2 according to the Council of Europe’s Common European Framework of Reference for Languages (CEFR)."
+    }
+  ],
+  "other_conditions": [
+    "Applicants for an EMJM Student Scholarship must have finished their undergraduate studies by the time of application.",
+    "If you have not completed your undergraduate degree by the time of your application but will do so within the year of the intake, you can be admitted conditionally only as a self-funded student."
+  ],
+  "deadlines": [
+    {
+      "label": "EMJM Scholarship application deadline",
+      "due": "2027-01-04",
+      "quote": "The application platform to join the second intake of ILSPSD (2027–2029) with an EMJM Scholarship is open until 4 January 2027 (23:59 CET)."
+    },
+    {
+      "label": "Self-funded student application deadline",
+      "due": "2027-03-31",
+      "quote": "Self-funded students can apply until 31 March 2027 (23:59 CEST)."
+    },
+    {
+      "label": "EMJM Scholarship Application Deadline",
+      "due": "2027-01-04",
+      "quote": "4 January 2027"
+    },
+    {
+      "label": "EMJM Scholarship Application Deadline (self-funded)",
+      "due": "2027-03-31",
+      "quote": "31 March 2027"
+    },
+    {
+      "label": "EMJM Scholarship Final Results",
+      "due": "2027-05-31",
+      "quote": "31 May 2027"
+    }
+  ],
+  "required_documents": [
+    {
+      "doc_type": "transcript",
+      "count": 1
+    },
+    {
+      "doc_type": "degree_certificate",
+      "count": 1
+    },
+    {
+      "doc_type": "cv",
+      "count": 1
+    },
+    {
+      "doc_type": "english_test",
+      "count": 1
+    },
+    {
+      "doc_type": "passport",
+      "count": 1
+    },
+    {
+      "doc_type": "recommendation_letter",
+      "count": 2
+    },
+    {
+      "doc_type": "motivation_letter",
+      "count": 1
+    },
+    {
+      "doc_type": "other",
+      "count": 1
+    }
+  ],
+  "courses": [
+    {
+      "name": "Global Security and Peaceful Dispute Settlement in International Law",
+      "ects": 5.0,
+      "semester": "Semester 1",
+      "university": "Leuphana University of Lüneburg",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law",
+        "security studies"
+      ]
+    },
+    {
+      "name": "International Economic Law and Sustainability",
+      "ects": 5.0,
+      "semester": "Semester 1",
+      "university": "Leuphana University of Lüneburg",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law",
+        "environmental law"
+      ]
+    },
+    {
+      "name": "International Sustainability Law",
+      "ects": 5.0,
+      "semester": "Semester 1",
+      "university": "Leuphana University of Lüneburg",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law",
+        "environmental law"
+      ]
+    },
+    {
+      "name": "Sustainable Ocean Law and Governance",
+      "ects": 5.0,
+      "semester": "Semester 1",
+      "university": "Leuphana University of Lüneburg",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law",
+        "environmental law"
+      ]
+    },
+    {
+      "name": "Public International Law",
+      "ects": 5.0,
+      "semester": "Semester 1",
+      "university": "Leuphana University of Lüneburg",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law"
+      ]
+    },
+    {
+      "name": "Environmental Law",
+      "ects": 5.0,
+      "semester": "Semester 1",
+      "university": "Leuphana University of Lüneburg",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "environmental law"
+      ]
+    },
+    {
+      "name": "Concepts, Structures and Practices of National and International Policy for Sustainable Development",
+      "ects": 5.0,
+      "semester": "Semester 1",
+      "university": "Leuphana University of Lüneburg",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law",
+        "environmental law"
+      ]
+    },
+    {
+      "name": "Lecture Series: Security, Power, and Law in the 21st Century",
+      "ects": 5.0,
+      "semester": "Semester 1",
+      "university": "Leuphana University of Lüneburg",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "security studies",
+        "law"
+      ]
+    },
+    {
+      "name": "Theories of International Security",
+      "ects": 8.0,
+      "semester": "Semester 2",
+      "university": "Institut Barcelona d’Estudis Internacionals",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "security studies"
+      ]
+    },
+    {
+      "name": "Research Methods in International Security",
+      "ects": 6.0,
+      "semester": "Semester 2",
+      "university": "Institut Barcelona d’Estudis Internacionals",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "security studies"
+      ]
+    },
+    {
+      "name": "Dissertation (Summer) Thesis",
+      "ects": 10.0,
+      "semester": "Semester 2",
+      "university": "Institut Barcelona d’Estudis Internacionals",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": []
+    },
+    {
+      "name": "International Law and International Security",
+      "ects": 10.0,
+      "semester": "Semester 3",
+      "university": "University of Glasgow",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law",
+        "security studies"
+      ]
+    },
+    {
+      "name": "Advanced Introduction to International Criminal Law",
+      "ects": 10.0,
+      "semester": "Semester 3",
+      "university": "University of Glasgow",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law"
+      ]
+    },
+    {
+      "name": "Advanced Introduction to the Law of the United Nations",
+      "ects": 10.0,
+      "semester": "Semester 3",
+      "university": "University of Glasgow",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law"
+      ]
+    },
+    {
+      "name": "Climate Change Law and Governance",
+      "ects": 10.0,
+      "semester": "Semester 3",
+      "university": "University of Glasgow",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law",
+        "environmental law"
+      ]
+    },
+    {
+      "name": "International Courts and Tribunals",
+      "ects": 10.0,
+      "semester": "Semester 3",
+      "university": "University of Glasgow",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law"
+      ]
+    },
+    {
+      "name": "International Human Rights Law",
+      "ects": 10.0,
+      "semester": "Semester 3",
+      "university": "University of Glasgow",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law",
+        "human rights law"
+      ]
+    },
+    {
+      "name": "International Law and International Economic Governance",
+      "ects": 10.0,
+      "semester": "Semester 3",
+      "university": "University of Glasgow",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law"
+      ]
+    },
+    {
+      "name": "International Law and Security in a Digital World",
+      "ects": 10.0,
+      "semester": "Semester 3",
+      "university": "University of Glasgow",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law",
+        "security studies",
+        "technology governance"
+      ]
+    },
+    {
+      "name": "Law and International Development",
+      "ects": 10.0,
+      "semester": "Semester 3",
+      "university": "University of Glasgow",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law"
+      ]
+    },
+    {
+      "name": "The Laws of Armed Conflict",
+      "ects": 10.0,
+      "semester": "Semester 3",
+      "university": "University of Glasgow",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law"
+      ]
+    },
+    {
+      "name": "International Litigation and Pleading Exercises (in English and French)",
+      "ects": 5.0,
+      "semester": "Semester 3",
+      "university": "Université libre de Bruxelles",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law"
+      ]
+    },
+    {
+      "name": "Exercises of Public International Law",
+      "ects": 5.0,
+      "semester": "Semester 3",
+      "university": "Université libre de Bruxelles",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law"
+      ]
+    },
+    {
+      "name": "Methodology of International Law / Méthodologie du droit international (in French)",
+      "ects": 5.0,
+      "semester": "Semester 3",
+      "university": "Université libre de Bruxelles",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law"
+      ]
+    },
+    {
+      "name": "Terrorism and International Law",
+      "ects": 5.0,
+      "semester": "Semester 3",
+      "university": "Université libre de Bruxelles",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law",
+        "security studies"
+      ]
+    },
+    {
+      "name": "Laws of Armed Conflict (in English and French)",
+      "ects": 5.0,
+      "semester": "Semester 3",
+      "university": "Université libre de Bruxelles",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law"
+      ]
+    },
+    {
+      "name": "International and European Criminal Law",
+      "ects": 5.0,
+      "semester": "Semester 3",
+      "university": "Université libre de Bruxelles",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law"
+      ]
+    },
+    {
+      "name": "International Dispute Settlement / Règlement des différends internationaux (in French)",
+      "ects": 5.0,
+      "semester": "Semester 3",
+      "university": "Université libre de Bruxelles",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law"
+      ]
+    },
+    {
+      "name": "Environmental Law / Droit de l’Environnement (in French)",
+      "ects": 5.0,
+      "semester": "Semester 3",
+      "university": "Université libre de Bruxelles",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "environmental law"
+      ]
+    },
+    {
+      "name": "International Humanitarian Law",
+      "ects": 6.0,
+      "semester": "Semester 3",
+      "university": "Universidade NOVA de Lisboa",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "international law"
+      ]
+    },
+    {
+      "name": "Globalization and Security",
+      "ects": 6.0,
+      "semester": "Semester 3",
+      "university": "Universidade NOVA de Lisboa",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "security studies"
+      ]
+    },
+    {
+      "name": "Security, Governance and the Rule of Law",
+      "ects": 6.0,
+      "semester": "Semester 3",
+      "university": "Universidade NOVA de Lisboa",
+      "description": null,
+      "source_url": "https://master-international-law-erasmusmundus.eu/programme-structure-modules/",
+      "topics": [
+        "security studies",
+        "law"
+      ]
+    }
+  ],
+  "missing_information": [],
+  "suspected_instructions": []
+}

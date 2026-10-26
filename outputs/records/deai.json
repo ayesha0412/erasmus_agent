@@ -1,0 +1,562 @@
+{
+  "programme_id": "deai",
+  "accepted_degree_fields": [
+    "computer science",
+    "mathematics",
+    "physics",
+    "statistics",
+    "electrical and electronic engineering",
+    "civil engineering",
+    "industrial engineering"
+  ],
+  "degree_rule_quote": "They have been awarded a Bachelor’s degree (i.e., the equivalent of 180 ECTS) from an accredited university. The university has to be listed in the World Higher Education Database (WHED) or be included in the following university rankings: The Times Higher Academic Ranking of World Universities, QS World University Rankings",
+  "degree_rule_vague": true,
+  "english_requirements": [
+    {
+      "test": "IELTS (Academic)",
+      "min_overall": 5.5
+    },
+    {
+      "test": "TOEFL (paper based)",
+      "min_overall": 570.0
+    },
+    {
+      "test": "TOEFL (computer based)",
+      "min_overall": 230.0
+    },
+    {
+      "test": "TOEFL (internet based)",
+      "min_overall": 72.0
+    }
+  ],
+  "other_language_requirements": [],
+  "other_conditions": [],
+  "deadlines": [
+    {
+      "label": "Grant application start period",
+      "due": "2026-10-20",
+      "quote": "Grant application start period October 20th, 2026"
+    },
+    {
+      "label": "Deadline for the grant application period",
+      "due": "2027-01-11",
+      "quote": "Deadline for the grant application period January 11th, 2027 (12:00 GMT) (strict deadline)"
+    },
+    {
+      "label": "Deadline for uploading reference letters (grant period)",
+      "due": "2027-01-18",
+      "quote": "Deadline for uploading reference letters January 18th, 2027"
+    },
+    {
+      "label": "Self-funded and partial grant application start period",
+      "due": "2027-03-01",
+      "quote": "Self-funded and partial grant application start period (common for all applicants) March 1st, 2027"
+    },
+    {
+      "label": "Deadline for the self-funded and partial grant application period (NON EU Countries)",
+      "due": "2027-05-15",
+      "quote": "Deadline for the self-funded and partial grant application period (NON EU Countries) May 15th, 2027 (strict deadline)"
+    },
+    {
+      "label": "Deadline for uploading reference letters (NON EU Countries)",
+      "due": "2027-05-20",
+      "quote": "Deadline for uploading reference letters (NON EU Countries) May 20th, 2027"
+    },
+    {
+      "label": "Deadline for uploading proof of bachelor (NON EU Countries)",
+      "due": "2027-06-15",
+      "quote": "Deadline for uploading proof of bachelor (NON EU Countries) June 15th, 2027"
+    },
+    {
+      "label": "Preliminary decision (NON EU Countries)",
+      "due": "2027-05-31",
+      "quote": "Preliminary decision (NON EU Countries) End of May, 2027"
+    },
+    {
+      "label": "Deadline for the self-funded and partial grant application period (EU Countries)",
+      "due": "2027-05-30",
+      "quote": "Deadline for the self-funded and partial grant application period (EU Countries) May 30th, 2027 (strict deadline)"
+    },
+    {
+      "label": "Deadline for uploading reference letters (EU Countries)",
+      "due": "2027-06-02",
+      "quote": "Deadline for uploading reference letters (EU Countries) June 2nd, 2027"
+    },
+    {
+      "label": "Deadline for uploading proof of bachelor (EU Countries)",
+      "due": "2027-05-30",
+      "quote": "Deadline for uploading proof of bachelor (EU Countries) May 30th, 2027"
+    },
+    {
+      "label": "Preliminary decision (EU Countries)",
+      "due": "2027-06-15",
+      "quote": "Preliminary decision (EU Countries) Mid June, 2027"
+    }
+  ],
+  "required_documents": [
+    {
+      "doc_type": "transcript",
+      "count": 1
+    },
+    {
+      "doc_type": "degree_certificate",
+      "count": 1
+    },
+    {
+      "doc_type": "cv",
+      "count": 1
+    },
+    {
+      "doc_type": "english_test",
+      "count": 1
+    },
+    {
+      "doc_type": "recommendation_letter",
+      "count": 2
+    },
+    {
+      "doc_type": "motivation_letter",
+      "count": 1
+    },
+    {
+      "doc_type": "passport",
+      "count": 1
+    }
+  ],
+  "courses": [
+    {
+      "name": "Data Engineering Foundations",
+      "ects": 30.0,
+      "semester": "1st",
+      "university": "ULB",
+      "description": "This semester introduces core concepts in Data Engineering, combining essential topics in data management, business intelligence, and analytical processes. It covers both traditional database technologies and new paradigms that support large-scale and complex data ecosystems. The semester provides the foundation for advanced data management, analysis, and artificial intelligence courses. It is composed of the following courses.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Advanced Databases",
+      "ects": 5.0,
+      "semester": null,
+      "university": "ULB",
+      "description": "This course introduces advanced database technologies and applications, including active, temporal, object-relational, and spatial databases. Students learn to understand and apply these technologies appropriately, and to analyse optimisation and implementation issues in modern database systems.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Database Systems Architecture",
+      "ects": 5.0,
+      "semester": null,
+      "university": "ULB",
+      "description": "This course provides an in-depth understanding of how database management systems function internally. It focuses on query processing, optimisation, transaction management, and concurrency control, enabling students to design and tune efficient and reliable data systems.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Data Warehouses",
+      "ects": 5.0,
+      "semester": null,
+      "university": "ULB",
+      "description": "This course covers the design and implementation of data warehouses and multidimensional databases. Students learn ETL processes, dimensional modelling, OLAP operations, and reporting, acquiring the skills to build and manage analytical data infrastructures.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Management of Data Science and Business Workflows",
+      "ects": 5.0,
+      "semester": null,
+      "university": "ULB",
+      "description": "This course presents concepts and methods for managing business and data science workflows. It addresses process modelling, analysis, and optimisation, as well as responsible data science topics such as privacy, fairness, and explainability in workflow design and execution.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data science"
+      ]
+    },
+    {
+      "name": "Data Mining",
+      "ects": 5.0,
+      "semester": null,
+      "university": "ULB",
+      "description": "This course introduces key data mining principles and techniques for discovering patterns in large datasets. Students study classification, clustering, association rule mining, and practical applications using real-world data and modern data mining tools.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data science"
+      ]
+    },
+    {
+      "name": "Foreign Language",
+      "ects": 5.0,
+      "semester": null,
+      "university": "Fondation 9 Languages",
+      "description": "Students take a French course adapted to their proficiency level. Native French speakers enrol in a Spanish, Italian, or German course corresponding to the languages of the partner universities in later semesters.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": []
+    },
+    {
+      "name": "Advanced Data Management and Analysis Foundations",
+      "ects": 30.0,
+      "semester": "2nd",
+      "university": "UPC",
+      "description": "This semester focuses on the core technical foundations required to become a proficient data-driven AI engineer. It trains students to manage and analyse large, complex, and heterogeneous data at scale, to design distributed data systems, and to apply rigorous machine learning techniques. Students also engage with ethical and societal implications of data and AI and participate in professional seminars presenting the latest developments in the field. The semester has a strong practical component, including projects that integrate concepts across courses.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Big Data Management",
+      "ects": 6.0,
+      "semester": null,
+      "university": "UPC",
+      "description": "This course examines the technological and engineering foundations of large-scale data management. It covers distributed and in-memory database systems, stream processing, and DataOps/MLOps practices. Students learn to design scalable architectures capable of handling high data volume, velocity, and complexity.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Semantic Data Management",
+      "ects": 6.0,
+      "semester": null,
+      "university": "UPC",
+      "description": "This course introduces semantic and graph-based data management techniques for integrating and analysing heterogeneous and multimodal data sources. Students learn about RDF and OWL ontologies, graph storage and processing, and semantic data governance for automating data integration in the presence of variety.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "ects": 6.0,
+      "semester": null,
+      "university": "UPC",
+      "description": "This course introduces the principles and methods of machine learning, including supervised and unsupervised learning, regression, classification, clustering, and neural networks. Students learn to analyse, model, and evaluate data-driven solutions using modern machine learning libraries in Python.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "machine learning"
+      ]
+    },
+    {
+      "name": "High-Performance Data Analytics",
+      "ects": 6.0,
+      "semester": null,
+      "university": "UPC",
+      "description": "This course explores computational infrastructures and architectures that enable scalable analytics and AI. It covers parallel and distributed computing, GPU acceleration, and federated learning architectures. Students learn to design and optimise data analytics pipelines for high-performance environments.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Data Engineering and Artificial Intelligence Seminars",
+      "ects": 2.0,
+      "semester": null,
+      "university": "UPC",
+      "description": "In this seminar series, students discover recent developments and research in Data Engineering and Artificial Intelligence through lectures from academic and industry experts. They conduct and present a state-of-the‑art study on an advanced topic, evaluated jointly during the summer school.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data engineering",
+        "artificial intelligence"
+      ]
+    },
+    {
+      "name": "Debates on Data Ethics",
+      "ects": 2.0,
+      "semester": null,
+      "university": "UPC",
+      "description": "This course develops students’ critical and communication skills by engaging them in debates on ethical and societal issues arising from data and AI. Students analyse case studies on privacy, bias, and accountability and prepare written reflections on their positions.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "ethics"
+      ]
+    },
+    {
+      "name": "Summer School",
+      "ects": null,
+      "semester": "Summer after 2nd",
+      "university": null,
+      "description": "Students will attend the summer school organised annually by one partner institution. Presented by leading researchers in the field, it provides students with theoretical and practical skills in the domain. Industrial presentations will allow participants to understand the current product offer.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": []
+    },
+    {
+      "name": "Summer Internship",
+      "ects": null,
+      "semester": "Summer after 2nd",
+      "university": null,
+      "description": "Although not mandatory, in order to acquire a first working experience, students are encouraged to participate in summer internships, typically with industrial associated partners, between the end of the summer school and the beginning of the third semester.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": []
+    },
+    {
+      "name": "Business, Economics and Financial Data Science",
+      "ects": 30.0,
+      "semester": "3rd",
+      "university": "UniPD",
+      "description": "During the third semester, students choose one of following three specialisation tracks.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data science"
+      ]
+    },
+    {
+      "name": "Statistical Learning",
+      "ects": 6.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "mathematics and statistics"
+      ]
+    },
+    {
+      "name": "Deep Learning and Human Data Analytics",
+      "ects": 6.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "deep learning"
+      ]
+    },
+    {
+      "name": "Time-Series Analysis for Business, Economic and Financial Data",
+      "ects": 6.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "mathematics and statistics"
+      ]
+    },
+    {
+      "name": "Business Process Intelligence",
+      "ects": 6.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Law and Data",
+      "ects": 6.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "law"
+      ]
+    },
+    {
+      "name": "Stochastic Methods",
+      "ects": 6.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "mathematics and statistics"
+      ]
+    },
+    {
+      "name": "Management of Graph Data",
+      "ects": 6.0,
+      "semester": null,
+      "university": "TU Wien",
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Graph AI",
+      "ects": 6.0,
+      "semester": null,
+      "university": "TU Wien",
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Declarative Knowledge and Symbolic AI",
+      "ects": 6.0,
+      "semester": null,
+      "university": "TU Wien",
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "name": "AI Ethics",
+      "ects": 6.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "ethics"
+      ]
+    },
+    {
+      "name": "Natural Language Processing and Information Extraction",
+      "ects": 3.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "natural language processing"
+      ]
+    },
+    {
+      "name": "Introduction into Research Data Management",
+      "ects": 3.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Technical English Communication",
+      "ects": 3.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": []
+    },
+    {
+      "name": "Technical English Presentation",
+      "ects": 3.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": []
+    },
+    {
+      "name": "Real-Time Data Processing and Analytics",
+      "ects": 6.0,
+      "semester": null,
+      "university": "Université Claude Bernard Lyon 1",
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Machine Learning Techniques and Applications",
+      "ects": 6.0,
+      "semester": null,
+      "university": "Université Claude Bernard Lyon 1",
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Research Methodologies 1",
+      "ects": 6.0,
+      "semester": null,
+      "university": "Université Claude Bernard Lyon 1",
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": []
+    },
+    {
+      "name": "Natural Language Processing and LLMs",
+      "ects": 3.0,
+      "semester": null,
+      "university": "Université Claude Bernard Lyon 1",
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "natural language processing"
+      ]
+    },
+    {
+      "name": "Research Methodologies 2",
+      "ects": 3.0,
+      "semester": null,
+      "university": "Université Claude Bernard Lyon 1",
+      "description": null,
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": []
+    },
+    {
+      "name": "Fundamentals of research project design and management within the Horizon Europe framework",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": "In this course, students learn the fundamentals of research project design and management within the Horizon Europe framework. It covers key aspects of proposal writing, project implementation, and funding instruments such as ERC and Marie Curie grants.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": []
+    },
+    {
+      "name": "Human-Centered AI (HumanAI, 3 ECTS, Prof. Andrea Mauri)",
+      "ects": 3.0,
+      "semester": null,
+      "university": null,
+      "description": "In this course, students learn to integrate human perspectives into the design and deployment of AI systems. It covers topics such as human-AI collaboration, explainability, fairness, and crowdsourcing, with a focus on designing and evaluating human-centered intelligent applications.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "artificial intelligence"
+      ]
+    },
+    {
+      "name": "Big Graph Processing Systems (BigGraph, 3 ECTS, Prof. Angela Bonifati)",
+      "ects": 3.0,
+      "semester": null,
+      "university": null,
+      "description": "In this course, students learn advanced techniques for processing and querying large-scale property graphs. It covers graph data models, query languages such as GQL and SPARQL, and systems for scalable graph analytics. Practical sessions involve querying and transforming real-world graph data using open-source databases like Neo4j.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": [
+        "data engineering"
+      ]
+    },
+    {
+      "name": "Master’s Thesis (4th semester, 30 ECTS)",
+      "ects": 30.0,
+      "semester": "4th semester",
+      "university": null,
+      "description": "During the fourth semester, students will put into practice what they have learned during the previous semesters, either in an industrial or a HEI partner. Students are encouraged to devote their master’s thesis to start-up creation. The thesis is evaluated jointly. The thesis work will be considered for submission to scientific conferences.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": []
+    },
+    {
+      "name": "Final event (Summer after the 4th semester)",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": "The closing event of the programme is organised annually by one partner institution. All main partners will participate in the event, associated partners and industrial organisations will be invited to attend. In this event the students will defend their master’s thesis, which will allow all partners to evaluate their skills. The event will also be the ideal place to assess the programme, and to discuss best practices and curriculum evolution. The event will be followed by the graduation ceremony.",
+      "source_url": "https://deai.ulb.be/home/master-programme/course-content/",
+      "topics": []
+    }
+  ],
+  "missing_information": [],
+  "suspected_instructions": []
+}

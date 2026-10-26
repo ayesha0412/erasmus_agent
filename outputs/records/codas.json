@@ -1,0 +1,190 @@
+{
+  "programme_id": "codas",
+  "accepted_degree_fields": [
+    "computer science",
+    "electrical and electronic engineering"
+  ],
+  "degree_rule_quote": "A high‐quality Bachelor’s degree in communications engineering, computer science, electrical engineering (with a major on communications) or software engineering is required.",
+  "degree_rule_vague": true,
+  "english_requirements": [
+    {
+      "test": "IELTS Academic",
+      "min_overall": 6.5
+    },
+    {
+      "test": "TOEFL iBT",
+      "min_overall": 92.0
+    },
+    {
+      "test": "TOEFL iBT",
+      "min_overall": 4.5
+    }
+  ],
+  "other_language_requirements": [],
+  "other_conditions": [
+    "Applicants with a previous Master’s degree of comparable quality and content in the fields of the CoDaS programme or who intend to complete one, or who have a valid study right in this application target will not be accepted to the programme except for special reasons, which the applicant must explain in the application. The Master’s programme should provide genuinely new knowledge and further the career of the applicant."
+  ],
+  "deadlines": [
+    {
+      "label": "Application period starts",
+      "due": "2026-12-01",
+      "quote": "The application period for studies beginning Autumn 2027 will be open from 1 December 2026 to 5 January 2027."
+    },
+    {
+      "label": "Application period ends",
+      "due": "2027-01-05",
+      "quote": "The application period for studies beginning Autumn 2027 will be open from 1 December 2026 to 5 January 2027."
+    },
+    {
+      "label": "Deadline for application documents",
+      "due": "2027-01-12",
+      "quote": "Deadline for application documents to be uploaded to application form (including motivation video, reference letters, and language test results) 12 January 2027 at 15.00 (3 pm, GMT +2)"
+    },
+    {
+      "label": "Recommendation letter submission deadline",
+      "due": "2027-01-12",
+      "quote": "The referee must submit their reference by the document submission deadline 12 January 2027 at 15.00 (3 pm, GMT +2)."
+    },
+    {
+      "label": "Certified educational documents deadline",
+      "due": "2027-08-13",
+      "quote": "The deadline for the officially certified study certificates is 13 August 2027 at 15.00 (GMT +3)."
+    },
+    {
+      "label": "IELTS/TOEFL test results deadline",
+      "due": "2027-01-12",
+      "quote": "The official language test scores must arrive at Aalto University at the latest by 12 January 2027 at 15.00 (3 pm, GMT +2)."
+    },
+    {
+      "label": "Transcript upload deadline",
+      "due": "2027-01-12",
+      "quote": "The documents must be uploaded to the online application form at the latest by 12 January 2027 at 15.00 (3 pm, GMT +2)."
+    },
+    {
+      "label": "Degree certificate upload deadline",
+      "due": "2027-08-13",
+      "quote": "A copy of the degree certificate must be submitted according to the instructions at the latest by 13 August 2027 at 15.00 (3 pm, GMT +3)."
+    },
+    {
+      "label": "Certified educational documents deadline",
+      "due": "2027-08-13",
+      "quote": "After the publication of admission results, the admitted applicants must submit copies of their certified (attested) educational documents at the latest by 13 August 2027 at 15.00 (3 pm, GMT +3)."
+    },
+    {
+      "label": "Certified study certificates deadline",
+      "due": "2027-08-13",
+      "quote": "The deadline for the officially certified study certificates is 13 August 2027 at 15.00 (GMT +3)."
+    }
+  ],
+  "required_documents": [
+    {
+      "doc_type": "degree_certificate",
+      "count": 1
+    },
+    {
+      "doc_type": "transcript",
+      "count": 1
+    },
+    {
+      "doc_type": "passport",
+      "count": 1
+    },
+    {
+      "doc_type": "english_test",
+      "count": 1
+    },
+    {
+      "doc_type": "recommendation_letter",
+      "count": 1
+    },
+    {
+      "doc_type": "other",
+      "count": 1
+    },
+    {
+      "doc_type": "cv",
+      "count": 1
+    },
+    {
+      "doc_type": "motivation_video",
+      "count": 1
+    }
+  ],
+  "courses": [
+    {
+      "name": "Basic studies at Aalto, Técnico Lisboa, TU Braunschweig, or UPC BarcelonaTech",
+      "ects": null,
+      "semester": "First year",
+      "university": null,
+      "description": null,
+      "source_url": "https://www.unite-codas-master.eu/programme.html",
+      "topics": []
+    },
+    {
+      "name": "Communications, Data Science, and Security (Grenoble INP-UGA)",
+      "ects": null,
+      "semester": "Second year",
+      "university": "Grenoble INP-UGA",
+      "description": null,
+      "source_url": "https://www.unite-codas-master.eu/programme.html",
+      "topics": [
+        "communication systems",
+        "data science",
+        "security studies"
+      ]
+    },
+    {
+      "name": "Communications and Data Science (Tecnico Lisboa)",
+      "ects": null,
+      "semester": "Second year",
+      "university": "Técnico Lisboa",
+      "description": null,
+      "source_url": "https://www.unite-codas-master.eu/programme.html",
+      "topics": [
+        "communication systems",
+        "data science"
+      ]
+    },
+    {
+      "name": "Communications, Automation, and Machine Learning (Aalto University)",
+      "ects": null,
+      "semester": "Second year",
+      "university": "Aalto University",
+      "description": null,
+      "source_url": "https://www.unite-codas-master.eu/programme.html",
+      "topics": [
+        "communication systems",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Communications, Machine Learning, Medical Informatics & Biomedicine (TU Braunschweig)",
+      "ects": null,
+      "semester": "Second year",
+      "university": "TU Braunschweig",
+      "description": null,
+      "source_url": "https://www.unite-codas-master.eu/programme.html",
+      "topics": [
+        "communication systems",
+        "machine learning",
+        "biomedical engineering"
+      ]
+    },
+    {
+      "name": "Communications, 5G/6G and Internet of Things, and Data Science (UPC BarcelonaTech)",
+      "ects": null,
+      "semester": "Second year",
+      "university": "UPC BarcelonaTech",
+      "description": null,
+      "source_url": "https://www.unite-codas-master.eu/programme.html",
+      "topics": [
+        "communication systems",
+        "data science"
+      ]
+    }
+  ],
+  "missing_information": [
+    "could not extract page 'admission' part 3 after one retry"
+  ],
+  "suspected_instructions": []
+}

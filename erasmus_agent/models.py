@@ -21,6 +21,8 @@ DocType = Literal[
     "recommendation_letter", "motivation_letter", "motivation_video", "residence_proof", "other",
 ]
 
+CefrLevel = Literal["A1", "A2", "B1", "B2", "C1", "C2"]   # Common European Framework of Reference levels
+
 # Deadlines outside this range are almost certainly extraction mistakes.
 EARLIEST_YEAR, LATEST_YEAR = 2020, 2035
 
@@ -121,6 +123,12 @@ class Preference(Strict):
         return f"{self.kind}:{self.value}"
 
 
+class LanguageSkill(Strict):
+    """A language other than English that the student speaks (English is proven by an english_test document)."""
+    language: str = Field(pattern=r"^[a-z]+$")   # lowercase, e.g. "french"
+    level: CefrLevel
+
+
 class Profile(Strict):
     student_id: str = Field(pattern=r"^stu-[a-z0-9-]+$")
     fictional: bool = False
@@ -129,6 +137,7 @@ class Profile(Strict):
     grades: Grades
     interests_text: str
     interest_topics: list[str] = Field(min_length=1)
+    languages: list[LanguageSkill] = []
     documents: list[Document] = []
     preferences: list[Preference] = []
 
@@ -187,6 +196,14 @@ class EnglishRequirement(Strict):
     min_overall: float = Field(ge=0)
 
 
+class LanguageRequirement(Strict):
+    """A language other than English that applicants must know. Language courses offered are not requirements."""
+    language: str = Field(pattern=r"^[a-z]+$")   # lowercase, e.g. "french"
+    min_level: CefrLevel | None = None           # None = required, but no level stated
+    applies_to: Literal["all", "some_tracks"]    # some_tracks: only for a study track, mobility path or semester
+    quote: str
+
+
 class Deadline(Strict):
     label: str                                 # e.g. "scholarship application"
     due: dt.date | None                        # None = the page says it is not published yet
@@ -211,6 +228,7 @@ class ProgrammeRecord(Strict):
     degree_rule_quote: str | None = None
     degree_rule_vague: bool = False            # e.g. "or equivalent", "related fields"
     english_requirements: list[EnglishRequirement] = []
+    other_language_requirements: list[LanguageRequirement] = []
     other_conditions: list[str] = []           # rules code cannot check, e.g. "top 10% of class"
     deadlines: list[Deadline] = []
     required_documents: list[RequiredDocument] = []

@@ -1,0 +1,866 @@
+{
+  "programme_id": "ifros",
+  "accepted_degree_fields": [],
+  "degree_rule_quote": null,
+  "degree_rule_vague": false,
+  "english_requirements": [],
+  "other_language_requirements": [],
+  "other_conditions": [],
+  "deadlines": [
+    {
+      "label": "Application deadline",
+      "due": null,
+      "quote": "Dates to be announced"
+    },
+    {
+      "label": "Erasmus Mundus scholarship application deadline",
+      "due": "2022-02-14",
+      "quote": "You can submit your application until 14th February, 2022."
+    },
+    {
+      "label": "Self‑funded student application deadline",
+      "due": "2022-05-14",
+      "quote": "You can submit your application until 14th May, 2022."
+    }
+  ],
+  "required_documents": [
+    {
+      "doc_type": "motivation_letter",
+      "count": 1
+    },
+    {
+      "doc_type": "cv",
+      "count": 1
+    },
+    {
+      "doc_type": "degree_certificate",
+      "count": 1
+    },
+    {
+      "doc_type": "english_test",
+      "count": 1
+    },
+    {
+      "doc_type": "passport",
+      "count": 1
+    },
+    {
+      "doc_type": "other",
+      "count": 1
+    },
+    {
+      "doc_type": "recommendation_letter",
+      "count": 2
+    }
+  ],
+  "courses": [
+    {
+      "name": "Robot Manipulation",
+      "ects": 6.0,
+      "semester": null,
+      "university": "Universitat de Girona",
+      "description": "The subject introduces various industrial manipulators, as well as the most common actuators and sensors. Direct, inverse, and differential kinematics will be addressed for the most common industrial manipulators, as well as dynamics, trajectory planning, and tracking. The subject not only delves into theory but also covers the programming of these manipulators for industrial tasks.",
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Probabilistic Robotics",
+      "ects": 6.0,
+      "semester": null,
+      "university": "Universitat de Girona",
+      "description": "Probabilistic techniques for robot localization and the construction of maps of its environment. Bayesian estimation.",
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Autonomous Systems",
+      "ects": 6.0,
+      "semester": null,
+      "university": "Universitat de Girona",
+      "description": "Algorithms to enable a robot to act autonomously: control architectures, behavior-based robotics, motion planning, robotics learning, and robotic exploration.",
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Multiple View Geometry",
+      "ects": 6.0,
+      "semester": null,
+      "university": "Universitat de Girona",
+      "description": "Basic concepts of computer vision. Image formation and camera modeling. Camera calibration. Feature detectors and descriptors. Robust estimation in computer vision. Multi-view geometry. Structure from motion and optimization systems. Real-time computer vision and vision applied to robotic systems. Unconventional optical imaging systems.",
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "computer vision"
+      ]
+    },
+    {
+      "name": "Structure-from-Motion",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "computer vision"
+      ]
+    },
+    {
+      "name": "Real-time Computer Vision and Vision applied to Robotic systems",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "computer vision",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Non-conventional optical imaging systems",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "computer vision"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "ects": 6.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Land and Marine Robots",
+      "ects": 6.0,
+      "semester": null,
+      "university": "Universitat de Girona",
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Hands-on Localization",
+      "ects": 6.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Hands-on Perception",
+      "ects": 6.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "computer vision"
+      ]
+    },
+    {
+      "name": "Multi Camera Calibration and metrology",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "computer vision"
+      ]
+    },
+    {
+      "name": "Map based Pose Estimation",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "2D optical mapping",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "computer vision"
+      ]
+    },
+    {
+      "name": "Hands-on project",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Common extensions for motion planning algorithms",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Motion planning with differential constraints",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "View planning, inspection, and automatic exploration",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Formal and Automatic task planning methods",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Management, communication & leadership",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "management"
+      ]
+    },
+    {
+      "name": "From the idea to the market",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "management"
+      ]
+    },
+    {
+      "name": "Business plan",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "management"
+      ]
+    },
+    {
+      "name": "Case studies",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Teamwork project",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Introduction to Scientific Writing and Resaerch Best Practices",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Principles of effective writing",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Peer reviewing and science dissemination",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Issues in scientific writing",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Principles of Research Ethics",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "ethics"
+      ]
+    },
+    {
+      "name": "Organization and formatting",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "The Publication process",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Deep Learning 1",
+      "ects": 5.0,
+      "semester": "3rd SEMESTER",
+      "university": "University of Zagreb",
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "deep learning"
+      ]
+    },
+    {
+      "name": "Deep learning",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "deep learning"
+      ]
+    },
+    {
+      "name": "Seminar 1",
+      "ects": 3.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Aerial Robotics",
+      "ects": 5.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Multi-robot Systems",
+      "ects": 5.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Human-robot interaction",
+      "ects": 5.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Ethics and New Technologies",
+      "ects": 2.0,
+      "semester": null,
+      "university": null,
+      "description": "Learning aim: The student will have a basic understanding of the ethical issues related to the development of new technologies such as robotics, artificial intelligence, and autonomous systems, as well as their social and legal consequences.",
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "ethics"
+      ]
+    },
+    {
+      "name": "Robot Sensing, Perception and Actuation",
+      "ects": 5.0,
+      "semester": null,
+      "university": "Eötvös Loránd University",
+      "description": "Learning aim: Types and characteristics of sensors and actuators in robotics. Proprioceptive sensors (GPS, AHRS / IMU, DVL, force and torque, encoders). Perceptual sensors (cameras and somatosensory systems, lasers, sonars). Sensor fusion. Centralized and decentralized fusion mode. Smart environments and robot integration into smart environments. Visual feedback. Ways to control robotic actuators based on visual feedback",
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Autonomous systems & self-driving land vehicles",
+      "ects": 6.0,
+      "semester": null,
+      "university": "Eötvös Loránd University",
+      "description": "Learning aim: In this course practical problems are addressed with deep learning techniques. Architectures: auto-encoders, convolutional neural networks, recurrent neural networks, long short-term memory, residual networks, and highway networks. Image processing: image restoration and super-resolution, bounding boxes, objects, face, hand, body recognition. Speech processing: speaker identification, speaker de-identification, speech recognition and speech production. Motion and control: deep learning for motion via imitation, dynamic movement primitives. Deep methods for anomaly detection, optical flow, tracking, multi-modal tracking, information fusion and pattern completion.",
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Introduction to Vehicles and Sensors",
+      "ects": 4.0,
+      "semester": null,
+      "university": "Eötvös Loránd University",
+      "description": "Learning aim",
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Principles of autonomous vehicles, and self-driving cars",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Hardware and software architectures",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Sensors, interconnect networks, actuators, processing elements",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Radars, LIDAR’s, cameras, ultrasonic, GPS, and other sensors",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "CAN, LIN, MOST, FlexRay vehicle interconnect networks and architectures",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Intelligent transportation systems",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "3D Sensing and Sensor Fusion",
+      "ects": 6.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "computer vision"
+      ]
+    },
+    {
+      "name": "Intelligent Field Robots Lab",
+      "ects": 6.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Methods and tools for AI Applications",
+      "ects": 6.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Preparation course for master studies and developing learning skills",
+      "ects": 2.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Mathematical data models in artificial intelligence",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "mathematics and statistics"
+      ]
+    },
+    {
+      "name": "Linear algebra, generalized linear models, mathematical representations; elements of probability theory, the normal distribution and the Mahalanobis distance",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "mathematics and statistics"
+      ]
+    },
+    {
+      "name": "Likelihood estimations: from the maximum likelihood to MAP to Bayesian estimations. Their use in model optimization.",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "mathematics and statistics"
+      ]
+    },
+    {
+      "name": "Likelihood approximations: from gradient to conjugate models",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "mathematics and statistics"
+      ]
+    },
+    {
+      "name": "Unsupervised methods, the expectation maximization and clustering",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Ensemble methods",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Autoencoder models",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": [
+        "deep learning"
+      ]
+    },
+    {
+      "name": "Preparation course for master studies and developing learning skills - ECTS 2",
+      "ects": 2.0,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Time management",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Stress management",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Capatity Building",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Soft and entrepreneurial skills",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Learning methodology",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Proactive Mindset",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Master Thesis Project",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Analysis and case studies",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Thesis writing",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Bibliography study and reading",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Seminars",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Master thesis regulation",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "An Erasmus Mundus Joint Master Degree (EMJMD) is a prestigious, integrated, international study programme, jointly delivered by an international consortium of higher education institutions (HEIs) and, where relevant, other partners with specific expertise and interest in the study programme.",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Validated under the European Approach",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Follow Our Social Networks",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Facebook",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Linkedin",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Youtube",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "Instagram",
+      "ects": null,
+      "semester": null,
+      "university": null,
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    },
+    {
+      "name": "4th SEMESTER",
+      "ects": 30.0,
+      "semester": "4th",
+      "university": "University of Girona / University of Zagreb / Eötvös Loránd University",
+      "description": null,
+      "source_url": "https://ifrosmaster.org/program",
+      "topics": []
+    }
+  ],
+  "missing_information": [],
+  "suspected_instructions": []
+}

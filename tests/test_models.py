@@ -84,6 +84,18 @@ def test_deadline_must_be_plausible_or_explicitly_unknown():
         Deadline(label="application", due="1999-01-11", quote="January 11th, 1999")
 
 
+def test_language_requirement_needs_a_valid_cefr_level_and_scope():
+    record = ProgrammeRecord(programme_id="ilspsd", other_language_requirements=[
+        {"language": "french", "min_level": "B2", "applies_to": "some_tracks", "quote": "French ... level B2"}])
+    assert record.other_language_requirements[0].min_level == "B2"
+    with pytest.raises(ValidationError):
+        ProgrammeRecord(programme_id="x", other_language_requirements=[
+            {"language": "french", "min_level": "B3", "applies_to": "all", "quote": "q"}])
+    with pytest.raises(ValidationError):
+        ProgrammeRecord(programme_id="x", other_language_requirements=[
+            {"language": "French", "min_level": "B2", "applies_to": "everyone", "quote": "q"}])
+
+
 def test_programme_record_rejects_unknown_degree_field():
     with pytest.raises(ValidationError, match="degree-field vocabulary"):
         ProgrammeRecord(programme_id="deai", accepted_degree_fields=["data wizardry"])
