@@ -15,6 +15,6 @@
     }
   ],
   "new_preferences": [
-    {"kind": "exclude_field", "value": "law", "added_on": "2026-12-15", "reason": "Not interested in law programmes."}
+    {"kind": "exclude_topic", "value": "law", "added_on": "2026-12-15", "reason": "Not interested in law programmes."}
   ]
 }
