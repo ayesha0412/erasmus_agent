@@ -1,0 +1,12 @@
+{
+  "target": "programme",
+  "programme_id": "deai",
+  "field": "required_documents",
+  "value": [
+    {
+      "doc_type": "recommendation_letter",
+      "count": 2
+    }
+  ],
+  "reason": "Extraction error: the saved DEAI pages list no document set; they only ask for reference letters from referees (plural). The CV, passport, transcript and motivation letter entries were invented by the extractor."
+}

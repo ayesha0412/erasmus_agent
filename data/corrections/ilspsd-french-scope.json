@@ -1,0 +1,14 @@
+{
+  "target": "programme",
+  "programme_id": "ilspsd",
+  "field": "other_language_requirements",
+  "value": [
+    {
+      "language": "french",
+      "min_level": "B2",
+      "applies_to": "some_tracks",
+      "quote": "students applying to the Université libre de Bruxelles for their second year of study, they are required to submit a certificate proving a passive level of French: a degree awarded by a higher education institution located in a French-speaking community, or proof of French language skills at level B2 according to the Council of Europe’s Common European Framework of Reference for Languages (CEFR)."
+    }
+  ],
+  "reason": "Extraction error: the page requires French B2 only for students who choose the Université libre de Bruxelles track in year 2, not for all students."
+}
