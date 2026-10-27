@@ -8,10 +8,12 @@ here, so a confused or manipulated model cannot skip an approval or invent an ac
 import json
 import sqlite3
 from dataclasses import dataclass, field
+from pathlib import Path
 
 from . import db
 from .config import DEFAULT_MODEL, EXTRACT_MODEL
 from .extract import extract_programme as run_extraction
+from .exports import export_plan, facts_summary
 from .extract import save_programme_record
 from .llm import chat_json
 from .memory import get_programme, lookup_profile, record_condition_answer
@@ -24,6 +26,10 @@ class ToolRefused(Exception):
     """A tool call broke a rule (e.g. writing a plan before approval). The agent is told why and continues."""
 
 
+class ToolFailed(Exception):
+    """A tool crashed while working (e.g. a simulated failure). Its writes are idempotent, so a retry is safe."""
+
+
 @dataclass
 class Context:
     """Everything a tool may use during one cycle. `state` is the cycle's working memory (checkpointed)."""
@@ -33,6 +39,8 @@ class Context:
     state: dict = field(default_factory=dict)
     model: str = DEFAULT_MODEL           # the model that makes decisions (also settles conditions)
     extract_model: str = EXTRACT_MODEL
+    plans_dir: Path | None = None        # where Excel and .ics go (None = outputs/plans)
+    fail_once: set = field(default_factory=set)   # tools that crash once part-way (failure simulation, M12)
 
     @property
     def student_id(self) -> str:
@@ -122,7 +130,7 @@ def settle_conditions_from_profile(ctx: Context, programme_id: str, conditions: 
     facts = profile_facts(student, ctx)
     message = json.dumps({"facts": facts, "conditions": conditions}, ensure_ascii=False)
     reply, tokens = chat_json([{"role": "system", "content": SETTLE_PROMPT}, {"role": "user", "content": message}],
-                              "condition_verdicts", SETTLE_SCHEMA, model=ctx.model)
+                              "condition_verdicts", SETTLE_SCHEMA, model=ctx.model, purpose="settle_conditions")
     ctx.state["llm_tokens_decisions"] = ctx.state.get("llm_tokens_decisions", 0) + tokens
     try:
         verdicts = json.loads(reply)["verdicts"]
@@ -306,36 +314,80 @@ def approve_shortlist(ctx: Context, programme_ids: list[str], reason: str) -> di
     return {"approved": approved, "programme_ids": programme_ids}
 
 
+def plan_items(ctx: Context, pid: str) -> tuple[list[str], str | None]:
+    """What should be on the checklist for one programme now: missing documents plus the application."""
+    student = lookup_profile(ctx.conn, ctx.student_id)
+    programme = get_programme(ctx.conn, pid)
+    deadline = check_eligibility(student, programme, ctx.cycle.date)["next_deadline"]
+    items = [f"obtain {m['missing']} more {m['doc_type']}" for m in find_missing_documents(student, programme["record"])["missing"]]
+    return items + ["submit the application"], deadline
+
+
 def write_plan(ctx: Context, programme_ids: list[str]) -> dict:
-    """Persistent write: one checklist item per missing document plus the application itself. Idempotent."""
+    """Persistent write, after the student approves the exact changes: checklist rows, then Excel and .ics.
+
+    Items still needed are carried forward (never duplicated), items no longer needed are marked done,
+    due dates follow the current approved deadline. Running it again changes nothing.
+    """
     shortlist = ctx.state.get("approved_shortlist")
     if not shortlist:
         raise ToolRefused("the student has not approved a shortlist in this cycle; call request_approval first")
     if not set(programme_ids) <= set(shortlist):
         raise ToolRefused(f"only approved programmes can be planned: {shortlist}")
-    written = existing = 0
     for pid in programme_ids:
-        programme = get_programme(ctx.conn, pid)
-        if programme["pending_version_id"] is not None:
+        if get_programme(ctx.conn, pid)["pending_version_id"] is not None:
             raise ToolRefused(f"{pid} has a changed version waiting for approval; approve or reject it first")
-        student = lookup_profile(ctx.conn, ctx.student_id)
-        deadline = check_eligibility(student, programme, ctx.cycle.date)["next_deadline"]
-        items = [f"obtain {m['missing']} more {m['doc_type']}" for m in find_missing_documents(student, programme["record"])["missing"]]
-        items.append("submit the application")
-        for item in items:
-            row = {"student_id": ctx.student_id, "programme_id": pid, "item": item, "cycle": ctx.cycle.cycle,
-                   "due_date": deadline, "idempotency_key": db.idempotency_key(ctx.student_id, pid, item, ctx.cycle.cycle)}
-            if db.insert_once(ctx.conn, "checklist_items", row):
-                written += 1
-            else:
-                existing += 1
+
+    # 1. Work out the changes without writing anything.
+    to_add, to_close, to_reschedule = [], [], []
+    for pid in programme_ids:
+        items, deadline = plan_items(ctx, pid)
+        open_rows = ctx.conn.execute("SELECT id, item, due_date FROM checklist_items WHERE student_id = ? "
+                                     "AND programme_id = ? AND status = 'open'", [ctx.student_id, pid]).fetchall()
+        open_items = {row["item"]: row for row in open_rows}
+        to_add += [(pid, item, deadline) for item in items if item not in open_items]
+        to_close += [(pid, row["id"], row["item"]) for row in open_rows if row["item"] not in items]
+        to_reschedule += [(pid, row["id"], row["item"], row["due_date"], deadline)
+                          for row in open_rows if row["item"] in items and row["due_date"] != deadline]
+    if not (to_add or to_close or to_reschedule):
+        files = export_plan(ctx.conn, ctx.student_id, ctx.plans_dir)
+        ctx.state["plan_written"] = programme_ids
+        return {"changes": "none, the checklist is already up to date", "files": files}
+
+    # 2. Show the exact changes and write only if the student approves.
+    lines = ([f"  + {pid}: {item} (due {due})" for pid, item, due in to_add]
+             + [f"  done {pid}: {item}" for pid, _, item in to_close]
+             + [f"  moved {pid}: {item} {old} -> {new}" for pid, _, item, old, new in to_reschedule])
+    if not ctx.interact.approve("Checklist and calendar changes:\n" + "\n".join(lines) + "\n  Write them?"):
+        return {"approved": False, "written": 0}
+
+    with ctx.conn:
+        for pid, row_id, _ in to_close:
+            ctx.conn.execute("UPDATE checklist_items SET status = 'done' WHERE id = ?", [row_id])
+        for pid, row_id, _, _, new_due in to_reschedule:
+            ctx.conn.execute("UPDATE checklist_items SET due_date = ? WHERE id = ?", [new_due, row_id])
+    written = 0
+    for pid, item, due in to_add:
+        written += db.insert_once(ctx.conn, "checklist_items", {
+            "student_id": ctx.student_id, "programme_id": pid, "item": item, "cycle": ctx.cycle.cycle, "due_date": due,
+            "idempotency_key": db.idempotency_key(ctx.student_id, pid, item, ctx.cycle.cycle)})
+        if "write_plan" in ctx.fail_once:          # failure simulation: crash after the first row is saved
+            ctx.fail_once.discard("write_plan")
+            raise ToolFailed(f"simulated crash after saving {written} of {len(to_add)} checklist items; "
+                             "every write has an idempotency key, so retrying write_plan is safe")
+    db.insert_once(ctx.conn, "decisions", {
+        "student_id": ctx.student_id, "cycle": ctx.cycle.cycle, "kind": "plan_approved", "decided_by": "student",
+        "data": json.dumps({"added": len(to_add), "closed": len(to_close), "rescheduled": len(to_reschedule)}),
+        "idempotency_key": db.idempotency_key(ctx.student_id, "plan", ctx.cycle.cycle, ",".join(sorted(programme_ids)))})
+    files = export_plan(ctx.conn, ctx.student_id, ctx.plans_dir)
     ctx.state["plan_written"] = programme_ids
-    return {"items_written": written, "items_already_there": existing}
+    return {"approved": True, "added": written, "closed": len(to_close), "rescheduled": len(to_reschedule), "files": files}
 
 
 def finish(ctx: Context, summary: str) -> dict:
-    """End the cycle with a short summary for the student."""
+    """End the cycle. The facts shown to the student come from the database; the model's text is only a note."""
     ctx.state["finished"] = summary
+    ctx.state["facts"] = facts_summary(ctx.conn, ctx.student_id)
     return {"finished": True}
 
 
@@ -372,6 +424,7 @@ TOOL_SCHEMAS = [
     _schema("request_approval", "Ask the student to approve either a programme_change or a shortlist.",
             {"kind": {"type": "string", "enum": ["programme_change", "shortlist"]}, "programme_ids": IDS,
              "reason": {"type": "string"}}),
-    _schema("write_plan", "Write the checklist for approved shortlisted programmes.", {"programme_ids": IDS}),
+    _schema("write_plan", "Write or update the checklist, Excel file and calendar for approved shortlisted programmes "
+            "(the student approves the exact changes).", {"programme_ids": IDS}),
     _schema("finish", "End this cycle with a short summary for the student.", {"summary": {"type": "string"}}),
 ]

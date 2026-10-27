@@ -193,7 +193,7 @@ class Course(Strict):
 
 class EnglishRequirement(Strict):
     test: str                                  # e.g. "IELTS Academic"
-    min_overall: float = Field(ge=0)
+    min_overall: float | None = Field(default=None, ge=0)   # None: accepted test without a numeric minimum
 
 
 class LanguageRequirement(Strict):

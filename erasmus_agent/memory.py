@@ -8,6 +8,7 @@ import json
 import sqlite3
 
 from . import db
+from .logbook import log_event
 from .models import Course, Document, Preference, Profile, ProgrammeRecord
 
 
@@ -58,6 +59,7 @@ def lookup_profile(conn: sqlite3.Connection, student_id: str) -> dict:
     """Everything the agent may know about ONE student: current profile, documents, preferences,
     past decisions, answered conditions and open checklist items."""
     profile = db.get_current(conn, "profile_versions", {"student_id": student_id})
+    log_event("memory_read", what="lookup_profile", target=student_id, found=profile is not None)
     if profile is None:
         raise ValueError(f"unknown student '{student_id}'")
     documents = [{"doc_id": r["doc_id"], "doc_type": r["doc_type"], "version": r["version"], **r["data"]}
@@ -99,6 +101,7 @@ def profile_view(profile: Profile) -> dict:
 def get_programme(conn: sqlite3.Connection, programme_id: str) -> dict | None:
     """The current APPROVED version of a programme, with its courses, plus any version waiting for approval."""
     row = db.get_current(conn, "programme_versions", {"programme_id": programme_id})
+    log_event("memory_read", what="get_programme", target=programme_id, version=row["version"] if row else None)
     if row is None:
         return None
     courses = [Course(name=c["name"], ects=c["ects"], semester=c["semester"], university=c["university"],
@@ -117,3 +120,73 @@ def get_programme(conn: sqlite3.Connection, programme_id: str) -> dict | None:
         "record": record,
         "pending_version_id": pending["id"] if pending else None,
     }
+
+
+# ---------- Corrections (history kept, never overwritten) ----------
+
+CORRECTABLE_PROGRAMME_FIELDS = set(ProgrammeRecord.model_fields) - {"programme_id", "courses"}
+
+
+def programme_corrections(conn: sqlite3.Connection, programme_id: str) -> dict:
+    """The latest correction for each field of a programme, as {field: value}."""
+    rows = conn.execute("SELECT field, value FROM corrections WHERE target = 'programme' AND target_id = ? ORDER BY id",
+                        [programme_id])
+    return {row["field"]: json.loads(row["value"]) for row in rows}
+
+
+def apply_corrections(conn: sqlite3.Connection, record: ProgrammeRecord) -> ProgrammeRecord:
+    """Return the record with every stored human correction applied (validated again)."""
+    fixes = programme_corrections(conn, record.programme_id)
+    if not fixes:
+        return record
+    return ProgrammeRecord.model_validate({**record.model_dump(mode="json"), **fixes})
+
+
+def correct_programme(conn: sqlite3.Connection, programme_id: str, field: str, value, reason: str) -> int:
+    """Correct one field of a programme: store the correction, then save a new approved version with it.
+
+    The old version is kept (superseded); later extractions re-apply the correction automatically.
+    """
+    if field not in CORRECTABLE_PROGRAMME_FIELDS:
+        raise ValueError(f"'{field}' cannot be corrected; choose one of {sorted(CORRECTABLE_PROGRAMME_FIELDS)}")
+    current = get_programme(conn, programme_id)
+    if current is None:
+        raise ValueError(f"programme '{programme_id}' has no saved record")
+    corrected = ProgrammeRecord.model_validate({**current["record"].model_dump(mode="json"), field: value})  # validate first
+    db.insert_once(conn, "corrections", {
+        "target": "programme", "target_id": programme_id, "field": field,
+        "value": json.dumps(value, ensure_ascii=False), "reason": reason,
+        "idempotency_key": db.idempotency_key("programme", programme_id, field, json.dumps(value, sort_keys=True))})
+    row = conn.execute("SELECT page_fingerprint, fetched_at FROM programme_versions WHERE id = ?",
+                       [current["version_id"]]).fetchone()
+    version_id = db.add_version(conn, "programme_versions", {"programme_id": programme_id},
+                                corrected.model_dump(mode="json", exclude={"courses"}), f"correction: {reason}",
+                                extra={"page_fingerprint": row["page_fingerprint"], "fetched_at": row["fetched_at"]})
+    with conn:   # the courses did not change: copy them to the new version (once)
+        if not conn.execute("SELECT COUNT(*) FROM courses WHERE programme_version_id = ?", [version_id]).fetchone()[0]:
+            conn.execute("INSERT INTO courses (programme_version_id, name, ects, semester, university, description, "
+                         "source_url, topics) SELECT ?, name, ects, semester, university, description, source_url, topics "
+                         "FROM courses WHERE programme_version_id = ?", [version_id, current["version_id"]])
+    return version_id
+
+
+def correct_student(conn: sqlite3.Connection, student_id: str, field: str, value, reason: str) -> int:
+    """Correct one profile fact, e.g. field 'grades.cgpa'. A new profile version is saved; the old one is kept."""
+    current = db.get_current(conn, "profile_versions", {"student_id": student_id})
+    if current is None:
+        raise ValueError(f"unknown student '{student_id}'")
+    data = json.loads(json.dumps(current["data"]))
+    *path, last = field.split(".")
+    target = data
+    for part in path:
+        if part not in target:
+            raise ValueError(f"unknown profile field '{field}'")
+        target = target[part]
+    if last not in target:
+        raise ValueError(f"unknown profile field '{field}'")
+    target[last] = value
+    Profile.model_validate({**data, "documents": [], "preferences": []})     # the corrected profile must still be valid
+    db.insert_once(conn, "corrections", {
+        "target": "student", "target_id": student_id, "field": field, "value": json.dumps(value), "reason": reason,
+        "idempotency_key": db.idempotency_key("student", student_id, field, json.dumps(value))})
+    return db.add_version(conn, "profile_versions", {"student_id": student_id}, data, f"correction: {reason}")

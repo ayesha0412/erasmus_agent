@@ -18,7 +18,7 @@ def sara() -> dict:
 
 def test_all_sample_profiles_and_cycles_are_valid():
     profiles = [load_profile(p) for p in sorted((DATA / "profiles").glob("*.json"))]
-    cycles = [load_cycle(c) for c in sorted((DATA / "cycles").glob("*.json"))]
+    cycles = [load_cycle(c) for c in sorted((DATA / "cycles").glob("cycle*.json"))]
     assert {p.student_id for p in profiles} == {"stu-sara", "stu-omar"}
     assert [c.cycle for c in cycles] == [1, 2, 3]
 

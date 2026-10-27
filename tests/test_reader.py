@@ -43,7 +43,7 @@ def test_changed_copy_is_detected(conn):
     reading = read_programme(conn, "deai", CHANGED_COPY)
     admission = next(p for p in reading["pages"] if p["page"] == "admission")
     assert reading["changed"] is True
-    assert admission["test_copy"] is True and "January 25th, 2027" in admission["text"]
+    assert admission["test_copy"] is True and "December 18th, 2026" in admission["text"]
 
 
 def test_fingerprint_ignores_whitespace_only_differences():

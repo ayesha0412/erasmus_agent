@@ -19,6 +19,7 @@ from pydantic import ValidationError
 from . import db
 from .config import DEFAULT_MODEL
 from .llm import chat_json
+from .memory import apply_corrections
 from .models import DocType, ProgrammeRecord, vocabulary
 from .reader import read_programme
 from .text import split_into_chunks
@@ -114,7 +115,7 @@ def tag_courses(record: ProgrammeRecord, model: str) -> tuple[int, int]:
     ]
     calls = tokens = 0
     for attempt in (1, 2):
-        reply, used = chat_json(messages, "course_topics", TAGGING_SCHEMA, model=model)
+        reply, used = chat_json(messages, "course_topics", TAGGING_SCHEMA, model=model, purpose="tag_courses")
         calls, tokens = calls + 1, tokens + used
         try:
             tagged = {item["name"]: item["topics"] for item in json.loads(reply)["courses"]}
@@ -134,6 +135,32 @@ def tag_courses(record: ProgrammeRecord, model: str) -> tuple[int, int]:
     return calls, tokens
 
 
+def salvage(data: dict, error: ValidationError) -> tuple[ProgrammeRecord | None, list[str]]:
+    """Keep what is valid: drop only the list items (or fields) the validator rejected, then validate again."""
+    dropped = []
+    for _ in range(10):                                   # each round removes the items named in the errors
+        bad_items, bad_fields = set(), set()
+        for problem in error.errors():
+            location = problem["loc"]
+            if len(location) >= 2 and isinstance(location[1], int) and isinstance(data.get(location[0]), list):
+                bad_items.add((location[0], location[1]))
+            elif location and location[0] in data and location[0] != "programme_id":
+                bad_fields.add(location[0])
+        if not bad_items and not bad_fields:
+            return None, dropped
+        for field, index in sorted(bad_items, reverse=True):          # highest index first, so others keep their place
+            dropped.append(f"{field}: {json.dumps(data[field][index], ensure_ascii=False)[:120]}")
+            del data[field][index]
+        for field in bad_fields:
+            dropped.append(f"{field}: {json.dumps(data[field], ensure_ascii=False)[:120]}")
+            del data[field]
+        try:
+            return ProgrammeRecord.model_validate(data), dropped
+        except ValidationError as again:
+            error = again
+    return None, dropped
+
+
 def extract_chunk(programme_id: str, page: dict, chunk: str, model: str) -> tuple[ProgrammeRecord | None, int, int]:
     """Extract one chunk. Returns (record or None, LLM calls made, tokens used)."""
     schema = ProgrammeRecord.model_json_schema()
@@ -144,7 +171,7 @@ def extract_chunk(programme_id: str, page: dict, chunk: str, model: str) -> tupl
     ]
     calls = tokens = 0
     for attempt in (1, 2):
-        reply, used = chat_json(messages, "programme_record", schema, model=model)
+        reply, used = chat_json(messages, "programme_record", schema, model=model, purpose="extract")
         calls, tokens = calls + 1, tokens + used
         try:
             data = json.loads(reply)
@@ -154,7 +181,12 @@ def extract_chunk(programme_id: str, page: dict, chunk: str, model: str) -> tupl
             return ProgrammeRecord.model_validate(data), calls, tokens
         except (json.JSONDecodeError, ValidationError, TypeError, AttributeError) as error:
             if attempt == 2:
-                return None, calls, tokens
+                if not isinstance(error, ValidationError):
+                    return None, calls, tokens
+                record, dropped = salvage(data, error)    # keep the valid parts, e.g. the deadlines
+                if record is not None:
+                    record.missing_information += [f"dropped invalid item from page '{page['page']}': {d}" for d in dropped]
+                return record, calls, tokens
             # One retry, showing the model exactly what was wrong.
             messages += [
                 {"role": "assistant", "content": reply},
@@ -210,7 +242,11 @@ def extract_programme(reading: dict, model: str = DEFAULT_MODEL) -> tuple[Progra
 
 
 def save_programme_record(conn: sqlite3.Connection, reading: dict, record: ProgrammeRecord, source: str) -> tuple[int, str]:
-    """Save the record as a programme version, with its courses. A changed page waits for approval."""
+    """Save the record as a programme version, with its courses. A changed page waits for approval.
+
+    Stored human corrections are applied first, so a re-extraction never undoes them.
+    """
+    record = apply_corrections(conn, record)
     status = "pending" if reading["changed"] else "approved"
     data = record.model_dump(mode="json", exclude={"courses"})
     version_id = db.add_version(

@@ -64,7 +64,7 @@ def check_eligibility(student: dict, programme: dict, today: dt.date) -> dict:
 
     # 2. English
     tests = [d for d in student["documents"] if d["doc_type"] == "english_test"]
-    required = [r for r in record.english_requirements if r.min_overall > 0]
+    required = [r for r in record.english_requirements if r.min_overall]   # skip tests with no numeric minimum
     if not required:
         unknowns.append("no minimum English score is stated")
     elif not tests:

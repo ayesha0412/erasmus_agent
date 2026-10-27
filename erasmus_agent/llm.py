@@ -6,6 +6,7 @@ import time
 from openai import OpenAI, RateLimitError
 
 from .config import DEFAULT_MODEL, GROQ_BASE_URL, LOCAL_BASE_URL, LOCAL_MODELS, MODELS
+from .logbook import log_event
 
 RATE_LIMIT_ATTEMPTS = 5   # tries when Groq answers "too many requests"
 RATE_LIMIT_WAIT = 30      # seconds to wait between those tries
@@ -42,43 +43,58 @@ def is_daily_limit(error: RateLimitError) -> bool:
     return "per day" in str(error)
 
 
-def chat_with_retry(messages: list[dict], model: str, **kwargs):
+def chat_with_retry(messages: list[dict], model: str, purpose: str = "chat", **kwargs):
     """chat(), but safe against rate limits. Returns (response, model actually used).
 
     Per-minute limit: wait and retry. Daily limit: switch to the fallback model at once.
+    Every call and every limit event is written to the run log.
     """
+    requested = model
     for attempt in range(1, RATE_LIMIT_ATTEMPTS + 1):
+        started = time.perf_counter()
         try:
-            return chat(messages, model=model, **kwargs), model
+            response = chat(messages, model=model, **kwargs)
         except RateLimitError as error:
-            if is_daily_limit(error) and model in FALLBACK:
+            daily = is_daily_limit(error)
+            switch = daily and model in FALLBACK
+            action = f"switch to {FALLBACK[model]}" if switch else ("give up" if daily else "wait")
+            log_event("rate_limit", purpose=purpose, model=MODELS[model], limit="daily" if daily else "per_minute",
+                      action=action)
+            if switch:
                 print(f"    daily token limit reached for '{model}', switching to '{FALLBACK[model]}'")
                 model = FALLBACK[model]
                 continue
-            if attempt == RATE_LIMIT_ATTEMPTS or is_daily_limit(error):
+            if attempt == RATE_LIMIT_ATTEMPTS or daily:
                 raise
             print(f"    rate limit reached, waiting {RATE_LIMIT_WAIT}s (attempt {attempt}/{RATE_LIMIT_ATTEMPTS})")
             time.sleep(RATE_LIMIT_WAIT)
+            continue
+        usage = response.usage
+        log_event("llm_call", purpose=purpose, model=MODELS[model], fallback=model != requested,
+                  prompt_tokens=getattr(usage, "prompt_tokens", 0), completion_tokens=getattr(usage, "completion_tokens", 0),
+                  tokens=getattr(usage, "total_tokens", 0), latency_ms=int((time.perf_counter() - started) * 1000))
+        return response, model
     raise RuntimeError("no model available")
 
 
 def chat_json(messages: list[dict], schema_name: str, schema: dict, model: str = DEFAULT_MODEL,
-              reasoning_effort: str = "low") -> tuple[str, int]:
+              reasoning_effort: str = "low", purpose: str = "json") -> tuple[str, int]:
     """Ask for a reply shaped by a JSON schema. Returns (reply text, tokens used).
 
     The reply is returned as text, not parsed: the caller validates it and decides what
     to do if it is wrong.
     """
     response_format = {"type": "json_schema", "json_schema": {"name": schema_name, "schema": schema}}
-    response, _ = chat_with_retry(messages, model, response_format=response_format, reasoning_effort=reasoning_effort)
+    response, _ = chat_with_retry(messages, model, purpose=purpose, response_format=response_format,
+                                  reasoning_effort=reasoning_effort)
     tokens = response.usage.total_tokens if response.usage else 0
     return response.choices[0].message.content or "", tokens
 
 
 def chat_tools(messages: list[dict], tools: list[dict], model: str = DEFAULT_MODEL,
-               reasoning_effort: str = "medium") -> tuple[str | None, str, int, str]:
+               reasoning_effort: str = "medium", purpose: str = "decide") -> tuple[str | None, str, int, str]:
     """Ask the model to choose ONE tool. Returns (tool name or None, arguments as JSON text, tokens, model used)."""
-    response, used = chat_with_retry(messages, model, tools=tools, tool_choice="required",
+    response, used = chat_with_retry(messages, model, purpose=purpose, tools=tools, tool_choice="required",
                                      reasoning_effort=reasoning_effort)
     tokens = response.usage.total_tokens if response.usage else 0
     message = response.choices[0].message

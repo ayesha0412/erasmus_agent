@@ -14,7 +14,7 @@ def fake_llm(replies):
     """Return a stand-in for chat_json that gives these replies in order and records the messages."""
     seen = []
 
-    def chat_json(messages, schema_name, schema, model="main", reasoning_effort="low"):
+    def chat_json(messages, schema_name, schema, model="main", reasoning_effort="low", **kwargs):
         seen.append(messages)
         return json.dumps(replies[len(seen) - 1]), 100
     return chat_json, seen
@@ -41,14 +41,26 @@ def test_invalid_reply_gets_one_retry_with_the_error(monkeypatch):
     assert "topic vocabulary" in seen[1][-1]["content"]             # the retry quoted the error
 
 
-def test_two_invalid_replies_become_missing_information(monkeypatch):
-    bad = {"deadlines": [{"label": "application", "due": "1999-01-01", "quote": "x"}]}
-    fake, _ = fake_llm([bad, bad])
-    monkeypatch.setattr(extract, "chat_json", fake)
+def test_unreadable_replies_become_missing_information(monkeypatch):
+    def not_json(messages, schema_name, schema, model="main", reasoning_effort="low", **kwargs):
+        return "this is not JSON", 100
+    monkeypatch.setattr(extract, "chat_json", not_json)
     reading = {"programme_id": "deai", "pages": [{**PAGE, "text": "short page"}]}
     record, stats = extract.extract_programme(reading)
     assert stats["failed_chunks"] == 1
     assert any("could not extract" in note for note in record.missing_information)
+
+
+def test_second_invalid_reply_keeps_the_valid_parts(monkeypatch):
+    bad = {"deadlines": [{"label": "application", "due": "1999-01-01", "quote": "x"},          # invalid year
+                         {"label": "Scholarship application deadline", "due": "2026-12-18", "quote": "18 Dec"}],
+           "english_requirements": [{"test": "IELTS", "min_overall": "high"}]}                   # invalid number
+    fake, _ = fake_llm([bad, bad])
+    monkeypatch.setattr(extract, "chat_json", fake)
+    record, calls, _ = extract.extract_chunk("deai", PAGE, "text", "main")
+    assert calls == 2 and [str(d.due) for d in record.deadlines] == ["2026-12-18"]
+    assert record.english_requirements == []
+    assert sum("dropped invalid item" in note for note in record.missing_information) == 2
 
 
 def test_merge_removes_duplicates_and_keeps_highest_count():

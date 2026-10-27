@@ -12,8 +12,10 @@ import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
+from .logbook import log_event
+
 DEFAULT_DB_PATH = Path(os.getenv("ERASMUS_DB", "erasmus.db"))
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2   # 2: corrections table
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS students (
@@ -143,6 +145,19 @@ CREATE TABLE IF NOT EXISTS cycles (
     UNIQUE (student_id, cycle)
 );
 
+-- Human corrections of extracted or entered facts. They are re-applied to every later
+-- extraction, so a re-read page can never silently undo a correction.
+CREATE TABLE IF NOT EXISTS corrections (
+    id              INTEGER PRIMARY KEY,
+    target          TEXT NOT NULL CHECK (target IN ('programme', 'student')),
+    target_id       TEXT NOT NULL,
+    field           TEXT NOT NULL,
+    value           TEXT NOT NULL,
+    reason          TEXT NOT NULL,
+    created_at      TEXT NOT NULL,
+    idempotency_key TEXT NOT NULL UNIQUE
+);
+
 CREATE TABLE IF NOT EXISTS action_log (
     id          INTEGER PRIMARY KEY,
     created_at  TEXT NOT NULL,
@@ -168,7 +183,7 @@ VERSIONED_TABLES = {
 }
 
 # Tables whose rows are written at most once, guarded by their UNIQUE idempotency_key.
-IDEMPOTENT_TABLES = ("decisions", "checklist_items")
+IDEMPOTENT_TABLES = ("decisions", "checklist_items", "corrections")
 
 
 def now_utc() -> str:
@@ -266,6 +281,7 @@ def add_version(
             [*values, payload],
         ).fetchone()
         if same:
+            log_event("memory_write", table=table, key=key, result="unchanged (same data already stored)", row=same["id"])
             return same["id"]
 
         latest = conn.execute(f"SELECT COALESCE(MAX(version), 0) FROM {table} WHERE {where}", values).fetchone()[0]
@@ -284,6 +300,8 @@ def add_version(
         new_id = cursor.lastrowid
         if status == "approved":
             _make_current(conn, table, key, new_id)
+    log_event("memory_write", table=table, key=key, result=f"version {latest + 1} saved as {status}", row=new_id,
+              source=source)
     return new_id
 
 
@@ -297,6 +315,7 @@ def approve_version(conn: sqlite3.Connection, table: str, version_id: int) -> No
     key = {column: row[column] for column in VERSIONED_TABLES[table]}
     with conn:
         _make_current(conn, table, key, version_id)
+    log_event("memory_write", table=table, key=key, result="pending version approved; old version superseded", row=version_id)
 
 
 def reject_version(conn: sqlite3.Connection, table: str, version_id: int) -> None:
@@ -308,6 +327,7 @@ def reject_version(conn: sqlite3.Connection, table: str, version_id: int) -> Non
                                [version_id]).rowcount
     if not updated:
         raise ValueError(f"{table} row {version_id} is not waiting for approval")
+    log_event("memory_write", table=table, result="pending version rejected; current version kept", row=version_id)
 
 
 def get_current(conn: sqlite3.Connection, table: str, key: dict) -> dict | None:
@@ -358,4 +378,28 @@ def insert_once(conn: sqlite3.Connection, table: str, row: dict) -> bool:
             "ON CONFLICT (idempotency_key) DO NOTHING",
             list(row.values()),
         )
-    return cursor.rowcount == 1
+    inserted = cursor.rowcount == 1
+    log_event("memory_write", table=table, key=row["idempotency_key"],
+              result="inserted" if inserted else "duplicate ignored (same idempotency key)")
+    return inserted
+
+# ---------- Deleting a student (right to be forgotten) ----------
+
+STUDENT_OWNED = ("checklist_items", "decisions", "cycles", "action_log", "preference_versions",
+                 "document_versions", "profile_versions")
+
+
+def forget_student(conn: sqlite3.Connection, student_id: str) -> dict:
+    """Delete everything stored about one student, in one transaction. Returns rows deleted per table.
+
+    Programme data is shared and not about the student, so it is kept.
+    """
+    deleted = {}
+    with conn:
+        for table in STUDENT_OWNED:
+            deleted[table] = conn.execute(f"DELETE FROM {table} WHERE student_id = ?", [student_id]).rowcount
+        deleted["corrections"] = conn.execute(
+            "DELETE FROM corrections WHERE target = 'student' AND target_id = ?", [student_id]).rowcount
+        deleted["students"] = conn.execute("DELETE FROM students WHERE student_id = ?", [student_id]).rowcount
+    log_event("memory_delete", deleted_student=student_id, rows=deleted)
+    return deleted

@@ -54,3 +54,19 @@ def test_daily_limit_on_the_last_model_is_raised(monkeypatch):
     monkeypatch.setattr(llm, "chat", chat)
     with pytest.raises(RateLimitError):
         llm.chat_with_retry([], "fast")
+
+
+def test_every_call_and_limit_event_is_logged(monkeypatch):
+    from erasmus_agent import logbook
+    calls = []
+
+    def chat(messages, model, **kwargs):
+        calls.append(model)
+        if model == "main":
+            raise limit_error("Rate limit reached ... on tokens per day (TPD)")
+        return fake_response()
+    monkeypatch.setattr(llm, "chat", chat)
+    llm.chat_with_retry([], "main", purpose="decide")
+    events = logbook.read_events()
+    assert [e["event"] for e in events] == ["rate_limit", "llm_call"]
+    assert events[0]["action"] == "switch to fast" and events[1]["fallback"] is True and events[1]["tokens"] == 10
